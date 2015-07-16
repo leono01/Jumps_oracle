@@ -1,0 +1,268 @@
+JOB170 | 19/06/2015 | 23:54:49 | oracle | ORA-028 | Realizando restauración del respaldo... | restore_backup_full_oracle.sh | ORA-RF-01
+
+Recovery Manager: Release 11.2.0.1.0 - Production on Fri Jun 19 23:54:49 2015
+
+Copyright (c) 1982, 2009, Oracle and/or its affiliates.  All rights reserved.
+
+connected to target database: PRODUCCI (DBID=3688939454)
+
+RMAN> 
+using target database control file instead of recovery catalog
+
+List of Backup Sets
+===================
+
+
+BS Key  Type LV Size       Device Type Elapsed Time Completion Time
+------- ---- -- ---------- ----------- ------------ ---------------
+181     Incr 0  10.95M     DISK        00:00:01     21-MAY-15      
+        BP Key: 181   Status: AVAILABLE  Compressed: NO  Tag: TAG20150521T000240
+        Piece Name: /u01/app/oracle/flash_recovery_area/PRODUCCION/backupset/2015_05_21/o1_mf_ncsn0_TAG20150521T000240_botsrbr0_.bkp
+  SPFILE Included: Modification time: 09-APR-15
+  SPFILE db_unique_name: PRODUCCION
+  Control File Included: Ckp SCN: 5322130424   Ckp time: 21-MAY-15
+
+BS Key  Type LV Size       Device Type Elapsed Time Completion Time
+------- ---- -- ---------- ----------- ------------ ---------------
+182     Incr 0  5.28G      DISK        00:04:22     25-MAY-15      
+        BP Key: 182   Status: AVAILABLE  Compressed: NO  Tag: TAG20150525T000248
+        Piece Name: /u01/app/oracle/flash_recovery_area/PRODUCCION/backupset/2015_05_25/o1_mf_nnnd0_TAG20150525T000248_bp5c7s64_.bkp
+  List of Datafiles in backup set 182
+  File LV Type Ckp SCN    Ckp Time  Name
+  ---- -- ---- ---------- --------- ----
+  1    0  Incr 5322779736 25-MAY-15 /u01/app/oracle/oradata/PRODUCCION/datafile/o1_mf_system_b3lgrmx4_.dbf
+  2    0  Incr 5322779736 25-MAY-15 /u01/app/oracle/oradata/PRODUCCION/datafile/o1_mf_sysaux_b3lgrmxw_.dbf
+  3    0  Incr 5322779736 25-MAY-15 /u01/app/oracle/oradata/PRODUCCION/datafile/o1_mf_undotbs1_b3lgrmy0_.dbf
+  4    0  Incr 5322779736 25-MAY-15 /u01/app/oracle/oradata/PRODUCCION/datafile/o1_mf_users_b3lgrmym_.dbf
+  5    0  Incr 5322779736 25-MAY-15 /u01/app/oracle/oradata/produccion/PAGOSIFREM_DATA.dbf
+
+RMAN> 
+
+Recovery Manager complete.
+
+Recovery Manager: Release 11.2.0.1.0 - Production on Fri Jun 19 23:55:00 2015
+
+Copyright (c) 1982, 2009, Oracle and/or its affiliates.  All rights reserved.
+
+connected to target database: PRODUCCI (DBID=3688939454)
+
+RMAN> 
+using target database control file instead of recovery catalog
+allocated channel: ORA_DISK_1
+channel ORA_DISK_1: SID=104 device type=DISK
+List of Archived Log Copies for database with db_unique_name PRODUCCION
+=====================================================================
+
+Key     Thrd Seq     S Low Time 
+------- ---- ------- - ---------
+2827    1    189     A 18-JUN-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_189_879308837.dbf
+
+2828    1    190     A 18-JUN-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_190_879308837.dbf
+
+2829    1    191     A 18-JUN-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_191_879308837.dbf
+
+2830    1    192     A 18-JUN-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_192_879308837.dbf
+
+2831    1    193     A 18-JUN-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_193_879308837.dbf
+
+2832    1    194     A 18-JUN-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_194_879308837.dbf
+
+2833    1    195     A 19-JUN-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_195_879308837.dbf
+
+2834    1    196     A 19-JUN-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_196_879308837.dbf
+
+2835    1    197     A 19-JUN-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_197_879308837.dbf
+
+2836    1    198     A 19-JUN-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_198_879308837.dbf
+
+2837    1    199     A 19-JUN-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_199_879308837.dbf
+
+2838    1    200     A 19-JUN-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_200_879308837.dbf
+
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_189_879308837.dbf RECID=2827 STAMP=882727218
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_190_879308837.dbf RECID=2828 STAMP=882732283
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_191_879308837.dbf RECID=2829 STAMP=882741606
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_192_879308837.dbf RECID=2830 STAMP=882741648
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_193_879308837.dbf RECID=2831 STAMP=882741672
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_194_879308837.dbf RECID=2832 STAMP=882763238
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_195_879308837.dbf RECID=2833 STAMP=882784887
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_196_879308837.dbf RECID=2834 STAMP=882807689
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_197_879308837.dbf RECID=2835 STAMP=882818702
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_198_879308837.dbf RECID=2836 STAMP=882818704
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_199_879308837.dbf RECID=2837 STAMP=882828014
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_200_879308837.dbf RECID=2838 STAMP=882828024
+Deleted 12 objects
+
+
+RMAN> 
+database closed
+database dismounted
+Oracle instance shut down
+
+RMAN> 
+executing command: SET DBID
+
+RMAN> 
+connected to target database (not started)
+Oracle instance started
+
+Total System Global Area    6547296256 bytes
+
+Fixed Size                     2213856 bytes
+Variable Size               5167384608 bytes
+Database Buffers            1342177280 bytes
+Redo Buffers                  35520512 bytes
+
+RMAN> 
+Starting restore at 19-JUN-15
+allocated channel: ORA_DISK_1
+channel ORA_DISK_1: SID=253 device type=DISK
+
+channel ORA_DISK_1: restoring control file
+channel ORA_DISK_1: restore complete, elapsed time: 00:00:03
+output file name=/u01/app/oracle/oradata/PRODUCCION/controlfile/o1_mf_b3lgtgr5_.ctl
+output file name=/u01/app/oracle/flash_recovery_area/PRODUCCION/controlfile/o1_mf_b3lgtgs0_.ctl
+Finished restore at 19-JUN-15
+
+RMAN> 
+database is already started
+database mounted
+released channel: ORA_DISK_1
+For record type ARCHIVED LOG RECIDS from 2838 to 2989 are re-used before resync
+
+RMAN> 
+allocated channel: ORA_DISK_1
+channel ORA_DISK_1: SID=253 device type=DISK
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/u01/app/oracle/flash_recovery_area/PRODUCCION/backupset/2015_07_04/o1_mf_ncsn0_TAG20150704T204701_bsk35hsd_.bkp RECID=1 STAMP=884206047
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/u01/app/oracle/flash_recovery_area/PRODUCCION/backupset/2015_07_04/o1_mf_annnn_TAG20150704T204730_bsk35lqh_.bkp RECID=2 STAMP=884206050
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/u01/app/oracle/flash_recovery_area/PRODUCCION/backupset/2015_07_04/o1_mf_annnn_TAG20150704T204730_bsk35tjt_.bkp RECID=3 STAMP=884206058
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/u01/app/oracle/flash_recovery_area/PRODUCCION/backupset/2015_07_04/o1_mf_ncsn0_TAG20150704T213236_bsk5tnvw_.bkp RECID=4 STAMP=884208772
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/u01/app/oracle/flash_recovery_area/PRODUCCION/backupset/2015_07_04/o1_mf_ncsn0_TAG20150704T213255_bsk5v7h5_.bkp RECID=5 STAMP=884208791
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/u01/app/oracle/flash_recovery_area/PRODUCCION/backupset/2015_07_04/o1_mf_ncsn0_TAG20150704T213913_bsk671cs_.bkp RECID=6 STAMP=884209169
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/u01/app/oracle/flash_recovery_area/PRODUCCION/backupset/2015_07_04/o1_mf_ncsn0_TAG20150704T213931_bsk67my3_.bkp RECID=7 STAMP=884209187
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/u01/app/oracle/flash_recovery_area/PRODUCCION/backupset/2015_07_04/o1_mf_ncsn0_TAG20150704T220457_bsk7q9xj_.bkp RECID=8 STAMP=884210713
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/u01/app/oracle/flash_recovery_area/PRODUCCION/backupset/2015_07_04/o1_mf_ncsn0_TAG20150704T220516_bsk7qwj7_.bkp RECID=9 STAMP=884210732
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/u01/app/oracle/flash_recovery_area/PRODUCCION/backupset/2015_07_04/o1_mf_ncsn0_TAG20150704T221031_bsk81qfl_.bkp RECID=10 STAMP=884211047
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/u01/app/oracle/flash_recovery_area/PRODUCCION/backupset/2015_07_04/o1_mf_ncsn0_TAG20150704T221049_bsk82b0w_.bkp RECID=11 STAMP=884211066
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/u01/app/oracle/flash_recovery_area/PRODUCCION/backupset/2015_07_04/o1_mf_ncsn0_TAG20150704T223008_bsk96jl6_.bkp RECID=12 STAMP=884212224
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/u01/app/oracle/flash_recovery_area/PRODUCCION/backupset/2015_07_04/o1_mf_ncsn0_TAG20150704T223026_bsk9734t_.bkp RECID=13 STAMP=884212243
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/u01/app/oracle/flash_recovery_area/PRODUCCION/backupset/2015_07_04/o1_mf_ncsn0_TAG20150704T232100_bskd5x2b_.bkp RECID=14 STAMP=884215277
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/u01/app/oracle/flash_recovery_area/PRODUCCION/backupset/2015_07_04/o1_mf_ncsn0_TAG20150704T232119_bskd6hnb_.bkp RECID=15 STAMP=884215295
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/u01/app/oracle/flash_recovery_area/PRODUCCION/backupset/2015_07_04/o1_mf_ncsn0_TAG20150704T232352_bskdc89t_.bkp RECID=16 STAMP=884215448
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/u01/app/oracle/flash_recovery_area/PRODUCCION/backupset/2015_07_04/o1_mf_ncsn0_TAG20150704T232410_bskdctty_.bkp RECID=17 STAMP=884215466
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/u01/app/oracle/flash_recovery_area/PRODUCCION/backupset/2015_07_04/o1_mf_ncsn0_TAG20150704T233939_bskf8vh7_.bkp RECID=18 STAMP=884216395
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/u01/app/oracle/flash_recovery_area/PRODUCCION/backupset/2015_07_04/o1_mf_ncsn0_TAG20150704T233957_bskf9g4g_.bkp RECID=19 STAMP=884216414
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/u01/app/oracle/flash_recovery_area/PRODUCCION/backupset/2015_07_04/o1_mf_ncsn0_TAG20150704T234920_bskfv0kn_.bkp RECID=20 STAMP=884216976
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/u01/app/oracle/flash_recovery_area/PRODUCCION/backupset/2015_07_04/o1_mf_ncsn0_TAG20150704T234938_bskfvm5k_.bkp RECID=21 STAMP=884216995
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/u01/app/oracle/flash_recovery_area/PRODUCCION/backupset/2015_07_04/o1_mf_ncsn0_TAG20150704T235311_bskg27w7_.bkp RECID=22 STAMP=884217207
+Crosschecked 22 objects
+
+
+RMAN> 
+Starting restore at 19-JUN-15
+using channel ORA_DISK_1
+
+datafile 5 will be created automatically during restore operation
+RMAN-00571: ===========================================================
+RMAN-00569: =============== ERROR MESSAGE STACK FOLLOWS ===============
+RMAN-00571: ===========================================================
+RMAN-03002: failure of restore command at 06/19/2015 23:55:25
+RMAN-06026: some targets not found - aborting restore
+RMAN-06023: no backup or copy of datafile 4 found to restore
+RMAN-06023: no backup or copy of datafile 3 found to restore
+RMAN-06023: no backup or copy of datafile 2 found to restore
+RMAN-06023: no backup or copy of datafile 1 found to restore
+
+RMAN> 
+Starting restore at 19-JUN-15
+using channel ORA_DISK_1
+
+RMAN-00571: ===========================================================
+RMAN-00569: =============== ERROR MESSAGE STACK FOLLOWS ===============
+RMAN-00571: ===========================================================
+RMAN-03002: failure of restore command at 06/19/2015 23:55:25
+RMAN-06026: some targets not found - aborting restore
+RMAN-06023: no backup or copy of datafile 4 found to restore
+RMAN-06023: no backup or copy of datafile 3 found to restore
+RMAN-06023: no backup or copy of datafile 2 found to restore
+RMAN-06023: no backup or copy of datafile 1 found to restore
+
+RMAN> 
+Starting recover at 19-JUN-15
+using channel ORA_DISK_1
+
+starting media recovery
+media recovery failed
+RMAN-00571: ===========================================================
+RMAN-00569: =============== ERROR MESSAGE STACK FOLLOWS ===============
+RMAN-00571: ===========================================================
+RMAN-03002: failure of recover command at 06/19/2015 23:55:26
+ORA-00283: recovery session canceled due to errors
+RMAN-11003: failure during parse/execution of SQL statement: alter database recover if needed
+ start until cancel using backup controlfile
+ORA-00283: sesion de recuperacion cancelada debido a errores
+ORA-19909: el archivo de datos 1 pertenece a una encarnacion huerfana
+ORA-01110: archivo de datos 1: '/u01/app/oracle/oradata/PRODUCCION/datafile/o1_mf_system_b3lgrmx4_.dbf'
+
+RMAN> 
+RMAN-00571: ===========================================================
+RMAN-00569: =============== ERROR MESSAGE STACK FOLLOWS ===============
+RMAN-00571: ===========================================================
+RMAN-03002: failure of alter db command at 06/19/2015 23:55:26
+ORA-01190: el archivo de control o el archivo de datos 1 es anterior al ultimo RESETLOGS
+ORA-01110: archivo de datos 1: '/u01/app/oracle/oradata/PRODUCCION/datafile/o1_mf_system_b3lgrmx4_.dbf'
+
+RMAN> 
+
+Recovery Manager complete.
+
+JOB170 | 19/06/2015 | 23:55:26 | oracle | ORA-025 | Finalizó exitosamente la restauración del respaldo completo. | restore_backup_full_oracle.sh | ORA-RF-01
+
+JOB170 | 19/06/2015 | 23:55:26 | oracle | ORA-000 | Se completó exitosamente el proceso. | restore_backup_full_oracle.sh |ORA-RF-01
+EXIT_CODE=0

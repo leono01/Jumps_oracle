@@ -1,0 +1,3577 @@
+JOB134 | 05/05/2015 | 04:27:44 | oracle | ORA-028 | Realizando restauración del respaldo... | restore_backup_full_oracle.sh | ORA-RF-01
+
+Recovery Manager: Release 11.2.0.1.0 - Production on Tue May 5 04:27:47 2015
+
+Copyright (c) 1982, 2009, Oracle and/or its affiliates.  All rights reserved.
+
+connected to target database: PRODUCCI (DBID=3688939454)
+
+RMAN> 
+using target database control file instead of recovery catalog
+
+List of Backup Sets
+===================
+
+
+BS Key  Type LV Size       Device Type Elapsed Time Completion Time
+------- ---- -- ---------- ----------- ------------ ---------------
+169     Incr 0  4.42G      DISK        00:00:14     13-FEB-15      
+        BP Key: 169   Status: EXPIRED  Compressed: NO  Tag: TAG20150213T131004
+        Piece Name: /u01/app/oracle/flash_recovery_area/PRODUCCION/backupset/2015_02_13/o1_mf_nnnd0_TAG20150213T131004_bfwm0ddf_.bkp
+  List of Datafiles in backup set 169
+  File LV Type Ckp SCN    Ckp Time  Name
+  ---- -- ---- ---------- --------- ----
+  1    0  Incr 5307631674 13-FEB-15 /u01/app/oracle/oradata/PRODUCCION/datafile/o1_mf_system_b3lgrmx4_.dbf
+  2    0  Incr 5307631674 13-FEB-15 /u01/app/oracle/oradata/PRODUCCION/datafile/o1_mf_sysaux_b3lgrmxw_.dbf
+  3    0  Incr 5307631674 13-FEB-15 /u01/app/oracle/oradata/PRODUCCION/datafile/o1_mf_undotbs1_b3lgrmy0_.dbf
+  4    0  Incr 5307631674 13-FEB-15 /u01/app/oracle/oradata/PRODUCCION/datafile/o1_mf_users_b3lgrmym_.dbf
+  5    0  Incr 5307631674 13-FEB-15 /u01/app/oracle/oradata/produccion/PAGOSIFREM_DATA.dbf
+
+BS Key  Type LV Size       Device Type Elapsed Time Completion Time
+------- ---- -- ---------- ----------- ------------ ---------------
+170     Incr 0  10.95M     DISK        00:00:01     13-FEB-15      
+        BP Key: 170   Status: EXPIRED  Compressed: NO  Tag: TAG20150213T131004
+        Piece Name: /u01/app/oracle/flash_recovery_area/PRODUCCION/backupset/2015_02_13/o1_mf_ncsn0_TAG20150213T131004_bfwm0whd_.bkp
+  SPFILE Included: Modification time: 29-JAN-15
+  SPFILE db_unique_name: PRODUCCION
+  Control File Included: Ckp SCN: 5307631713   Ckp time: 13-FEB-15
+
+BS Key  Type LV Size       Device Type Elapsed Time Completion Time
+------- ---- -- ---------- ----------- ------------ ---------------
+171     Incr 0  4.42G      DISK        00:00:14     13-FEB-15      
+        BP Key: 171   Status: AVAILABLE  Compressed: NO  Tag: TAG20150213T131022
+        Piece Name: /u01/app/oracle/flash_recovery_area/PRODUCCION/backupset/2015_02_13/o1_mf_nnnd0_TAG20150213T131022_bfwm0yyx_.bkp
+  List of Datafiles in backup set 171
+  File LV Type Ckp SCN    Ckp Time  Name
+  ---- -- ---- ---------- --------- ----
+  1    0  Incr 5307631740 13-FEB-15 /u01/app/oracle/oradata/PRODUCCION/datafile/o1_mf_system_b3lgrmx4_.dbf
+  2    0  Incr 5307631740 13-FEB-15 /u01/app/oracle/oradata/PRODUCCION/datafile/o1_mf_sysaux_b3lgrmxw_.dbf
+  3    0  Incr 5307631740 13-FEB-15 /u01/app/oracle/oradata/PRODUCCION/datafile/o1_mf_undotbs1_b3lgrmy0_.dbf
+  4    0  Incr 5307631740 13-FEB-15 /u01/app/oracle/oradata/PRODUCCION/datafile/o1_mf_users_b3lgrmym_.dbf
+  5    0  Incr 5307631740 13-FEB-15 /u01/app/oracle/oradata/produccion/PAGOSIFREM_DATA.dbf
+
+BS Key  Type LV Size       Device Type Elapsed Time Completion Time
+------- ---- -- ---------- ----------- ------------ ---------------
+172     Incr 0  10.95M     DISK        00:00:01     13-FEB-15      
+        BP Key: 172   Status: AVAILABLE  Compressed: NO  Tag: TAG20150213T131022
+        Piece Name: /u01/app/oracle/flash_recovery_area/PRODUCCION/backupset/2015_02_13/o1_mf_ncsn0_TAG20150213T131022_bfwm1h2v_.bkp
+  SPFILE Included: Modification time: 29-JAN-15
+  SPFILE db_unique_name: PRODUCCION
+  Control File Included: Ckp SCN: 5307631773   Ckp time: 13-FEB-15
+
+BS Key  Type LV Size       Device Type Elapsed Time Completion Time
+------- ---- -- ---------- ----------- ------------ ---------------
+173     Incr 1  2.11M      DISK        00:00:10     13-FEB-15      
+        BP Key: 173   Status: AVAILABLE  Compressed: NO  Tag: TAG20150213T135833
+        Piece Name: /u01/app/oracle/flash_recovery_area/PRODUCCION/backupset/2015_02_13/o1_mf_nnnd1_TAG20150213T135833_bfwov9fr_.bkp
+  List of Datafiles in backup set 173
+  File LV Type Ckp SCN    Ckp Time  Name
+  ---- -- ---- ---------- --------- ----
+  1    1  Incr 5307636266 13-FEB-15 /u01/app/oracle/oradata/PRODUCCION/datafile/o1_mf_system_b3lgrmx4_.dbf
+  2    1  Incr 5307636266 13-FEB-15 /u01/app/oracle/oradata/PRODUCCION/datafile/o1_mf_sysaux_b3lgrmxw_.dbf
+  3    1  Incr 5307636266 13-FEB-15 /u01/app/oracle/oradata/PRODUCCION/datafile/o1_mf_undotbs1_b3lgrmy0_.dbf
+  4    1  Incr 5307636266 13-FEB-15 /u01/app/oracle/oradata/PRODUCCION/datafile/o1_mf_users_b3lgrmym_.dbf
+  5    1  Incr 5307636266 13-FEB-15 /u01/app/oracle/oradata/produccion/PAGOSIFREM_DATA.dbf
+
+RMAN> 
+
+Recovery Manager complete.
+
+Recovery Manager: Release 11.2.0.1.0 - Production on Tue May 5 04:28:00 2015
+
+Copyright (c) 1982, 2009, Oracle and/or its affiliates.  All rights reserved.
+
+connected to target database: PRODUCCI (DBID=3688939454)
+
+RMAN> 
+using target database control file instead of recovery catalog
+allocated channel: ORA_DISK_1
+channel ORA_DISK_1: SID=54 device type=DISK
+List of Archived Log Copies for database with db_unique_name PRODUCCION
+=====================================================================
+
+Key     Thrd Seq     S Low Time 
+------- ---- ------- - ---------
+1442    1    1444    A 13-FEB-15
+        Name: /u01/app/oracle/flash_recovery_area/PRODUCCION/archivelog/2015_02_13/o1_mf_1_1444_bfwojscy_.arc
+
+1449    1    1       A 29-JAN-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_1_870284986.dbf
+
+1450    1    2       A 05-FEB-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_2_870284986.dbf
+
+1451    1    3       A 06-FEB-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_3_870284986.dbf
+
+1452    1    4       A 13-FEB-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_4_870284986.dbf
+
+1453    1    5       A 13-FEB-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_5_870284986.dbf
+
+1454    1    6       A 13-FEB-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_6_870284986.dbf
+
+1455    1    7       A 13-FEB-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_7_870284986.dbf
+
+1456    1    8       A 13-FEB-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_8_870284986.dbf
+
+1457    1    9       A 13-FEB-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_9_870284986.dbf
+
+1458    1    10      A 13-FEB-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_10_870284986.dbf
+
+1459    1    11      A 14-FEB-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_11_870284986.dbf
+
+1460    1    12      A 14-FEB-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_12_870284986.dbf
+
+1461    1    13      A 14-FEB-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_13_870284986.dbf
+
+1462    1    14      A 14-FEB-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_14_870284986.dbf
+
+1463    1    15      A 14-FEB-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_15_870284986.dbf
+
+1464    1    16      A 14-FEB-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_16_870284986.dbf
+
+1465    1    17      A 14-FEB-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_17_870284986.dbf
+
+1466    1    18      A 14-FEB-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_18_870284986.dbf
+
+1467    1    19      A 15-FEB-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_19_870284986.dbf
+
+1468    1    20      A 15-FEB-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_20_870284986.dbf
+
+1469    1    21      A 15-FEB-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_21_870284986.dbf
+
+1470    1    22      A 15-FEB-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_22_870284986.dbf
+
+1471    1    23      A 15-FEB-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_23_870284986.dbf
+
+1472    1    24      A 15-FEB-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_24_870284986.dbf
+
+1473    1    25      A 15-FEB-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_25_870284986.dbf
+
+1474    1    26      A 15-FEB-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_26_870284986.dbf
+
+1475    1    27      A 15-FEB-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_27_870284986.dbf
+
+1476    1    28      A 16-FEB-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_28_870284986.dbf
+
+1477    1    29      A 16-FEB-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_29_870284986.dbf
+
+1478    1    30      A 16-FEB-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_30_870284986.dbf
+
+1479    1    31      A 16-FEB-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_31_870284986.dbf
+
+1480    1    32      A 16-FEB-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_32_870284986.dbf
+
+1481    1    33      A 16-FEB-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_33_870284986.dbf
+
+1482    1    34      A 16-FEB-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_34_870284986.dbf
+
+1483    1    35      A 17-FEB-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_35_870284986.dbf
+
+1484    1    36      A 17-FEB-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_36_870284986.dbf
+
+1485    1    37      A 17-FEB-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_37_870284986.dbf
+
+1486    1    38      A 17-FEB-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_38_870284986.dbf
+
+1487    1    39      A 17-FEB-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_39_870284986.dbf
+
+1488    1    40      A 17-FEB-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_40_870284986.dbf
+
+1489    1    41      A 17-FEB-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_41_870284986.dbf
+
+1490    1    42      A 17-FEB-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_42_870284986.dbf
+
+1491    1    43      A 17-FEB-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_43_870284986.dbf
+
+1492    1    44      A 18-FEB-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_44_870284986.dbf
+
+1493    1    45      A 18-FEB-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_45_870284986.dbf
+
+1494    1    46      A 18-FEB-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_46_870284986.dbf
+
+1495    1    47      A 18-FEB-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_47_870284986.dbf
+
+1496    1    48      A 18-FEB-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_48_870284986.dbf
+
+1497    1    49      A 18-FEB-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_49_870284986.dbf
+
+1498    1    50      A 18-FEB-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_50_870284986.dbf
+
+1499    1    51      A 18-FEB-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_51_870284986.dbf
+
+1500    1    52      A 19-FEB-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_52_870284986.dbf
+
+1501    1    53      A 19-FEB-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_53_870284986.dbf
+
+1502    1    54      A 19-FEB-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_54_870284986.dbf
+
+1503    1    55      A 19-FEB-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_55_870284986.dbf
+
+1504    1    56      A 19-FEB-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_56_870284986.dbf
+
+1505    1    57      A 19-FEB-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_57_870284986.dbf
+
+1506    1    58      A 19-FEB-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_58_870284986.dbf
+
+1507    1    59      A 19-FEB-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_59_870284986.dbf
+
+1508    1    60      A 19-FEB-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_60_870284986.dbf
+
+1509    1    61      A 20-FEB-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_61_870284986.dbf
+
+1510    1    62      A 20-FEB-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_62_870284986.dbf
+
+1511    1    63      A 20-FEB-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_63_870284986.dbf
+
+1512    1    64      A 20-FEB-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_64_870284986.dbf
+
+1513    1    65      A 20-FEB-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_65_870284986.dbf
+
+1514    1    66      A 20-FEB-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_66_870284986.dbf
+
+1515    1    67      A 20-FEB-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_67_870284986.dbf
+
+1516    1    68      A 20-FEB-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_68_870284986.dbf
+
+1517    1    69      A 21-FEB-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_69_870284986.dbf
+
+1518    1    70      A 21-FEB-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_70_870284986.dbf
+
+1519    1    71      A 21-FEB-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_71_870284986.dbf
+
+1520    1    72      A 21-FEB-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_72_870284986.dbf
+
+1521    1    73      A 21-FEB-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_73_870284986.dbf
+
+1522    1    74      A 21-FEB-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_74_870284986.dbf
+
+1523    1    75      A 21-FEB-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_75_870284986.dbf
+
+1524    1    76      A 21-FEB-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_76_870284986.dbf
+
+1525    1    77      A 21-FEB-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_77_870284986.dbf
+
+1526    1    78      A 21-FEB-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_78_870284986.dbf
+
+1527    1    79      A 22-FEB-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_79_870284986.dbf
+
+1528    1    80      A 22-FEB-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_80_870284986.dbf
+
+1529    1    81      A 22-FEB-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_81_870284986.dbf
+
+1530    1    82      A 22-FEB-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_82_870284986.dbf
+
+1531    1    83      A 22-FEB-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_83_870284986.dbf
+
+1532    1    84      A 22-FEB-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_84_870284986.dbf
+
+1533    1    85      A 22-FEB-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_85_870284986.dbf
+
+1534    1    86      A 22-FEB-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_86_870284986.dbf
+
+1535    1    87      A 22-FEB-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_87_870284986.dbf
+
+1536    1    88      A 22-FEB-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_88_870284986.dbf
+
+1537    1    89      A 23-FEB-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_89_870284986.dbf
+
+1538    1    90      A 23-FEB-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_90_870284986.dbf
+
+1539    1    91      A 23-FEB-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_91_870284986.dbf
+
+1540    1    92      A 23-FEB-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_92_870284986.dbf
+
+1541    1    93      A 23-FEB-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_93_870284986.dbf
+
+1542    1    94      A 23-FEB-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_94_870284986.dbf
+
+1543    1    95      A 23-FEB-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_95_870284986.dbf
+
+1544    1    96      A 24-FEB-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_96_870284986.dbf
+
+1545    1    97      A 24-FEB-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_97_870284986.dbf
+
+1546    1    98      A 24-FEB-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_98_870284986.dbf
+
+1547    1    99      A 24-FEB-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_99_870284986.dbf
+
+1548    1    100     A 24-FEB-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_100_870284986.dbf
+
+1549    1    101     A 24-FEB-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_101_870284986.dbf
+
+1550    1    102     A 24-FEB-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_102_870284986.dbf
+
+1551    1    103     A 24-FEB-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_103_870284986.dbf
+
+1552    1    104     A 25-FEB-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_104_870284986.dbf
+
+1553    1    105     A 25-FEB-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_105_870284986.dbf
+
+1554    1    106     A 25-FEB-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_106_870284986.dbf
+
+1555    1    107     A 25-FEB-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_107_870284986.dbf
+
+1556    1    108     A 25-FEB-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_108_870284986.dbf
+
+1557    1    109     A 25-FEB-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_109_870284986.dbf
+
+1558    1    110     A 25-FEB-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_110_870284986.dbf
+
+1559    1    111     A 25-FEB-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_111_870284986.dbf
+
+1560    1    112     A 26-FEB-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_112_870284986.dbf
+
+1561    1    113     A 26-FEB-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_113_870284986.dbf
+
+1562    1    114     A 26-FEB-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_114_870284986.dbf
+
+1563    1    115     A 26-FEB-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_115_870284986.dbf
+
+1564    1    116     A 26-FEB-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_116_870284986.dbf
+
+1565    1    117     A 26-FEB-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_117_870284986.dbf
+
+1566    1    118     A 26-FEB-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_118_870284986.dbf
+
+1567    1    119     A 27-FEB-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_119_870284986.dbf
+
+1568    1    120     A 27-FEB-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_120_870284986.dbf
+
+1569    1    121     A 27-FEB-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_121_870284986.dbf
+
+1570    1    122     A 27-FEB-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_122_870284986.dbf
+
+1571    1    123     A 27-FEB-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_123_870284986.dbf
+
+1572    1    124     A 27-FEB-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_124_870284986.dbf
+
+1573    1    125     A 27-FEB-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_125_870284986.dbf
+
+1574    1    126     A 27-FEB-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_126_870284986.dbf
+
+1575    1    127     A 28-FEB-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_127_870284986.dbf
+
+1576    1    128     A 28-FEB-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_128_870284986.dbf
+
+1577    1    129     A 28-FEB-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_129_870284986.dbf
+
+1578    1    130     A 28-FEB-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_130_870284986.dbf
+
+1579    1    131     A 28-FEB-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_131_870284986.dbf
+
+1580    1    132     A 28-FEB-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_132_870284986.dbf
+
+1581    1    133     A 28-FEB-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_133_870284986.dbf
+
+1582    1    134     A 28-FEB-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_134_870284986.dbf
+
+1583    1    135     A 28-FEB-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_135_870284986.dbf
+
+1584    1    136     A 01-MAR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_136_870284986.dbf
+
+1585    1    137     A 01-MAR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_137_870284986.dbf
+
+1586    1    138     A 01-MAR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_138_870284986.dbf
+
+1587    1    139     A 01-MAR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_139_870284986.dbf
+
+1588    1    140     A 01-MAR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_140_870284986.dbf
+
+1589    1    141     A 01-MAR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_141_870284986.dbf
+
+1590    1    142     A 01-MAR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_142_870284986.dbf
+
+1591    1    143     A 01-MAR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_143_870284986.dbf
+
+1592    1    144     A 01-MAR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_144_870284986.dbf
+
+1593    1    145     A 02-MAR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_145_870284986.dbf
+
+1594    1    146     A 02-MAR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_146_870284986.dbf
+
+1595    1    147     A 02-MAR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_147_870284986.dbf
+
+1596    1    148     A 02-MAR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_148_870284986.dbf
+
+1597    1    149     A 02-MAR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_149_870284986.dbf
+
+1598    1    150     A 02-MAR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_150_870284986.dbf
+
+1599    1    151     A 02-MAR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_151_870284986.dbf
+
+1600    1    152     A 02-MAR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_152_870284986.dbf
+
+1601    1    153     A 03-MAR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_153_870284986.dbf
+
+1602    1    154     A 03-MAR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_154_870284986.dbf
+
+1603    1    155     A 03-MAR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_155_870284986.dbf
+
+1604    1    156     A 03-MAR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_156_870284986.dbf
+
+1605    1    157     A 03-MAR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_157_870284986.dbf
+
+1606    1    158     A 03-MAR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_158_870284986.dbf
+
+1607    1    159     A 03-MAR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_159_870284986.dbf
+
+1608    1    160     A 03-MAR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_160_870284986.dbf
+
+1609    1    161     A 04-MAR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_161_870284986.dbf
+
+1610    1    162     A 04-MAR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_162_870284986.dbf
+
+1611    1    163     A 04-MAR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_163_870284986.dbf
+
+1612    1    164     A 04-MAR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_164_870284986.dbf
+
+1613    1    165     A 04-MAR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_165_870284986.dbf
+
+1614    1    166     A 04-MAR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_166_870284986.dbf
+
+1615    1    167     A 04-MAR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_167_870284986.dbf
+
+1616    1    168     A 05-MAR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_168_870284986.dbf
+
+1617    1    169     A 05-MAR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_169_870284986.dbf
+
+1618    1    170     A 05-MAR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_170_870284986.dbf
+
+1619    1    171     A 05-MAR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_171_870284986.dbf
+
+1620    1    172     A 05-MAR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_172_870284986.dbf
+
+1621    1    173     A 05-MAR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_173_870284986.dbf
+
+1622    1    174     A 05-MAR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_174_870284986.dbf
+
+1623    1    175     A 05-MAR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_175_870284986.dbf
+
+1624    1    176     A 06-MAR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_176_870284986.dbf
+
+1625    1    177     A 06-MAR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_177_870284986.dbf
+
+1626    1    178     A 06-MAR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_178_870284986.dbf
+
+1627    1    179     A 06-MAR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_179_870284986.dbf
+
+1628    1    180     A 06-MAR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_180_870284986.dbf
+
+1629    1    181     A 06-MAR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_181_870284986.dbf
+
+1630    1    182     A 06-MAR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_182_870284986.dbf
+
+1631    1    183     A 07-MAR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_183_870284986.dbf
+
+1632    1    184     A 07-MAR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_184_870284986.dbf
+
+1633    1    185     A 07-MAR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_185_870284986.dbf
+
+1634    1    186     A 07-MAR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_186_870284986.dbf
+
+1635    1    187     A 07-MAR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_187_870284986.dbf
+
+1636    1    188     A 07-MAR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_188_870284986.dbf
+
+1637    1    189     A 07-MAR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_189_870284986.dbf
+
+1638    1    190     A 07-MAR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_190_870284986.dbf
+
+1639    1    191     A 07-MAR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_191_870284986.dbf
+
+1640    1    192     A 08-MAR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_192_870284986.dbf
+
+1641    1    193     A 08-MAR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_193_870284986.dbf
+
+1642    1    194     A 08-MAR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_194_870284986.dbf
+
+1643    1    195     A 08-MAR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_195_870284986.dbf
+
+1644    1    196     A 08-MAR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_196_870284986.dbf
+
+1645    1    197     A 08-MAR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_197_870284986.dbf
+
+1646    1    198     A 08-MAR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_198_870284986.dbf
+
+1647    1    199     A 08-MAR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_199_870284986.dbf
+
+1648    1    200     A 08-MAR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_200_870284986.dbf
+
+1649    1    201     A 09-MAR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_201_870284986.dbf
+
+1650    1    202     A 09-MAR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_202_870284986.dbf
+
+1651    1    203     A 09-MAR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_203_870284986.dbf
+
+1652    1    204     A 09-MAR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_204_870284986.dbf
+
+1653    1    205     A 09-MAR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_205_870284986.dbf
+
+1654    1    206     A 09-MAR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_206_870284986.dbf
+
+1655    1    207     A 09-MAR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_207_870284986.dbf
+
+1656    1    208     A 09-MAR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_208_870284986.dbf
+
+1657    1    209     A 10-MAR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_209_870284986.dbf
+
+1658    1    210     A 10-MAR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_210_870284986.dbf
+
+1659    1    211     A 10-MAR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_211_870284986.dbf
+
+1660    1    212     A 10-MAR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_212_870284986.dbf
+
+1661    1    213     A 10-MAR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_213_870284986.dbf
+
+1662    1    214     A 10-MAR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_214_870284986.dbf
+
+1663    1    215     A 10-MAR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_215_870284986.dbf
+
+1664    1    216     A 10-MAR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_216_870284986.dbf
+
+1665    1    217     A 11-MAR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_217_870284986.dbf
+
+1666    1    218     A 11-MAR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_218_870284986.dbf
+
+1667    1    219     A 11-MAR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_219_870284986.dbf
+
+1668    1    220     A 11-MAR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_220_870284986.dbf
+
+1669    1    221     A 11-MAR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_221_870284986.dbf
+
+1670    1    222     A 11-MAR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_222_870284986.dbf
+
+1671    1    223     A 11-MAR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_223_870284986.dbf
+
+1672    1    224     A 11-MAR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_224_870284986.dbf
+
+1673    1    225     A 12-MAR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_225_870284986.dbf
+
+1674    1    226     A 12-MAR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_226_870284986.dbf
+
+1675    1    227     A 12-MAR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_227_870284986.dbf
+
+1676    1    228     A 12-MAR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_228_870284986.dbf
+
+1677    1    229     A 12-MAR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_229_870284986.dbf
+
+1678    1    230     A 12-MAR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_230_870284986.dbf
+
+1679    1    231     A 12-MAR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_231_870284986.dbf
+
+1680    1    232     A 12-MAR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_232_870284986.dbf
+
+1681    1    233     A 13-MAR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_233_870284986.dbf
+
+1682    1    234     A 13-MAR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_234_870284986.dbf
+
+1683    1    235     A 13-MAR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_235_870284986.dbf
+
+1684    1    236     A 13-MAR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_236_870284986.dbf
+
+1685    1    237     A 13-MAR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_237_870284986.dbf
+
+1686    1    238     A 13-MAR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_238_870284986.dbf
+
+1687    1    239     A 13-MAR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_239_870284986.dbf
+
+1688    1    240     A 13-MAR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_240_870284986.dbf
+
+1689    1    241     A 14-MAR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_241_870284986.dbf
+
+1690    1    242     A 14-MAR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_242_870284986.dbf
+
+1691    1    243     A 14-MAR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_243_870284986.dbf
+
+1692    1    244     A 14-MAR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_244_870284986.dbf
+
+1693    1    245     A 14-MAR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_245_870284986.dbf
+
+1694    1    246     A 14-MAR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_246_870284986.dbf
+
+1695    1    247     A 14-MAR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_247_870284986.dbf
+
+1696    1    248     A 14-MAR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_248_870284986.dbf
+
+1697    1    249     A 14-MAR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_249_870284986.dbf
+
+1698    1    250     A 15-MAR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_250_870284986.dbf
+
+1699    1    251     A 15-MAR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_251_870284986.dbf
+
+1700    1    252     A 15-MAR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_252_870284986.dbf
+
+1701    1    253     A 15-MAR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_253_870284986.dbf
+
+1702    1    254     A 15-MAR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_254_870284986.dbf
+
+1703    1    255     A 15-MAR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_255_870284986.dbf
+
+1704    1    256     A 15-MAR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_256_870284986.dbf
+
+1705    1    257     A 15-MAR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_257_870284986.dbf
+
+1706    1    258     A 15-MAR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_258_870284986.dbf
+
+1707    1    259     A 16-MAR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_259_870284986.dbf
+
+1708    1    260     A 16-MAR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_260_870284986.dbf
+
+1709    1    261     A 16-MAR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_261_870284986.dbf
+
+1710    1    262     A 16-MAR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_262_870284986.dbf
+
+1711    1    263     A 16-MAR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_263_870284986.dbf
+
+1712    1    264     A 16-MAR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_264_870284986.dbf
+
+1713    1    265     A 16-MAR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_265_870284986.dbf
+
+1714    1    266     A 16-MAR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_266_870284986.dbf
+
+1715    1    267     A 17-MAR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_267_870284986.dbf
+
+1716    1    268     A 17-MAR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_268_870284986.dbf
+
+1717    1    269     A 17-MAR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_269_870284986.dbf
+
+1718    1    270     A 17-MAR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_270_870284986.dbf
+
+1719    1    271     A 17-MAR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_271_870284986.dbf
+
+1720    1    272     A 17-MAR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_272_870284986.dbf
+
+1721    1    273     A 17-MAR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_273_870284986.dbf
+
+1722    1    274     A 17-MAR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_274_870284986.dbf
+
+1723    1    275     A 18-MAR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_275_870284986.dbf
+
+1724    1    276     A 18-MAR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_276_870284986.dbf
+
+1725    1    277     A 18-MAR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_277_870284986.dbf
+
+1726    1    278     A 18-MAR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_278_870284986.dbf
+
+1727    1    279     A 18-MAR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_279_870284986.dbf
+
+1728    1    280     A 18-MAR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_280_870284986.dbf
+
+1729    1    281     A 18-MAR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_281_870284986.dbf
+
+1730    1    282     A 18-MAR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_282_870284986.dbf
+
+1731    1    283     A 19-MAR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_283_870284986.dbf
+
+1732    1    284     A 19-MAR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_284_870284986.dbf
+
+1733    1    285     A 19-MAR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_285_870284986.dbf
+
+1734    1    286     A 19-MAR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_286_870284986.dbf
+
+1735    1    287     A 19-MAR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_287_870284986.dbf
+
+1736    1    288     A 19-MAR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_288_870284986.dbf
+
+1737    1    289     A 19-MAR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_289_870284986.dbf
+
+1738    1    290     A 20-MAR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_290_870284986.dbf
+
+1739    1    291     A 20-MAR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_291_870284986.dbf
+
+1740    1    292     A 20-MAR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_292_870284986.dbf
+
+1741    1    293     A 20-MAR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_293_870284986.dbf
+
+1742    1    294     A 20-MAR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_294_870284986.dbf
+
+1743    1    295     A 20-MAR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_295_870284986.dbf
+
+1744    1    296     A 20-MAR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_296_870284986.dbf
+
+1745    1    297     A 20-MAR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_297_870284986.dbf
+
+1746    1    298     A 21-MAR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_298_870284986.dbf
+
+1747    1    299     A 21-MAR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_299_870284986.dbf
+
+1748    1    300     A 21-MAR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_300_870284986.dbf
+
+1749    1    301     A 21-MAR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_301_870284986.dbf
+
+1750    1    302     A 21-MAR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_302_870284986.dbf
+
+1751    1    303     A 21-MAR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_303_870284986.dbf
+
+1752    1    304     A 21-MAR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_304_870284986.dbf
+
+1753    1    305     A 21-MAR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_305_870284986.dbf
+
+1754    1    306     A 22-MAR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_306_870284986.dbf
+
+1755    1    307     A 22-MAR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_307_870284986.dbf
+
+1756    1    308     A 22-MAR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_308_870284986.dbf
+
+1757    1    309     A 22-MAR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_309_870284986.dbf
+
+1758    1    310     A 22-MAR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_310_870284986.dbf
+
+1759    1    311     A 22-MAR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_311_870284986.dbf
+
+1760    1    312     A 22-MAR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_312_870284986.dbf
+
+1761    1    313     A 22-MAR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_313_870284986.dbf
+
+1762    1    314     A 22-MAR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_314_870284986.dbf
+
+1763    1    315     A 23-MAR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_315_870284986.dbf
+
+1764    1    316     A 23-MAR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_316_870284986.dbf
+
+1765    1    317     A 23-MAR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_317_870284986.dbf
+
+1766    1    318     A 23-MAR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_318_870284986.dbf
+
+1767    1    319     A 23-MAR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_319_870284986.dbf
+
+1768    1    320     A 23-MAR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_320_870284986.dbf
+
+1769    1    321     A 23-MAR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_321_870284986.dbf
+
+1770    1    322     A 24-MAR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_322_870284986.dbf
+
+1771    1    323     A 24-MAR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_323_870284986.dbf
+
+1772    1    324     A 24-MAR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_324_870284986.dbf
+
+1773    1    325     A 24-MAR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_325_870284986.dbf
+
+1774    1    326     A 24-MAR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_326_870284986.dbf
+
+1775    1    327     A 24-MAR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_327_870284986.dbf
+
+1776    1    328     A 24-MAR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_328_870284986.dbf
+
+1777    1    329     A 24-MAR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_329_870284986.dbf
+
+1778    1    330     A 24-MAR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_330_870284986.dbf
+
+1779    1    331     A 25-MAR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_331_870284986.dbf
+
+1780    1    332     A 25-MAR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_332_870284986.dbf
+
+1781    1    333     A 25-MAR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_333_870284986.dbf
+
+1782    1    334     A 25-MAR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_334_870284986.dbf
+
+1783    1    335     A 25-MAR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_335_870284986.dbf
+
+1784    1    336     A 25-MAR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_336_870284986.dbf
+
+1785    1    337     A 25-MAR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_337_870284986.dbf
+
+1786    1    338     A 26-MAR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_338_870284986.dbf
+
+1787    1    339     A 26-MAR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_339_870284986.dbf
+
+1788    1    340     A 26-MAR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_340_870284986.dbf
+
+1789    1    341     A 26-MAR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_341_870284986.dbf
+
+1790    1    342     A 26-MAR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_342_870284986.dbf
+
+1791    1    343     A 26-MAR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_343_870284986.dbf
+
+1792    1    344     A 26-MAR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_344_870284986.dbf
+
+1793    1    345     A 26-MAR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_345_870284986.dbf
+
+1794    1    346     A 26-MAR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_346_870284986.dbf
+
+1795    1    347     A 27-MAR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_347_870284986.dbf
+
+1796    1    348     A 27-MAR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_348_870284986.dbf
+
+1797    1    349     A 27-MAR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_349_870284986.dbf
+
+1798    1    350     A 27-MAR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_350_870284986.dbf
+
+1799    1    351     A 27-MAR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_351_870284986.dbf
+
+1800    1    352     A 27-MAR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_352_870284986.dbf
+
+1801    1    353     A 27-MAR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_353_870284986.dbf
+
+1802    1    354     A 27-MAR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_354_870284986.dbf
+
+1803    1    355     A 28-MAR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_355_870284986.dbf
+
+1804    1    356     A 28-MAR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_356_870284986.dbf
+
+1805    1    357     A 28-MAR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_357_870284986.dbf
+
+1806    1    358     A 28-MAR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_358_870284986.dbf
+
+1807    1    359     A 28-MAR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_359_870284986.dbf
+
+1808    1    360     A 28-MAR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_360_870284986.dbf
+
+1809    1    361     A 28-MAR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_361_870284986.dbf
+
+1810    1    362     A 28-MAR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_362_870284986.dbf
+
+1811    1    363     A 28-MAR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_363_870284986.dbf
+
+1812    1    364     A 29-MAR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_364_870284986.dbf
+
+1813    1    365     A 29-MAR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_365_870284986.dbf
+
+1814    1    366     A 29-MAR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_366_870284986.dbf
+
+1815    1    367     A 29-MAR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_367_870284986.dbf
+
+1816    1    368     A 29-MAR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_368_870284986.dbf
+
+1817    1    369     A 29-MAR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_369_870284986.dbf
+
+1818    1    370     A 29-MAR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_370_870284986.dbf
+
+1819    1    371     A 29-MAR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_371_870284986.dbf
+
+1820    1    372     A 29-MAR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_372_870284986.dbf
+
+1821    1    373     A 30-MAR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_373_870284986.dbf
+
+1822    1    374     A 30-MAR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_374_870284986.dbf
+
+1823    1    375     A 30-MAR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_375_870284986.dbf
+
+1824    1    376     A 30-MAR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_376_870284986.dbf
+
+1825    1    377     A 30-MAR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_377_870284986.dbf
+
+1826    1    378     A 30-MAR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_378_870284986.dbf
+
+1827    1    379     A 30-MAR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_379_870284986.dbf
+
+1828    1    380     A 30-MAR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_380_870284986.dbf
+
+1829    1    381     A 31-MAR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_381_870284986.dbf
+
+1830    1    382     A 31-MAR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_382_870284986.dbf
+
+1831    1    383     A 31-MAR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_383_870284986.dbf
+
+1832    1    384     A 31-MAR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_384_870284986.dbf
+
+1833    1    385     A 31-MAR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_385_870284986.dbf
+
+1834    1    386     A 31-MAR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_386_870284986.dbf
+
+1835    1    387     A 31-MAR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_387_870284986.dbf
+
+1836    1    388     A 31-MAR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_388_870284986.dbf
+
+1837    1    389     A 01-APR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_389_870284986.dbf
+
+1838    1    390     A 01-APR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_390_870284986.dbf
+
+1839    1    391     A 01-APR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_391_870284986.dbf
+
+1840    1    392     A 01-APR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_392_870284986.dbf
+
+1841    1    393     A 01-APR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_393_870284986.dbf
+
+1842    1    394     A 01-APR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_394_870284986.dbf
+
+1843    1    395     A 01-APR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_395_870284986.dbf
+
+1844    1    396     A 01-APR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_396_870284986.dbf
+
+1845    1    397     A 02-APR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_397_870284986.dbf
+
+1846    1    398     A 02-APR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_398_870284986.dbf
+
+1847    1    399     A 02-APR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_399_870284986.dbf
+
+1848    1    400     A 02-APR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_400_870284986.dbf
+
+1849    1    401     A 02-APR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_401_870284986.dbf
+
+1850    1    402     A 02-APR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_402_870284986.dbf
+
+1851    1    403     A 02-APR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_403_870284986.dbf
+
+1852    1    404     A 02-APR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_404_870284986.dbf
+
+1853    1    405     A 03-APR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_405_870284986.dbf
+
+1854    1    406     A 03-APR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_406_870284986.dbf
+
+1855    1    407     A 03-APR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_407_870284986.dbf
+
+1856    1    408     A 03-APR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_408_870284986.dbf
+
+1857    1    409     A 03-APR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_409_870284986.dbf
+
+1858    1    410     A 03-APR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_410_870284986.dbf
+
+1859    1    411     A 03-APR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_411_870284986.dbf
+
+1860    1    412     A 03-APR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_412_870284986.dbf
+
+1861    1    413     A 04-APR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_413_870284986.dbf
+
+1862    1    414     A 04-APR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_414_870284986.dbf
+
+1863    1    415     A 04-APR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_415_870284986.dbf
+
+1864    1    416     A 04-APR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_416_870284986.dbf
+
+1865    1    417     A 04-APR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_417_870284986.dbf
+
+1866    1    418     A 04-APR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_418_870284986.dbf
+
+1867    1    419     A 04-APR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_419_870284986.dbf
+
+1868    1    420     A 04-APR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_420_870284986.dbf
+
+1869    1    421     A 04-APR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_421_870284986.dbf
+
+1870    1    422     A 05-APR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_422_870284986.dbf
+
+1871    1    423     A 05-APR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_423_870284986.dbf
+
+1872    1    424     A 05-APR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_424_870284986.dbf
+
+1873    1    425     A 05-APR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_425_870284986.dbf
+
+1874    1    426     A 05-APR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_426_870284986.dbf
+
+1875    1    427     A 05-APR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_427_870284986.dbf
+
+1876    1    428     A 05-APR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_428_870284986.dbf
+
+1877    1    429     A 05-APR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_429_870284986.dbf
+
+1878    1    430     A 05-APR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_430_870284986.dbf
+
+1879    1    431     A 06-APR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_431_870284986.dbf
+
+1880    1    432     A 06-APR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_432_870284986.dbf
+
+1881    1    433     A 06-APR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_433_870284986.dbf
+
+1882    1    434     A 06-APR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_434_870284986.dbf
+
+1883    1    435     A 06-APR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_435_870284986.dbf
+
+1884    1    436     A 06-APR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_436_870284986.dbf
+
+1885    1    437     A 06-APR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_437_870284986.dbf
+
+1886    1    438     A 06-APR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_438_870284986.dbf
+
+1887    1    439     A 07-APR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_439_870284986.dbf
+
+1888    1    440     A 07-APR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_440_870284986.dbf
+
+1889    1    441     A 07-APR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_441_870284986.dbf
+
+1890    1    442     A 07-APR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_442_870284986.dbf
+
+1891    1    443     A 07-APR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_443_870284986.dbf
+
+1892    1    444     A 07-APR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_444_870284986.dbf
+
+1893    1    445     A 07-APR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_445_870284986.dbf
+
+1894    1    446     A 07-APR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_446_870284986.dbf
+
+1895    1    447     A 07-APR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_447_870284986.dbf
+
+1896    1    448     A 08-APR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_448_870284986.dbf
+
+1897    1    449     A 08-APR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_449_870284986.dbf
+
+1898    1    450     A 08-APR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_450_870284986.dbf
+
+1899    1    451     A 08-APR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_451_870284986.dbf
+
+1900    1    452     A 08-APR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_452_870284986.dbf
+
+1901    1    453     A 08-APR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_453_870284986.dbf
+
+1902    1    454     A 08-APR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_454_870284986.dbf
+
+1903    1    455     A 08-APR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_455_870284986.dbf
+
+1904    1    456     A 09-APR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_456_870284986.dbf
+
+1905    1    457     A 09-APR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_457_870284986.dbf
+
+1906    1    458     A 09-APR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_458_870284986.dbf
+
+1907    1    459     A 09-APR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_459_870284986.dbf
+
+1908    1    460     A 09-APR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_460_870284986.dbf
+
+1909    1    461     A 09-APR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_461_870284986.dbf
+
+1910    1    462     A 09-APR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_462_870284986.dbf
+
+1911    1    463     A 10-APR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_463_870284986.dbf
+
+1912    1    464     A 10-APR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_464_870284986.dbf
+
+1913    1    465     A 10-APR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_465_870284986.dbf
+
+1914    1    466     A 10-APR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_466_870284986.dbf
+
+1915    1    467     A 10-APR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_467_870284986.dbf
+
+1916    1    468     A 10-APR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_468_870284986.dbf
+
+1917    1    469     A 10-APR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_469_870284986.dbf
+
+1918    1    470     A 10-APR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_470_870284986.dbf
+
+1919    1    471     A 11-APR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_471_870284986.dbf
+
+1920    1    472     A 11-APR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_472_870284986.dbf
+
+1921    1    473     A 11-APR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_473_870284986.dbf
+
+1922    1    474     A 11-APR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_474_870284986.dbf
+
+1923    1    475     A 11-APR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_475_870284986.dbf
+
+1924    1    476     A 11-APR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_476_870284986.dbf
+
+1925    1    477     A 11-APR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_477_870284986.dbf
+
+1926    1    478     A 11-APR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_478_870284986.dbf
+
+1927    1    479     A 11-APR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_479_870284986.dbf
+
+1928    1    480     A 12-APR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_480_870284986.dbf
+
+1929    1    481     A 12-APR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_481_870284986.dbf
+
+1930    1    482     A 12-APR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_482_870284986.dbf
+
+1931    1    483     A 12-APR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_483_870284986.dbf
+
+1932    1    484     A 12-APR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_484_870284986.dbf
+
+1933    1    485     A 12-APR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_485_870284986.dbf
+
+1934    1    486     A 12-APR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_486_870284986.dbf
+
+1935    1    487     A 12-APR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_487_870284986.dbf
+
+1936    1    488     A 12-APR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_488_870284986.dbf
+
+1937    1    489     A 13-APR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_489_870284986.dbf
+
+1938    1    490     A 13-APR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_490_870284986.dbf
+
+1939    1    491     A 13-APR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_491_870284986.dbf
+
+1940    1    492     A 13-APR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_492_870284986.dbf
+
+1941    1    493     A 13-APR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_493_870284986.dbf
+
+1942    1    494     A 13-APR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_494_870284986.dbf
+
+1943    1    495     A 13-APR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_495_870284986.dbf
+
+1944    1    496     A 13-APR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_496_870284986.dbf
+
+1945    1    497     A 14-APR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_497_870284986.dbf
+
+1946    1    498     A 14-APR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_498_870284986.dbf
+
+1947    1    499     A 14-APR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_499_870284986.dbf
+
+1948    1    500     A 14-APR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_500_870284986.dbf
+
+1949    1    501     A 14-APR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_501_870284986.dbf
+
+1950    1    502     A 14-APR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_502_870284986.dbf
+
+1951    1    503     A 14-APR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_503_870284986.dbf
+
+1952    1    504     A 14-APR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_504_870284986.dbf
+
+1953    1    505     A 15-APR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_505_870284986.dbf
+
+1954    1    506     A 15-APR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_506_870284986.dbf
+
+1955    1    507     A 15-APR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_507_870284986.dbf
+
+1956    1    508     A 15-APR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_508_870284986.dbf
+
+1957    1    509     A 15-APR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_509_870284986.dbf
+
+1958    1    510     A 15-APR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_510_870284986.dbf
+
+1959    1    511     A 15-APR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_511_870284986.dbf
+
+1960    1    512     A 15-APR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_512_870284986.dbf
+
+1961    1    513     A 16-APR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_513_870284986.dbf
+
+1962    1    514     A 16-APR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_514_870284986.dbf
+
+1963    1    515     A 16-APR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_515_870284986.dbf
+
+1964    1    516     A 16-APR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_516_870284986.dbf
+
+1965    1    517     A 16-APR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_517_870284986.dbf
+
+1966    1    518     A 16-APR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_518_870284986.dbf
+
+1967    1    519     A 16-APR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_519_870284986.dbf
+
+1968    1    520     A 17-APR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_520_870284986.dbf
+
+1969    1    521     A 17-APR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_521_870284986.dbf
+
+1970    1    522     A 17-APR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_522_870284986.dbf
+
+1971    1    523     A 17-APR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_523_870284986.dbf
+
+1972    1    524     A 17-APR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_524_870284986.dbf
+
+1973    1    525     A 17-APR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_525_870284986.dbf
+
+1974    1    526     A 17-APR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_526_870284986.dbf
+
+1975    1    527     A 17-APR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_527_870284986.dbf
+
+1976    1    528     A 17-APR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_528_870284986.dbf
+
+1977    1    529     A 18-APR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_529_870284986.dbf
+
+1978    1    530     A 18-APR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_530_870284986.dbf
+
+1979    1    531     A 18-APR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_531_870284986.dbf
+
+1980    1    532     A 18-APR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_532_870284986.dbf
+
+1981    1    533     A 18-APR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_533_870284986.dbf
+
+1982    1    534     A 18-APR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_534_870284986.dbf
+
+1983    1    535     A 18-APR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_535_870284986.dbf
+
+1984    1    536     A 18-APR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_536_870284986.dbf
+
+1985    1    537     A 18-APR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_537_870284986.dbf
+
+1986    1    538     A 19-APR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_538_870284986.dbf
+
+1987    1    539     A 19-APR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_539_870284986.dbf
+
+1988    1    540     A 19-APR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_540_870284986.dbf
+
+1989    1    541     A 19-APR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_541_870284986.dbf
+
+1990    1    542     A 19-APR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_542_870284986.dbf
+
+1991    1    543     A 19-APR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_543_870284986.dbf
+
+1992    1    544     A 19-APR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_544_870284986.dbf
+
+1993    1    545     A 19-APR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_545_870284986.dbf
+
+1994    1    546     A 19-APR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_546_870284986.dbf
+
+1995    1    547     A 20-APR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_547_870284986.dbf
+
+1996    1    548     A 20-APR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_548_870284986.dbf
+
+1997    1    549     A 20-APR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_549_870284986.dbf
+
+1998    1    550     A 20-APR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_550_870284986.dbf
+
+1999    1    551     A 20-APR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_551_870284986.dbf
+
+2000    1    552     A 20-APR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_552_870284986.dbf
+
+2001    1    553     A 20-APR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_553_870284986.dbf
+
+2002    1    554     A 20-APR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_554_870284986.dbf
+
+2003    1    555     A 20-APR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_555_870284986.dbf
+
+2004    1    556     A 21-APR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_556_870284986.dbf
+
+2005    1    557     A 21-APR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_557_870284986.dbf
+
+2006    1    558     A 21-APR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_558_870284986.dbf
+
+2007    1    559     A 21-APR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_559_870284986.dbf
+
+2008    1    560     A 21-APR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_560_870284986.dbf
+
+2009    1    561     A 21-APR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_561_870284986.dbf
+
+2010    1    562     A 21-APR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_562_870284986.dbf
+
+2011    1    563     A 21-APR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_563_870284986.dbf
+
+2012    1    564     A 22-APR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_564_870284986.dbf
+
+2013    1    565     A 22-APR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_565_870284986.dbf
+
+2014    1    566     A 22-APR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_566_870284986.dbf
+
+2015    1    567     A 22-APR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_567_870284986.dbf
+
+2016    1    568     A 22-APR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_568_870284986.dbf
+
+2017    1    569     A 22-APR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_569_870284986.dbf
+
+2018    1    570     A 22-APR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_570_870284986.dbf
+
+2019    1    571     A 22-APR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_571_870284986.dbf
+
+2020    1    572     A 23-APR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_572_870284986.dbf
+
+2021    1    573     A 23-APR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_573_870284986.dbf
+
+2022    1    574     A 23-APR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_574_870284986.dbf
+
+2023    1    575     A 23-APR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_575_870284986.dbf
+
+2024    1    576     A 23-APR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_576_870284986.dbf
+
+2025    1    577     A 23-APR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_577_870284986.dbf
+
+2026    1    578     A 23-APR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_578_870284986.dbf
+
+2027    1    579     A 23-APR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_579_870284986.dbf
+
+2028    1    580     A 24-APR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_580_870284986.dbf
+
+2029    1    581     A 24-APR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_581_870284986.dbf
+
+2030    1    582     A 24-APR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_582_870284986.dbf
+
+2031    1    583     A 24-APR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_583_870284986.dbf
+
+2032    1    584     A 24-APR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_584_870284986.dbf
+
+2033    1    585     A 24-APR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_585_870284986.dbf
+
+2034    1    586     A 24-APR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_586_870284986.dbf
+
+2035    1    587     A 24-APR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_587_870284986.dbf
+
+2036    1    588     A 25-APR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_588_870284986.dbf
+
+2037    1    589     A 25-APR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_589_870284986.dbf
+
+2038    1    590     A 25-APR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_590_870284986.dbf
+
+2039    1    591     A 25-APR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_591_870284986.dbf
+
+2040    1    592     A 25-APR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_592_870284986.dbf
+
+2041    1    593     A 25-APR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_593_870284986.dbf
+
+2042    1    594     A 25-APR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_594_870284986.dbf
+
+2043    1    595     A 25-APR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_595_870284986.dbf
+
+2044    1    596     A 25-APR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_596_870284986.dbf
+
+2045    1    597     A 26-APR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_597_870284986.dbf
+
+2046    1    598     A 26-APR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_598_870284986.dbf
+
+2047    1    599     A 26-APR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_599_870284986.dbf
+
+2048    1    600     A 26-APR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_600_870284986.dbf
+
+2049    1    601     A 26-APR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_601_870284986.dbf
+
+2050    1    602     A 26-APR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_602_870284986.dbf
+
+2051    1    603     A 26-APR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_603_870284986.dbf
+
+2052    1    604     A 26-APR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_604_870284986.dbf
+
+2053    1    605     A 26-APR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_605_870284986.dbf
+
+2054    1    606     A 26-APR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_606_870284986.dbf
+
+2055    1    607     A 26-APR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_607_870284986.dbf
+
+2056    1    608     A 27-APR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_608_870284986.dbf
+
+2057    1    609     A 27-APR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_609_870284986.dbf
+
+2058    1    610     A 27-APR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_610_870284986.dbf
+
+2059    1    611     A 27-APR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_611_870284986.dbf
+
+2060    1    612     A 27-APR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_612_870284986.dbf
+
+2061    1    613     A 27-APR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_613_870284986.dbf
+
+2062    1    614     A 27-APR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_614_870284986.dbf
+
+2063    1    615     A 28-APR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_615_870284986.dbf
+
+2064    1    616     A 28-APR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_616_870284986.dbf
+
+2065    1    617     A 28-APR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_617_870284986.dbf
+
+2066    1    618     A 28-APR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_618_870284986.dbf
+
+2067    1    619     A 28-APR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_619_870284986.dbf
+
+2068    1    620     A 28-APR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_620_870284986.dbf
+
+2069    1    621     A 28-APR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_621_870284986.dbf
+
+2070    1    622     A 28-APR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_622_870284986.dbf
+
+2071    1    623     A 29-APR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_623_870284986.dbf
+
+2072    1    624     A 29-APR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_624_870284986.dbf
+
+2073    1    625     A 29-APR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_625_870284986.dbf
+
+2074    1    626     A 29-APR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_626_870284986.dbf
+
+2075    1    627     A 29-APR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_627_870284986.dbf
+
+2076    1    628     A 29-APR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_628_870284986.dbf
+
+2077    1    629     A 29-APR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_629_870284986.dbf
+
+2078    1    630     A 29-APR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_630_870284986.dbf
+
+2079    1    631     A 29-APR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_631_870284986.dbf
+
+2080    1    632     A 30-APR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_632_870284986.dbf
+
+2081    1    633     A 30-APR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_633_870284986.dbf
+
+2082    1    634     A 30-APR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_634_870284986.dbf
+
+2083    1    635     A 30-APR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_635_870284986.dbf
+
+2084    1    636     A 30-APR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_636_870284986.dbf
+
+2085    1    637     A 30-APR-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_637_870284986.dbf
+
+2086    1    638     A 01-MAY-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_638_870284986.dbf
+
+2087    1    639     A 01-MAY-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_639_870284986.dbf
+
+2088    1    640     A 01-MAY-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_640_870284986.dbf
+
+2089    1    641     A 01-MAY-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_641_870284986.dbf
+
+2090    1    642     A 01-MAY-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_642_870284986.dbf
+
+2091    1    643     A 01-MAY-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_643_870284986.dbf
+
+2092    1    644     A 01-MAY-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_644_870284986.dbf
+
+2093    1    645     A 01-MAY-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_645_870284986.dbf
+
+2094    1    646     A 02-MAY-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_646_870284986.dbf
+
+2095    1    647     A 02-MAY-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_647_870284986.dbf
+
+2096    1    648     A 02-MAY-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_648_870284986.dbf
+
+2097    1    649     A 02-MAY-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_649_870284986.dbf
+
+2098    1    650     A 02-MAY-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_650_870284986.dbf
+
+2099    1    651     A 02-MAY-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_651_870284986.dbf
+
+2100    1    652     A 02-MAY-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_652_870284986.dbf
+
+2101    1    653     A 02-MAY-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_653_870284986.dbf
+
+2102    1    654     A 02-MAY-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_654_870284986.dbf
+
+2103    1    655     A 03-MAY-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_655_870284986.dbf
+
+2104    1    656     A 03-MAY-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_656_870284986.dbf
+
+2105    1    657     A 03-MAY-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_657_870284986.dbf
+
+2106    1    658     A 03-MAY-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_658_870284986.dbf
+
+2107    1    659     A 03-MAY-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_659_870284986.dbf
+
+2108    1    660     A 03-MAY-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_660_870284986.dbf
+
+2109    1    661     A 03-MAY-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_661_870284986.dbf
+
+2110    1    662     A 03-MAY-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_662_870284986.dbf
+
+2111    1    663     A 03-MAY-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_663_870284986.dbf
+
+2112    1    664     A 04-MAY-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_664_870284986.dbf
+
+2113    1    665     A 04-MAY-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_665_870284986.dbf
+
+2114    1    666     A 04-MAY-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_666_870284986.dbf
+
+2115    1    667     A 04-MAY-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_667_870284986.dbf
+
+2116    1    668     A 04-MAY-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_668_870284986.dbf
+
+2117    1    669     A 04-MAY-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_669_870284986.dbf
+
+2118    1    670     A 04-MAY-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_670_870284986.dbf
+
+2119    1    671     A 04-MAY-15
+        Name: /u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_671_870284986.dbf
+
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_1_870284986.dbf RECID=1449 STAMP=870887726
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_2_870284986.dbf RECID=1450 STAMP=870987105
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_3_870284986.dbf RECID=1451 STAMP=871570861
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_4_870284986.dbf RECID=1452 STAMP=871581667
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_5_870284986.dbf RECID=1453 STAMP=871581695
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_6_870284986.dbf RECID=1454 STAMP=871581713
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_7_870284986.dbf RECID=1455 STAMP=871596006
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_8_870284986.dbf RECID=1456 STAMP=871596048
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_9_870284986.dbf RECID=1457 STAMP=871596076
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_10_870284986.dbf RECID=1458 STAMP=871610420
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_11_870284986.dbf RECID=1459 STAMP=871624818
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_12_870284986.dbf RECID=1460 STAMP=871639312
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_13_870284986.dbf RECID=1461 STAMP=871653714
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_14_870284986.dbf RECID=1462 STAMP=871668083
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_15_870284986.dbf RECID=1463 STAMP=871668086
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_16_870284986.dbf RECID=1464 STAMP=871668137
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_17_870284986.dbf RECID=1465 STAMP=871682532
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_18_870284986.dbf RECID=1466 STAMP=871693212
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_19_870284986.dbf RECID=1467 STAMP=871711213
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_20_870284986.dbf RECID=1468 STAMP=871725760
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_21_870284986.dbf RECID=1469 STAMP=871740175
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_22_870284986.dbf RECID=1470 STAMP=871754532
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_23_870284986.dbf RECID=1471 STAMP=871754535
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_24_870284986.dbf RECID=1472 STAMP=871754584
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_25_870284986.dbf RECID=1473 STAMP=871757132
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_26_870284986.dbf RECID=1474 STAMP=871768992
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_27_870284986.dbf RECID=1475 STAMP=871790411
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_28_870284986.dbf RECID=1476 STAMP=871812036
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_29_870284986.dbf RECID=1477 STAMP=871833633
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_30_870284986.dbf RECID=1478 STAMP=871840981
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_31_870284986.dbf RECID=1479 STAMP=871840983
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_32_870284986.dbf RECID=1480 STAMP=871855213
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_33_870284986.dbf RECID=1481 STAMP=871855225
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_34_870284986.dbf RECID=1482 STAMP=871863056
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_35_870284986.dbf RECID=1483 STAMP=871884016
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_36_870284986.dbf RECID=1484 STAMP=871905649
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_37_870284986.dbf RECID=1485 STAMP=871927250
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_38_870284986.dbf RECID=1486 STAMP=871941612
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_39_870284986.dbf RECID=1487 STAMP=871941621
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_40_870284986.dbf RECID=1488 STAMP=871941846
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_41_870284986.dbf RECID=1489 STAMP=871941852
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_42_870284986.dbf RECID=1490 STAMP=871941864
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_43_870284986.dbf RECID=1491 STAMP=871963220
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_44_870284986.dbf RECID=1492 STAMP=871984835
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_45_870284986.dbf RECID=1493 STAMP=872006462
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_46_870284986.dbf RECID=1494 STAMP=872028012
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_47_870284986.dbf RECID=1495 STAMP=872028024
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_48_870284986.dbf RECID=1496 STAMP=872028043
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_49_870284986.dbf RECID=1497 STAMP=872028293
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_50_870284986.dbf RECID=1498 STAMP=872028297
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_51_870284986.dbf RECID=1499 STAMP=872035241
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_52_870284986.dbf RECID=1500 STAMP=872056824
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_53_870284986.dbf RECID=1501 STAMP=872078457
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_54_870284986.dbf RECID=1502 STAMP=872100018
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_55_870284986.dbf RECID=1503 STAMP=872114414
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_56_870284986.dbf RECID=1504 STAMP=872114426
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_57_870284986.dbf RECID=1505 STAMP=872114742
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_58_870284986.dbf RECID=1506 STAMP=872114751
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_59_870284986.dbf RECID=1507 STAMP=872118028
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_60_870284986.dbf RECID=1508 STAMP=872137842
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_61_870284986.dbf RECID=1509 STAMP=872158324
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_62_870284986.dbf RECID=1510 STAMP=872179222
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_63_870284986.dbf RECID=1511 STAMP=872200810
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_64_870284986.dbf RECID=1512 STAMP=872200822
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_65_870284986.dbf RECID=1513 STAMP=872200840
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_66_870284986.dbf RECID=1514 STAMP=872201196
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_67_870284986.dbf RECID=1515 STAMP=872201198
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_68_870284986.dbf RECID=1516 STAMP=872218855
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_69_870284986.dbf RECID=1517 STAMP=872229614
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_70_870284986.dbf RECID=1518 STAMP=872230202
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_71_870284986.dbf RECID=1519 STAMP=872244465
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_72_870284986.dbf RECID=1520 STAMP=872261189
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_73_870284986.dbf RECID=1521 STAMP=872273578
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_74_870284986.dbf RECID=1522 STAMP=872287648
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_75_870284986.dbf RECID=1523 STAMP=872287651
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_76_870284986.dbf RECID=1524 STAMP=872287699
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_77_870284986.dbf RECID=1525 STAMP=872287714
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_78_870284986.dbf RECID=1526 STAMP=872306887
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_79_870284986.dbf RECID=1527 STAMP=872316320
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_80_870284986.dbf RECID=1528 STAMP=872330912
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_81_870284986.dbf RECID=1529 STAMP=872348441
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_82_870284986.dbf RECID=1530 STAMP=872359730
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_83_870284986.dbf RECID=1531 STAMP=872365430
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_84_870284986.dbf RECID=1532 STAMP=872374099
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_85_870284986.dbf RECID=1533 STAMP=872374106
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_86_870284986.dbf RECID=1534 STAMP=872374155
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_87_870284986.dbf RECID=1535 STAMP=872380210
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_88_870284986.dbf RECID=1536 STAMP=872400026
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_89_870284986.dbf RECID=1537 STAMP=872420764
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_90_870284986.dbf RECID=1538 STAMP=872442026
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_91_870284986.dbf RECID=1539 STAMP=872460015
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_92_870284986.dbf RECID=1540 STAMP=872460026
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_93_870284986.dbf RECID=1541 STAMP=872460549
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_94_870284986.dbf RECID=1542 STAMP=872460553
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_95_870284986.dbf RECID=1543 STAMP=872474404
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_96_870284986.dbf RECID=1544 STAMP=872494327
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_97_870284986.dbf RECID=1545 STAMP=872515222
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_98_870284986.dbf RECID=1546 STAMP=872535644
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_99_870284986.dbf RECID=1547 STAMP=872546419
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_100_870284986.dbf RECID=1548 STAMP=872546430
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_101_870284986.dbf RECID=1549 STAMP=872547001
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_102_870284986.dbf RECID=1550 STAMP=872547007
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_103_870284986.dbf RECID=1551 STAMP=872555100
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_104_870284986.dbf RECID=1552 STAMP=872575524
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_105_870284986.dbf RECID=1553 STAMP=872596837
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_106_870284986.dbf RECID=1554 STAMP=872618451
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_107_870284986.dbf RECID=1555 STAMP=872619053
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_108_870284986.dbf RECID=1556 STAMP=872632811
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_109_870284986.dbf RECID=1557 STAMP=872632830
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_110_870284986.dbf RECID=1558 STAMP=872632851
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_111_870284986.dbf RECID=1559 STAMP=872653117
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_112_870284986.dbf RECID=1560 STAMP=872672917
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_113_870284986.dbf RECID=1561 STAMP=872694057
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_114_870284986.dbf RECID=1562 STAMP=872705517
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_115_870284986.dbf RECID=1563 STAMP=872705520
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_116_870284986.dbf RECID=1564 STAMP=872719215
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_117_870284986.dbf RECID=1565 STAMP=872719224
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_118_870284986.dbf RECID=1566 STAMP=872727565
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_119_870284986.dbf RECID=1567 STAMP=872748046
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_120_870284986.dbf RECID=1568 STAMP=872769606
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_121_870284986.dbf RECID=1569 STAMP=872791223
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_122_870284986.dbf RECID=1570 STAMP=872791975
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_123_870284986.dbf RECID=1571 STAMP=872798427
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_124_870284986.dbf RECID=1572 STAMP=872805619
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_125_870284986.dbf RECID=1573 STAMP=872805634
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_126_870284986.dbf RECID=1574 STAMP=872827248
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_127_870284986.dbf RECID=1575 STAMP=872839556
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_128_870284986.dbf RECID=1576 STAMP=872852402
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_129_870284986.dbf RECID=1577 STAMP=872867771
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_130_870284986.dbf RECID=1578 STAMP=872877987
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_131_870284986.dbf RECID=1579 STAMP=872878424
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_132_870284986.dbf RECID=1580 STAMP=872880334
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_133_870284986.dbf RECID=1581 STAMP=872892400
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_134_870284986.dbf RECID=1582 STAMP=872892412
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_135_870284986.dbf RECID=1583 STAMP=873162931
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_136_870284986.dbf RECID=1584 STAMP=873180012
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_137_870284986.dbf RECID=1585 STAMP=873194818
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_138_870284986.dbf RECID=1586 STAMP=873210991
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_139_870284986.dbf RECID=1587 STAMP=873223638
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_140_870284986.dbf RECID=1588 STAMP=873224070
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_141_870284986.dbf RECID=1589 STAMP=873224074
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_142_870284986.dbf RECID=1590 STAMP=873238054
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_143_870284986.dbf RECID=1591 STAMP=873238067
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_144_870284986.dbf RECID=1592 STAMP=873252006
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_145_870284986.dbf RECID=1593 STAMP=873273629
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_146_870284986.dbf RECID=1594 STAMP=873295245
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_147_870284986.dbf RECID=1595 STAMP=873310534
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_148_870284986.dbf RECID=1596 STAMP=873310538
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_149_870284986.dbf RECID=1597 STAMP=873324017
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_150_870284986.dbf RECID=1598 STAMP=873324026
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_151_870284986.dbf RECID=1599 STAMP=873330013
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_152_870284986.dbf RECID=1600 STAMP=873349830
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_153_870284986.dbf RECID=1601 STAMP=873370850
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_154_870284986.dbf RECID=1602 STAMP=873392414
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_155_870284986.dbf RECID=1603 STAMP=873396983
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_156_870284986.dbf RECID=1604 STAMP=873396988
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_157_870284986.dbf RECID=1605 STAMP=873396998
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_158_870284986.dbf RECID=1606 STAMP=873410421
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_159_870284986.dbf RECID=1607 STAMP=873410430
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_160_870284986.dbf RECID=1608 STAMP=873424051
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_161_870284986.dbf RECID=1609 STAMP=873444168
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_162_870284986.dbf RECID=1610 STAMP=873464645
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_163_870284986.dbf RECID=1611 STAMP=873483433
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_164_870284986.dbf RECID=1612 STAMP=873483436
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_165_870284986.dbf RECID=1613 STAMP=873496816
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_166_870284986.dbf RECID=1614 STAMP=873496825
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_167_870284986.dbf RECID=1615 STAMP=873505480
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_168_870284986.dbf RECID=1616 STAMP=873525602
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_169_870284986.dbf RECID=1617 STAMP=873547221
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_170_870284986.dbf RECID=1618 STAMP=873568836
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_171_870284986.dbf RECID=1619 STAMP=873569895
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_172_870284986.dbf RECID=1620 STAMP=873583216
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_173_870284986.dbf RECID=1621 STAMP=873583225
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_174_870284986.dbf RECID=1622 STAMP=873584269
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_175_870284986.dbf RECID=1623 STAMP=873604826
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_176_870284986.dbf RECID=1624 STAMP=873626415
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_177_870284986.dbf RECID=1625 STAMP=873648034
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_178_870284986.dbf RECID=1626 STAMP=873656346
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_179_870284986.dbf RECID=1627 STAMP=873656351
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_180_870284986.dbf RECID=1628 STAMP=873669620
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_181_870284986.dbf RECID=1629 STAMP=873669631
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_182_870284986.dbf RECID=1630 STAMP=873682509
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_183_870284986.dbf RECID=1631 STAMP=873698412
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_184_870284986.dbf RECID=1632 STAMP=873712976
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_185_870284986.dbf RECID=1633 STAMP=873727382
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_186_870284986.dbf RECID=1634 STAMP=873741789
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_187_870284986.dbf RECID=1635 STAMP=873742796
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_188_870284986.dbf RECID=1636 STAMP=873742797
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_189_870284986.dbf RECID=1637 STAMP=873756196
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_190_870284986.dbf RECID=1638 STAMP=873756214
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_191_870284986.dbf RECID=1639 STAMP=873763220
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_192_870284986.dbf RECID=1640 STAMP=873781211
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_193_870284986.dbf RECID=1641 STAMP=873795819
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_194_870284986.dbf RECID=1642 STAMP=873810231
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_195_870284986.dbf RECID=1643 STAMP=873826207
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_196_870284986.dbf RECID=1644 STAMP=873829245
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_197_870284986.dbf RECID=1645 STAMP=873829248
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_198_870284986.dbf RECID=1646 STAMP=873839060
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_199_870284986.dbf RECID=1647 STAMP=873839076
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_200_870284986.dbf RECID=1648 STAMP=873856599
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_201_870284986.dbf RECID=1649 STAMP=873876416
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_202_870284986.dbf RECID=1650 STAMP=873896521
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_203_870284986.dbf RECID=1651 STAMP=873915704
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_204_870284986.dbf RECID=1652 STAMP=873915706
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_205_870284986.dbf RECID=1653 STAMP=873920917
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_206_870284986.dbf RECID=1654 STAMP=873925224
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_207_870284986.dbf RECID=1655 STAMP=873925236
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_208_870284986.dbf RECID=1656 STAMP=873943256
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_209_870284986.dbf RECID=1657 STAMP=873964821
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_210_870284986.dbf RECID=1658 STAMP=873986433
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_211_870284986.dbf RECID=1659 STAMP=874002159
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_212_870284986.dbf RECID=1660 STAMP=874002163
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_213_870284986.dbf RECID=1661 STAMP=874002169
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_214_870284986.dbf RECID=1662 STAMP=874011620
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_215_870284986.dbf RECID=1663 STAMP=874011632
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_216_870284986.dbf RECID=1664 STAMP=874029613
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_217_870284986.dbf RECID=1665 STAMP=874051231
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_218_870284986.dbf RECID=1666 STAMP=874072850
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_219_870284986.dbf RECID=1667 STAMP=874094415
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_220_870284986.dbf RECID=1668 STAMP=874098022
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_221_870284986.dbf RECID=1669 STAMP=874099421
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_222_870284986.dbf RECID=1670 STAMP=874099423
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_223_870284986.dbf RECID=1671 STAMP=874099430
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_224_870284986.dbf RECID=1672 STAMP=874119649
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_225_870284986.dbf RECID=1673 STAMP=874140365
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_226_870284986.dbf RECID=1674 STAMP=874160188
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_227_870284986.dbf RECID=1675 STAMP=874180838
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_228_870284986.dbf RECID=1676 STAMP=874184420
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_229_870284986.dbf RECID=1677 STAMP=874184444
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_230_870284986.dbf RECID=1678 STAMP=874185870
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_231_870284986.dbf RECID=1679 STAMP=874185873
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_232_870284986.dbf RECID=1680 STAMP=874206004
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_233_870284986.dbf RECID=1681 STAMP=874227627
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_234_870284986.dbf RECID=1682 STAMP=874249248
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_235_870284986.dbf RECID=1683 STAMP=874270810
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_236_870284986.dbf RECID=1684 STAMP=874270826
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_237_870284986.dbf RECID=1685 STAMP=874270841
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_238_870284986.dbf RECID=1686 STAMP=874272330
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_239_870284986.dbf RECID=1687 STAMP=874272333
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_240_870284986.dbf RECID=1688 STAMP=874292424
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_241_870284986.dbf RECID=1689 STAMP=874299617
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_242_870284986.dbf RECID=1690 STAMP=874302041
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_243_870284986.dbf RECID=1691 STAMP=874314565
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_244_870284986.dbf RECID=1692 STAMP=874328970
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_245_870284986.dbf RECID=1693 STAMP=874344745
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_246_870284986.dbf RECID=1694 STAMP=874357787
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_247_870284986.dbf RECID=1695 STAMP=874358780
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_248_870284986.dbf RECID=1696 STAMP=874358783
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_249_870284986.dbf RECID=1697 STAMP=874373984
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_250_870284986.dbf RECID=1698 STAMP=874386014
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_251_870284986.dbf RECID=1699 STAMP=874386023
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_252_870284986.dbf RECID=1700 STAMP=874400407
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_253_870284986.dbf RECID=1701 STAMP=874407618
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_254_870284986.dbf RECID=1702 STAMP=874422039
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_255_870284986.dbf RECID=1703 STAMP=874438543
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_256_870284986.dbf RECID=1704 STAMP=874445234
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_257_870284986.dbf RECID=1705 STAMP=874445238
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_258_870284986.dbf RECID=1706 STAMP=874462394
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_259_870284986.dbf RECID=1707 STAMP=874483222
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_260_870284986.dbf RECID=1708 STAMP=874504842
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_261_870284986.dbf RECID=1709 STAMP=874526403
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_262_870284986.dbf RECID=1710 STAMP=874530020
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_263_870284986.dbf RECID=1711 STAMP=874531678
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_264_870284986.dbf RECID=1712 STAMP=874531681
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_265_870284986.dbf RECID=1713 STAMP=874535609
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_266_870284986.dbf RECID=1714 STAMP=874555231
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_267_870284986.dbf RECID=1715 STAMP=874576847
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_268_870284986.dbf RECID=1716 STAMP=874598414
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_269_870284986.dbf RECID=1717 STAMP=874616421
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_270_870284986.dbf RECID=1718 STAMP=874616430
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_271_870284986.dbf RECID=1719 STAMP=874616451
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_272_870284986.dbf RECID=1720 STAMP=874618134
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_273_870284986.dbf RECID=1721 STAMP=874618137
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_274_870284986.dbf RECID=1722 STAMP=874633254
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_275_870284986.dbf RECID=1723 STAMP=874653137
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_276_870284986.dbf RECID=1724 STAMP=874674023
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_277_870284986.dbf RECID=1725 STAMP=874695648
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_278_870284986.dbf RECID=1726 STAMP=874702818
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_279_870284986.dbf RECID=1727 STAMP=874702830
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_280_870284986.dbf RECID=1728 STAMP=874704590
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_281_870284986.dbf RECID=1729 STAMP=874704592
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_282_870284986.dbf RECID=1730 STAMP=874718659
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_283_870284986.dbf RECID=1731 STAMP=874738833
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_284_870284986.dbf RECID=1732 STAMP=874760455
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_285_870284986.dbf RECID=1733 STAMP=874771236
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_286_870284986.dbf RECID=1734 STAMP=874789221
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_287_870284986.dbf RECID=1735 STAMP=874789233
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_288_870284986.dbf RECID=1736 STAMP=874796202
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_289_870284986.dbf RECID=1737 STAMP=874814820
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_290_870284986.dbf RECID=1738 STAMP=874836014
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_291_870284986.dbf RECID=1739 STAMP=874857631
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_292_870284986.dbf RECID=1740 STAMP=874857689
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_293_870284986.dbf RECID=1741 STAMP=874860402
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_294_870284986.dbf RECID=1742 STAMP=874875624
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_295_870284986.dbf RECID=1743 STAMP=874875636
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_296_870284986.dbf RECID=1744 STAMP=874883406
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_297_870284986.dbf RECID=1745 STAMP=874904407
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_298_870284986.dbf RECID=1746 STAMP=874915234
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_299_870284986.dbf RECID=1747 STAMP=874929643
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_300_870284986.dbf RECID=1748 STAMP=874944146
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_301_870284986.dbf RECID=1749 STAMP=874944149
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_302_870284986.dbf RECID=1750 STAMP=874947964
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_303_870284986.dbf RECID=1751 STAMP=874947976
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_304_870284986.dbf RECID=1752 STAMP=874962376
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_305_870284986.dbf RECID=1753 STAMP=874982738
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_306_870284986.dbf RECID=1754 STAMP=874992165
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_307_870284986.dbf RECID=1755 STAMP=875005602
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_308_870284986.dbf RECID=1756 STAMP=875020008
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_309_870284986.dbf RECID=1757 STAMP=875030599
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_310_870284986.dbf RECID=1758 STAMP=875030602
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_311_870284986.dbf RECID=1759 STAMP=875034423
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_312_870284986.dbf RECID=1760 STAMP=875034435
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_313_870284986.dbf RECID=1761 STAMP=875048831
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_314_870284986.dbf RECID=1762 STAMP=875068204
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_315_870284986.dbf RECID=1763 STAMP=875088323
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_316_870284986.dbf RECID=1764 STAMP=875109639
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_317_870284986.dbf RECID=1765 STAMP=875117060
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_318_870284986.dbf RECID=1766 STAMP=875129223
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_319_870284986.dbf RECID=1767 STAMP=875134820
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_320_870284986.dbf RECID=1768 STAMP=875134835
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_321_870284986.dbf RECID=1769 STAMP=875153288
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_322_870284986.dbf RECID=1770 STAMP=875174434
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_323_870284986.dbf RECID=1771 STAMP=875196053
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_324_870284986.dbf RECID=1772 STAMP=875203508
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_325_870284986.dbf RECID=1773 STAMP=875203511
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_326_870284986.dbf RECID=1774 STAMP=875203517
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_327_870284986.dbf RECID=1775 STAMP=875221221
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_328_870284986.dbf RECID=1776 STAMP=875221235
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_329_870284986.dbf RECID=1777 STAMP=875225433
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_330_870284986.dbf RECID=1778 STAMP=875246417
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_331_870284986.dbf RECID=1779 STAMP=875268007
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_332_870284986.dbf RECID=1780 STAMP=875289619
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_333_870284986.dbf RECID=1781 STAMP=875289971
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_334_870284986.dbf RECID=1782 STAMP=875289975
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_335_870284986.dbf RECID=1783 STAMP=875307615
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_336_870284986.dbf RECID=1784 STAMP=875307627
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_337_870284986.dbf RECID=1785 STAMP=875318456
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_338_870284986.dbf RECID=1786 STAMP=875338810
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_339_870284986.dbf RECID=1787 STAMP=875358219
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_340_870284986.dbf RECID=1788 STAMP=875376423
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_341_870284986.dbf RECID=1789 STAMP=875376426
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_342_870284986.dbf RECID=1790 STAMP=875379644
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_343_870284986.dbf RECID=1791 STAMP=875394019
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_344_870284986.dbf RECID=1792 STAMP=875394031
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_345_870284986.dbf RECID=1793 STAMP=875394064
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_346_870284986.dbf RECID=1794 STAMP=875415394
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_347_870284986.dbf RECID=1795 STAMP=875434311
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_348_870284986.dbf RECID=1796 STAMP=875455261
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_349_870284986.dbf RECID=1797 STAMP=875462885
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_350_870284986.dbf RECID=1798 STAMP=875462888
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_351_870284986.dbf RECID=1799 STAMP=875480414
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_352_870284986.dbf RECID=1800 STAMP=875480426
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_353_870284986.dbf RECID=1801 STAMP=875484031
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_354_870284986.dbf RECID=1802 STAMP=875505603
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_355_870284986.dbf RECID=1803 STAMP=875514005
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_356_870284986.dbf RECID=1804 STAMP=875523744
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_357_870284986.dbf RECID=1805 STAMP=875541623
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_358_870284986.dbf RECID=1806 STAMP=875549335
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_359_870284986.dbf RECID=1807 STAMP=875549339
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_360_870284986.dbf RECID=1808 STAMP=875552565
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_361_870284986.dbf RECID=1809 STAMP=875566971
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_362_870284986.dbf RECID=1810 STAMP=875569537
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_363_870284986.dbf RECID=1811 STAMP=875588455
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_364_870284986.dbf RECID=1812 STAMP=875599207
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_365_870284986.dbf RECID=1813 STAMP=875613623
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_366_870284986.dbf RECID=1814 STAMP=875624614
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_367_870284986.dbf RECID=1815 STAMP=875635796
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_368_870284986.dbf RECID=1816 STAMP=875635799
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_369_870284986.dbf RECID=1817 STAMP=875639023
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_370_870284986.dbf RECID=1818 STAMP=875639035
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_371_870284986.dbf RECID=1819 STAMP=875653431
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_372_870284986.dbf RECID=1820 STAMP=875674826
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_373_870284986.dbf RECID=1821 STAMP=875696443
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_374_870284986.dbf RECID=1822 STAMP=875718005
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_375_870284986.dbf RECID=1823 STAMP=875722249
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_376_870284986.dbf RECID=1824 STAMP=875722252
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_377_870284986.dbf RECID=1825 STAMP=875736033
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_378_870284986.dbf RECID=1826 STAMP=875739616
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_379_870284986.dbf RECID=1827 STAMP=875739631
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_380_870284986.dbf RECID=1828 STAMP=875757647
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_381_870284986.dbf RECID=1829 STAMP=875779202
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_382_870284986.dbf RECID=1830 STAMP=875800816
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_383_870284986.dbf RECID=1831 STAMP=875808711
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_384_870284986.dbf RECID=1832 STAMP=875808712
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_385_870284986.dbf RECID=1833 STAMP=875822450
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_386_870284986.dbf RECID=1834 STAMP=875826021
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_387_870284986.dbf RECID=1835 STAMP=875826037
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_388_870284986.dbf RECID=1836 STAMP=875844004
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_389_870284986.dbf RECID=1837 STAMP=875865620
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_390_870284986.dbf RECID=1838 STAMP=875887240
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_391_870284986.dbf RECID=1839 STAMP=875908451
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_392_870284986.dbf RECID=1840 STAMP=875912422
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_393_870284986.dbf RECID=1841 STAMP=875913175
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_394_870284986.dbf RECID=1842 STAMP=875913178
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_395_870284986.dbf RECID=1843 STAMP=875913187
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_396_870284986.dbf RECID=1844 STAMP=875934024
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_397_870284986.dbf RECID=1845 STAMP=875955416
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_398_870284986.dbf RECID=1846 STAMP=875975413
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_399_870284986.dbf RECID=1847 STAMP=875995231
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_400_870284986.dbf RECID=1848 STAMP=875998818
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_401_870284986.dbf RECID=1849 STAMP=875998833
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_402_870284986.dbf RECID=1850 STAMP=875999637
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_403_870284986.dbf RECID=1851 STAMP=875999941
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_404_870284986.dbf RECID=1852 STAMP=876020451
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_405_870284986.dbf RECID=1853 STAMP=876042007
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_406_870284986.dbf RECID=1854 STAMP=876063626
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_407_870284986.dbf RECID=1855 STAMP=876085207
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_408_870284986.dbf RECID=1856 STAMP=876085222
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_409_870284986.dbf RECID=1857 STAMP=876085252
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_410_870284986.dbf RECID=1858 STAMP=876086090
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_411_870284986.dbf RECID=1859 STAMP=876086093
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_412_870284986.dbf RECID=1860 STAMP=876103814
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_413_870284986.dbf RECID=1861 STAMP=876114014
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_414_870284986.dbf RECID=1862 STAMP=876114025
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_415_870284986.dbf RECID=1863 STAMP=876128951
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_416_870284986.dbf RECID=1864 STAMP=876143354
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_417_870284986.dbf RECID=1865 STAMP=876157770
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_418_870284986.dbf RECID=1866 STAMP=876172181
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_419_870284986.dbf RECID=1867 STAMP=876172547
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_420_870284986.dbf RECID=1868 STAMP=876172551
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_421_870284986.dbf RECID=1869 STAMP=876196837
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_422_870284986.dbf RECID=1870 STAMP=876204015
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_423_870284986.dbf RECID=1871 STAMP=876207607
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_424_870284986.dbf RECID=1872 STAMP=876219008
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_425_870284986.dbf RECID=1873 STAMP=876234328
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_426_870284986.dbf RECID=1874 STAMP=876250027
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_427_870284986.dbf RECID=1875 STAMP=876262229
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_428_870284986.dbf RECID=1876 STAMP=876262601
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_429_870284986.dbf RECID=1877 STAMP=876262604
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_430_870284986.dbf RECID=1878 STAMP=876283228
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_431_870284986.dbf RECID=1879 STAMP=876304846
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_432_870284986.dbf RECID=1880 STAMP=876326409
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_433_870284986.dbf RECID=1881 STAMP=876347924
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_434_870284986.dbf RECID=1882 STAMP=876348023
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_435_870284986.dbf RECID=1883 STAMP=876348038
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_436_870284986.dbf RECID=1884 STAMP=876349058
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_437_870284986.dbf RECID=1885 STAMP=876349061
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_438_870284986.dbf RECID=1886 STAMP=876362455
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_439_870284986.dbf RECID=1887 STAMP=876384014
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_440_870284986.dbf RECID=1888 STAMP=876405635
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_441_870284986.dbf RECID=1889 STAMP=876427256
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_442_870284986.dbf RECID=1890 STAMP=876434422
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_443_870284986.dbf RECID=1891 STAMP=876434437
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_444_870284986.dbf RECID=1892 STAMP=876435511
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_445_870284986.dbf RECID=1893 STAMP=876435514
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_446_870284986.dbf RECID=1894 STAMP=876439329
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_447_870284986.dbf RECID=1895 STAMP=876459624
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_448_870284986.dbf RECID=1896 STAMP=876481244
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_449_870284986.dbf RECID=1897 STAMP=876502857
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_450_870284986.dbf RECID=1898 STAMP=876520817
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_451_870284986.dbf RECID=1899 STAMP=876520829
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_452_870284986.dbf RECID=1900 STAMP=876521966
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_453_870284986.dbf RECID=1901 STAMP=876521973
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_454_870284986.dbf RECID=1902 STAMP=876521977
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_455_870284986.dbf RECID=1903 STAMP=876542440
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_456_870284986.dbf RECID=1904 STAMP=876564003
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_457_870284986.dbf RECID=1905 STAMP=876582975
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_458_870284986.dbf RECID=1906 STAMP=876594009
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_459_870284986.dbf RECID=1907 STAMP=876607216
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_460_870284986.dbf RECID=1908 STAMP=876607225
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_461_870284986.dbf RECID=1909 STAMP=876613732
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_462_870284986.dbf RECID=1910 STAMP=876632457
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_463_870284986.dbf RECID=1911 STAMP=876654021
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_464_870284986.dbf RECID=1912 STAMP=876675640
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_465_870284986.dbf RECID=1913 STAMP=876680463
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_466_870284986.dbf RECID=1914 STAMP=876680466
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_467_870284986.dbf RECID=1915 STAMP=876693621
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_468_870284986.dbf RECID=1916 STAMP=876693630
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_469_870284986.dbf RECID=1917 STAMP=876697213
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_470_870284986.dbf RECID=1918 STAMP=876718816
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_471_870284986.dbf RECID=1919 STAMP=876729636
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_472_870284986.dbf RECID=1920 STAMP=876742728
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_473_870284986.dbf RECID=1921 STAMP=876758406
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_474_870284986.dbf RECID=1922 STAMP=876765963
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_475_870284986.dbf RECID=1923 STAMP=876766913
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_476_870284986.dbf RECID=1924 STAMP=876766918
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_477_870284986.dbf RECID=1925 STAMP=876780375
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_478_870284986.dbf RECID=1926 STAMP=876780387
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_479_870284986.dbf RECID=1927 STAMP=876796426
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_480_870284986.dbf RECID=1928 STAMP=876808817
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_481_870284986.dbf RECID=1929 STAMP=876823603
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_482_870284986.dbf RECID=1930 STAMP=876838321
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_483_870284986.dbf RECID=1931 STAMP=876852423
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_484_870284986.dbf RECID=1932 STAMP=876853374
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_485_870284986.dbf RECID=1933 STAMP=876853377
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_486_870284986.dbf RECID=1934 STAMP=876866835
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_487_870284986.dbf RECID=1935 STAMP=876866848
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_488_870284986.dbf RECID=1936 STAMP=876880861
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_489_870284986.dbf RECID=1937 STAMP=876902419
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_490_870284986.dbf RECID=1938 STAMP=876924040
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_491_870284986.dbf RECID=1939 STAMP=876939831
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_492_870284986.dbf RECID=1940 STAMP=876939837
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_493_870284986.dbf RECID=1941 STAMP=876952814
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_494_870284986.dbf RECID=1942 STAMP=876952823
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_495_870284986.dbf RECID=1943 STAMP=876955095
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_496_870284986.dbf RECID=1944 STAMP=876974426
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_497_870284986.dbf RECID=1945 STAMP=876996047
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_498_870284986.dbf RECID=1946 STAMP=877017605
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_499_870284986.dbf RECID=1947 STAMP=877026284
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_500_870284986.dbf RECID=1948 STAMP=877026289
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_501_870284986.dbf RECID=1949 STAMP=877026296
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_502_870284986.dbf RECID=1950 STAMP=877039218
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_503_870284986.dbf RECID=1951 STAMP=877039233
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_504_870284986.dbf RECID=1952 STAMP=877060845
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_505_870284986.dbf RECID=1953 STAMP=877080129
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_506_870284986.dbf RECID=1954 STAMP=877100430
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_507_870284986.dbf RECID=1955 STAMP=877112742
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_508_870284986.dbf RECID=1956 STAMP=877112745
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_509_870284986.dbf RECID=1957 STAMP=877113052
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_510_870284986.dbf RECID=1958 STAMP=877125620
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_511_870284986.dbf RECID=1959 STAMP=877125632
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_512_870284986.dbf RECID=1960 STAMP=877136457
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_513_870284986.dbf RECID=1961 STAMP=877155418
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_514_870284986.dbf RECID=1962 STAMP=877176035
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_515_870284986.dbf RECID=1963 STAMP=877197650
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_516_870284986.dbf RECID=1964 STAMP=877199199
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_517_870284986.dbf RECID=1965 STAMP=877212016
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_518_870284986.dbf RECID=1966 STAMP=877212028
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_519_870284986.dbf RECID=1967 STAMP=877220898
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_520_870284986.dbf RECID=1968 STAMP=877240832
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_521_870284986.dbf RECID=1969 STAMP=877262447
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_522_870284986.dbf RECID=1970 STAMP=877284012
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_523_870284986.dbf RECID=1971 STAMP=877285645
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_524_870284986.dbf RECID=1972 STAMP=877285648
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_525_870284986.dbf RECID=1973 STAMP=877298413
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_526_870284986.dbf RECID=1974 STAMP=877298422
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_527_870284986.dbf RECID=1975 STAMP=877300838
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_528_870284986.dbf RECID=1976 STAMP=877320053
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_529_870284986.dbf RECID=1977 STAMP=877330802
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_530_870284986.dbf RECID=1978 STAMP=877344746
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_531_870284986.dbf RECID=1979 STAMP=877359628
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_532_870284986.dbf RECID=1980 STAMP=877370564
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_533_870284986.dbf RECID=1981 STAMP=877372094
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_534_870284986.dbf RECID=1982 STAMP=877372098
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_535_870284986.dbf RECID=1983 STAMP=877384980
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_536_870284986.dbf RECID=1984 STAMP=877384995
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_537_870284986.dbf RECID=1985 STAMP=877403898
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_538_870284986.dbf RECID=1986 STAMP=877413617
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_539_870284986.dbf RECID=1987 STAMP=877428200
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_540_870284986.dbf RECID=1988 STAMP=877442614
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_541_870284986.dbf RECID=1989 STAMP=877457020
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_542_870284986.dbf RECID=1990 STAMP=877458548
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_543_870284986.dbf RECID=1991 STAMP=877458552
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_544_870284986.dbf RECID=1992 STAMP=877471430
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_545_870284986.dbf RECID=1993 STAMP=877471442
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_546_870284986.dbf RECID=1994 STAMP=877478417
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_547_870284986.dbf RECID=1995 STAMP=877498842
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_548_870284986.dbf RECID=1996 STAMP=877518062
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_549_870284986.dbf RECID=1997 STAMP=877539608
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_550_870284986.dbf RECID=1998 STAMP=877545003
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_551_870284986.dbf RECID=1999 STAMP=877545006
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_552_870284986.dbf RECID=2000 STAMP=877557618
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_553_870284986.dbf RECID=2001 STAMP=877557627
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_554_870284986.dbf RECID=2002 STAMP=877562320
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_555_870284986.dbf RECID=2003 STAMP=877582847
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_556_870284986.dbf RECID=2004 STAMP=877604408
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_557_870284986.dbf RECID=2005 STAMP=877626029
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_558_870284986.dbf RECID=2006 STAMP=877629655
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_559_870284986.dbf RECID=2007 STAMP=877629657
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_560_870284986.dbf RECID=2008 STAMP=877640442
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_561_870284986.dbf RECID=2009 STAMP=877644022
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_562_870284986.dbf RECID=2010 STAMP=877644042
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_563_870284986.dbf RECID=2011 STAMP=877664478
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_564_870284986.dbf RECID=2012 STAMP=877683633
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_565_870284986.dbf RECID=2013 STAMP=877705245
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_566_870284986.dbf RECID=2014 STAMP=877716106
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_567_870284986.dbf RECID=2015 STAMP=877716110
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_568_870284986.dbf RECID=2016 STAMP=877726806
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_569_870284986.dbf RECID=2017 STAMP=877730422
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_570_870284986.dbf RECID=2018 STAMP=877730435
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_571_870284986.dbf RECID=2019 STAMP=877744814
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_572_870284986.dbf RECID=2020 STAMP=877764318
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_573_870284986.dbf RECID=2021 STAMP=877784452
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_574_870284986.dbf RECID=2022 STAMP=877806044
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_575_870284986.dbf RECID=2023 STAMP=877816820
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_576_870284986.dbf RECID=2024 STAMP=877816830
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_577_870284986.dbf RECID=2025 STAMP=877816977
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_578_870284986.dbf RECID=2026 STAMP=877816982
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_579_870284986.dbf RECID=2027 STAMP=877828218
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_580_870284986.dbf RECID=2028 STAMP=877849242
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_581_870284986.dbf RECID=2029 STAMP=877870855
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_582_870284986.dbf RECID=2030 STAMP=877892417
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_583_870284986.dbf RECID=2031 STAMP=877903219
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_584_870284986.dbf RECID=2032 STAMP=877903228
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_585_870284986.dbf RECID=2033 STAMP=877903438
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_586_870284986.dbf RECID=2034 STAMP=877903444
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_587_870284986.dbf RECID=2035 STAMP=877924129
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_588_870284986.dbf RECID=2036 STAMP=877932020
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_589_870284986.dbf RECID=2037 STAMP=877932032
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_590_870284986.dbf RECID=2038 STAMP=877946943
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_591_870284986.dbf RECID=2039 STAMP=877962143
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_592_870284986.dbf RECID=2040 STAMP=877976314
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_593_870284986.dbf RECID=2041 STAMP=877989887
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_594_870284986.dbf RECID=2042 STAMP=877989889
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_595_870284986.dbf RECID=2043 STAMP=877990180
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_596_870284986.dbf RECID=2044 STAMP=877997273
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_597_870284986.dbf RECID=2045 STAMP=878018053
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_598_870284986.dbf RECID=2046 STAMP=878022375
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_599_870284986.dbf RECID=2047 STAMP=878036428
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_600_870284986.dbf RECID=2048 STAMP=878052284
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_601_870284986.dbf RECID=2049 STAMP=878062241
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_602_870284986.dbf RECID=2050 STAMP=878068824
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_603_870284986.dbf RECID=2051 STAMP=878076350
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_604_870284986.dbf RECID=2052 STAMP=878076351
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_605_870284986.dbf RECID=2053 STAMP=878076654
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_606_870284986.dbf RECID=2054 STAMP=878081981
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_607_870284986.dbf RECID=2055 STAMP=878101244
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_608_870284986.dbf RECID=2056 STAMP=878122803
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_609_870284986.dbf RECID=2057 STAMP=878144420
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_610_870284986.dbf RECID=2058 STAMP=878162410
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_611_870284986.dbf RECID=2059 STAMP=878162423
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_612_870284986.dbf RECID=2060 STAMP=878162798
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_613_870284986.dbf RECID=2061 STAMP=878162801
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_614_870284986.dbf RECID=2062 STAMP=878183333
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_615_870284986.dbf RECID=2063 STAMP=878202372
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_616_870284986.dbf RECID=2064 STAMP=878223613
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_617_870284986.dbf RECID=2065 STAMP=878245230
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_618_870284986.dbf RECID=2066 STAMP=878248813
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_619_870284986.dbf RECID=2067 STAMP=878248826
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_620_870284986.dbf RECID=2068 STAMP=878249258
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_621_870284986.dbf RECID=2069 STAMP=878249261
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_622_870284986.dbf RECID=2070 STAMP=878269257
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_623_870284986.dbf RECID=2071 STAMP=878288532
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_624_870284986.dbf RECID=2072 STAMP=878310017
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_625_870284986.dbf RECID=2073 STAMP=878331638
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_626_870284986.dbf RECID=2074 STAMP=878335218
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_627_870284986.dbf RECID=2075 STAMP=878335243
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_628_870284986.dbf RECID=2076 STAMP=878335708
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_629_870284986.dbf RECID=2077 STAMP=878335710
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_630_870284986.dbf RECID=2078 STAMP=878338844
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_631_870284986.dbf RECID=2079 STAMP=878359445
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_632_870284986.dbf RECID=2080 STAMP=878378576
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_633_870284986.dbf RECID=2081 STAMP=878400029
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_634_870284986.dbf RECID=2082 STAMP=878413157
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_635_870284986.dbf RECID=2083 STAMP=878421616
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_636_870284986.dbf RECID=2084 STAMP=878421625
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_637_870284986.dbf RECID=2085 STAMP=878522458
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_638_870284986.dbf RECID=2086 STAMP=878543057
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_639_870284986.dbf RECID=2087 STAMP=878562390
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_640_870284986.dbf RECID=2088 STAMP=878583644
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_641_870284986.dbf RECID=2089 STAMP=878584211
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_642_870284986.dbf RECID=2090 STAMP=878584214
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_643_870284986.dbf RECID=2091 STAMP=878594417
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_644_870284986.dbf RECID=2092 STAMP=878594430
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_645_870284986.dbf RECID=2093 STAMP=878612413
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_646_870284986.dbf RECID=2094 STAMP=878623210
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_647_870284986.dbf RECID=2095 STAMP=878637966
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_648_870284986.dbf RECID=2096 STAMP=878652829
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_649_870284986.dbf RECID=2097 STAMP=878666783
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_650_870284986.dbf RECID=2098 STAMP=878670664
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_651_870284986.dbf RECID=2099 STAMP=878670667
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_652_870284986.dbf RECID=2100 STAMP=878681195
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_653_870284986.dbf RECID=2101 STAMP=878681207
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_654_870284986.dbf RECID=2102 STAMP=878696195
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_655_870284986.dbf RECID=2103 STAMP=878709627
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_656_870284986.dbf RECID=2104 STAMP=878724415
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_657_870284986.dbf RECID=2105 STAMP=878739451
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_658_870284986.dbf RECID=2106 STAMP=878753238
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_659_870284986.dbf RECID=2107 STAMP=878757116
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_660_870284986.dbf RECID=2108 STAMP=878757120
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_661_870284986.dbf RECID=2109 STAMP=878767648
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_662_870284986.dbf RECID=2110 STAMP=878767660
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_663_870284986.dbf RECID=2111 STAMP=878778024
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_664_870284986.dbf RECID=2112 STAMP=878799164
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_665_870284986.dbf RECID=2113 STAMP=878817961
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_666_870284986.dbf RECID=2114 STAMP=878839213
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_667_870284986.dbf RECID=2115 STAMP=878843575
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_668_870284986.dbf RECID=2116 STAMP=878843578
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_669_870284986.dbf RECID=2117 STAMP=878853617
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_670_870284986.dbf RECID=2118 STAMP=878853629
+deleted archived log
+archived log file name=/u01/app/oracle/product/11.2.0/dbhome_1/dbs/arch1_671_870284986.dbf RECID=2119 STAMP=878875240
+Deleted 671 objects
+
+RMAN-06207: WARNING: 1 objects could not be deleted for DISK channel(s) due
+RMAN-06208:          to mismatched status.  Use CROSSCHECK command to fix status
+RMAN-06210: List of Mismatched objects
+RMAN-06211: ==========================
+RMAN-06212:   Object Type   Filename/Handle
+RMAN-06213: --------------- ---------------------------------------------------
+RMAN-06214: Archivelog      /u01/app/oracle/flash_recovery_area/PRODUCCION/archivelog/2015_02_13/o1_mf_1_1444_bfwojscy_.arc
+
+
+RMAN> 
+database closed
+database dismounted
+Oracle instance shut down
+
+RMAN> 
+executing command: SET DBID
+
+RMAN> 
+connected to target database (not started)
+Oracle instance started
+
+Total System Global Area    6547296256 bytes
+
+Fixed Size                     2213856 bytes
+Variable Size               5167384608 bytes
+Database Buffers            1342177280 bytes
+Redo Buffers                  35520512 bytes
+
+RMAN> 
+Starting restore at 05-MAY-15
+allocated channel: ORA_DISK_1
+channel ORA_DISK_1: SID=253 device type=DISK
+
+channel ORA_DISK_1: restoring control file
+channel ORA_DISK_1: restore complete, elapsed time: 00:00:02
+output file name=/u01/app/oracle/oradata/PRODUCCION/controlfile/o1_mf_b3lgtgr5_.ctl
+output file name=/u01/app/oracle/flash_recovery_area/PRODUCCION/controlfile/o1_mf_b3lgtgs0_.ctl
+Finished restore at 05-MAY-15
+
+RMAN> 
+database is already started
+database mounted
+released channel: ORA_DISK_1
+
+RMAN> 
+allocated channel: ORA_DISK_1
+channel ORA_DISK_1: SID=253 device type=DISK
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/u01/app/oracle/flash_recovery_area/PRODUCCION/backupset/2015_02_13/o1_mf_nnnd0_TAG20150213T131004_bfwm0ddf_.bkp RECID=169 STAMP=871564204
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/u01/app/oracle/flash_recovery_area/PRODUCCION/backupset/2015_02_13/o1_mf_ncsn0_TAG20150213T131004_bfwm0whd_.bkp RECID=170 STAMP=871564220
+crosschecked backup piece: found to be 'AVAILABLE'
+backup piece handle=/u01/app/oracle/flash_recovery_area/PRODUCCION/backupset/2015_02_13/o1_mf_nnnd0_TAG20150213T131022_bfwm0yyx_.bkp RECID=171 STAMP=871564222
+crosschecked backup piece: found to be 'AVAILABLE'
+backup piece handle=/u01/app/oracle/flash_recovery_area/PRODUCCION/backupset/2015_02_13/o1_mf_ncsn0_TAG20150213T131022_bfwm1h2v_.bkp RECID=172 STAMP=871564239
+crosschecked backup piece: found to be 'AVAILABLE'
+backup piece handle=/u01/app/oracle/flash_recovery_area/PRODUCCION/backupset/2015_02_13/o1_mf_nnnd1_TAG20150213T135833_bfwov9fr_.bkp RECID=173 STAMP=871567113
+crosschecked backup piece: found to be 'AVAILABLE'
+backup piece handle=/u01/app/oracle/flash_recovery_area/PRODUCCION/backupset/2015_02_13/o1_mf_ncsn1_TAG20150213T135833_bfwovsgk_.bkp RECID=174 STAMP=871567129
+crosschecked backup piece: found to be 'AVAILABLE'
+backup piece handle=/u01/app/oracle/flash_recovery_area/PRODUCCION/backupset/2015_02_13/o1_mf_annnn_TAG20150213T135851_bfwovvyx_.bkp RECID=175 STAMP=871567131
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/u01/app/oracle/flash_recovery_area/PRODUCCION/backupset/2015_05_20/o1_mf_nnnd0_TAG20150520T000238_bor5cgy4_.bkp RECID=176 STAMP=880156958
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/u01/app/oracle/flash_recovery_area/PRODUCCION/backupset/2015_05_20/o1_mf_ncsn0_TAG20150520T000238_bor5d90k_.bkp RECID=177 STAMP=880156985
+crosschecked backup piece: found to be 'AVAILABLE'
+backup piece handle=/u01/app/oracle/flash_recovery_area/PRODUCCION/backupset/2015_05_20/o1_mf_nnnd0_TAG20150520T000307_bor5dcpb_.bkp RECID=178 STAMP=880156987
+Crosschecked 10 objects
+
+
+RMAN> 
+Starting restore at 05-MAY-15
+using channel ORA_DISK_1
+
+channel ORA_DISK_1: starting validation of datafile backup set
+channel ORA_DISK_1: reading from backup piece /u01/app/oracle/flash_recovery_area/PRODUCCION/backupset/2015_05_20/o1_mf_nnnd0_TAG20150520T000307_bor5dcpb_.bkp
+channel ORA_DISK_1: piece handle=/u01/app/oracle/flash_recovery_area/PRODUCCION/backupset/2015_05_20/o1_mf_nnnd0_TAG20150520T000307_bor5dcpb_.bkp tag=TAG20150520T000307
+channel ORA_DISK_1: restored backup piece 1
+channel ORA_DISK_1: validation complete, elapsed time: 00:00:56
+Finished restore at 05-MAY-15
+
+RMAN> 
+Starting restore at 05-MAY-15
+using channel ORA_DISK_1
+
+channel ORA_DISK_1: starting datafile backup set restore
+channel ORA_DISK_1: specifying datafile(s) to restore from backup set
+channel ORA_DISK_1: restoring datafile 00001 to /u01/app/oracle/oradata/PRODUCCION/datafile/o1_mf_system_b3lgrmx4_.dbf
+channel ORA_DISK_1: restoring datafile 00002 to /u01/app/oracle/oradata/PRODUCCION/datafile/o1_mf_sysaux_b3lgrmxw_.dbf
+channel ORA_DISK_1: restoring datafile 00003 to /u01/app/oracle/oradata/PRODUCCION/datafile/o1_mf_undotbs1_b3lgrmy0_.dbf
+channel ORA_DISK_1: restoring datafile 00004 to /u01/app/oracle/oradata/PRODUCCION/datafile/o1_mf_users_b3lgrmym_.dbf
+channel ORA_DISK_1: restoring datafile 00005 to /u01/app/oracle/oradata/produccion/PAGOSIFREM_DATA.dbf
+channel ORA_DISK_1: reading from backup piece /u01/app/oracle/flash_recovery_area/PRODUCCION/backupset/2015_05_20/o1_mf_nnnd0_TAG20150520T000307_bor5dcpb_.bkp
+channel ORA_DISK_1: piece handle=/u01/app/oracle/flash_recovery_area/PRODUCCION/backupset/2015_05_20/o1_mf_nnnd0_TAG20150520T000307_bor5dcpb_.bkp tag=TAG20150520T000307
+channel ORA_DISK_1: restored backup piece 1
+channel ORA_DISK_1: restore complete, elapsed time: 00:01:27
+Finished restore at 05-MAY-15
+
+RMAN> 
+Starting recover at 05-MAY-15
+using channel ORA_DISK_1
+
+starting media recovery
+
+unable to find archived log
+archived log thread=1 sequence=2581
+RMAN-00571: ===========================================================
+RMAN-00569: =============== ERROR MESSAGE STACK FOLLOWS ===============
+RMAN-00571: ===========================================================
+RMAN-03002: failure of recover command at 05/05/2015 04:31:34
+RMAN-06054: media recovery requesting unknown archived log for thread 1 with sequence 2581 and starting SCN of 5321973238
+
+RMAN> 
+database opened
+
+RMAN> 
+
+Recovery Manager complete.
+
+JOB134 | 05/05/2015 | 04:31:46 | oracle | ORA-025 | Finalizó exitosamente la restauración del respaldo completo. | restore_backup_full_oracle.sh | ORA-RF-01
+
+JOB134 | 05/05/2015 | 04:31:46 | oracle | ORA-000 | Se completó exitosamente el proceso. | restore_backup_full_oracle.sh |ORA-RF-01
+EXIT_CODE=0

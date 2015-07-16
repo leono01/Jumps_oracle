@@ -1,0 +1,258 @@
+JOB98 | 19/11/2014 | 17:27:04 | oracle | ORA-028 | Realizando restauración del respaldo... | restore_backup_inc_oracle.sh | ORA-RI-01
+
+Recovery Manager: Release 11.2.0.1.0 - Production on Wed Nov 19 17:27:04 2014
+
+Copyright (c) 1982, 2009, Oracle and/or its affiliates.  All rights reserved.
+
+connected to target database: PRODUCCI (DBID=3688939454)
+
+RMAN> 
+using target database control file instead of recovery catalog
+
+List of Backup Sets
+===================
+
+
+BS Key  Type LV Size       Device Type Elapsed Time Completion Time
+------- ---- -- ---------- ----------- ------------ ---------------
+110     Incr 0  4.25G      DISK        00:00:14     19-NOV-14      
+        BP Key: 110   Status: AVAILABLE  Compressed: NO  Tag: TAG20141119T155444
+        Piece Name: /u01/app/oracle/flash_recovery_area/PRODUCCION/backupset/2014_11_19/o1_mf_nnnd0_TAG20141119T155444_b6t4f4h0_.bkp
+  List of Datafiles in backup set 110
+  File LV Type Ckp SCN    Ckp Time  Name
+  ---- -- ---- ---------- --------- ----
+  1    0  Incr 5382379    19-NOV-14 /u01/app/oracle/oradata/PRODUCCION/datafile/o1_mf_system_b3lgrmx4_.dbf
+  2    0  Incr 5382379    19-NOV-14 /u01/app/oracle/oradata/PRODUCCION/datafile/o1_mf_sysaux_b3lgrmxw_.dbf
+  3    0  Incr 5382379    19-NOV-14 /u01/app/oracle/oradata/PRODUCCION/datafile/o1_mf_undotbs1_b3lgrmy0_.dbf
+  4    0  Incr 5382379    19-NOV-14 /u01/app/oracle/oradata/PRODUCCION/datafile/o1_mf_users_b3lgrmym_.dbf
+  5    0  Incr 5382379    19-NOV-14 /u01/app/oracle/oradata/produccion/PAGOSIFREM_DATA.dbf
+
+BS Key  Type LV Size       Device Type Elapsed Time Completion Time
+------- ---- -- ---------- ----------- ------------ ---------------
+111     Incr 0  10.11M     DISK        00:00:01     19-NOV-14      
+        BP Key: 111   Status: AVAILABLE  Compressed: NO  Tag: TAG20141119T155444
+        Piece Name: /u01/app/oracle/flash_recovery_area/PRODUCCION/backupset/2014_11_19/o1_mf_ncsn0_TAG20141119T155444_b6t4fnl3_.bkp
+  SPFILE Included: Modification time: 19-NOV-14
+  SPFILE db_unique_name: PRODUCCION
+  Control File Included: Ckp SCN: 5382384      Ckp time: 19-NOV-14
+
+BS Key  Size       Device Type Elapsed Time Completion Time
+------- ---------- ----------- ------------ ---------------
+112     2.38M      DISK        00:00:00     19-NOV-14      
+        BP Key: 112   Status: AVAILABLE  Compressed: NO  Tag: TAG20141119T155502
+        Piece Name: /u01/app/oracle/flash_recovery_area/PRODUCCION/backupset/2014_11_19/o1_mf_annnn_TAG20141119T155502_b6t4fq0z_.bkp
+
+  List of Archived Logs in backup set 112
+  Thrd Seq     Low SCN    Low Time  Next SCN   Next Time
+  ---- ------- ---------- --------- ---------- ---------
+  1    484     5379811    19-NOV-14 5382409    19-NOV-14
+
+BS Key  Type LV Size       Device Type Elapsed Time Completion Time
+------- ---- -- ---------- ----------- ------------ ---------------
+113     Incr 1  4.59M      DISK        00:00:07     19-NOV-14      
+        BP Key: 113   Status: AVAILABLE  Compressed: NO  Tag: TAG20141119T163728
+        Piece Name: /u01/app/oracle/flash_recovery_area/PRODUCCION/backupset/2014_11_19/o1_mf_nnnd1_TAG20141119T163728_b6t6x86y_.bkp
+  List of Datafiles in backup set 113
+  File LV Type Ckp SCN    Ckp Time  Name
+  ---- -- ---- ---------- --------- ----
+  1    1  Incr 5384490    19-NOV-14 /u01/app/oracle/oradata/PRODUCCION/datafile/o1_mf_system_b3lgrmx4_.dbf
+  2    1  Incr 5384490    19-NOV-14 /u01/app/oracle/oradata/PRODUCCION/datafile/o1_mf_sysaux_b3lgrmxw_.dbf
+  3    1  Incr 5384490    19-NOV-14 /u01/app/oracle/oradata/PRODUCCION/datafile/o1_mf_undotbs1_b3lgrmy0_.dbf
+  4    1  Incr 5384490    19-NOV-14 /u01/app/oracle/oradata/PRODUCCION/datafile/o1_mf_users_b3lgrmym_.dbf
+  5    1  Incr 5384490    19-NOV-14 /u01/app/oracle/oradata/produccion/PAGOSIFREM_DATA.dbf
+
+BS Key  Type LV Size       Device Type Elapsed Time Completion Time
+------- ---- -- ---------- ----------- ------------ ---------------
+114     Incr 1  10.11M     DISK        00:00:01     19-NOV-14      
+        BP Key: 114   Status: AVAILABLE  Compressed: NO  Tag: TAG20141119T163728
+        Piece Name: /u01/app/oracle/flash_recovery_area/PRODUCCION/backupset/2014_11_19/o1_mf_ncsn1_TAG20141119T163728_b6t6xr9n_.bkp
+  SPFILE Included: Modification time: 19-NOV-14
+  SPFILE db_unique_name: PRODUCCION
+  Control File Included: Ckp SCN: 5384495      Ckp time: 19-NOV-14
+
+BS Key  Size       Device Type Elapsed Time Completion Time
+------- ---------- ----------- ------------ ---------------
+115     2.21M      DISK        00:00:00     19-NOV-14      
+        BP Key: 115   Status: AVAILABLE  Compressed: NO  Tag: TAG20141119T163746
+        Piece Name: /u01/app/oracle/flash_recovery_area/PRODUCCION/backupset/2014_11_19/o1_mf_annnn_TAG20141119T163746_b6t6xtqr_.bkp
+
+  List of Archived Logs in backup set 115
+  Thrd Seq     Low SCN    Low Time  Next SCN   Next Time
+  ---- ------- ---------- --------- ---------- ---------
+  1    485     5382409    19-NOV-14 5384517    19-NOV-14
+
+BS Key  Type LV Size       Device Type Elapsed Time Completion Time
+------- ---- -- ---------- ----------- ------------ ---------------
+116     Incr 1  1.20M      DISK        00:00:08     19-NOV-14      
+        BP Key: 116   Status: AVAILABLE  Compressed: NO  Tag: TAG20141119T165858
+        Piece Name: /u01/app/oracle/flash_recovery_area/PRODUCCION/backupset/2014_11_19/o1_mf_nnnd1_TAG20141119T165858_b6t85lor_.bkp
+  List of Datafiles in backup set 116
+  File LV Type Ckp SCN    Ckp Time  Name
+  ---- -- ---- ---------- --------- ----
+  1    1  Incr 5385409    19-NOV-14 /u01/app/oracle/oradata/PRODUCCION/datafile/o1_mf_system_b3lgrmx4_.dbf
+  2    1  Incr 5385409    19-NOV-14 /u01/app/oracle/oradata/PRODUCCION/datafile/o1_mf_sysaux_b3lgrmxw_.dbf
+  3    1  Incr 5385409    19-NOV-14 /u01/app/oracle/oradata/PRODUCCION/datafile/o1_mf_undotbs1_b3lgrmy0_.dbf
+  4    1  Incr 5385409    19-NOV-14 /u01/app/oracle/oradata/PRODUCCION/datafile/o1_mf_users_b3lgrmym_.dbf
+  5    1  Incr 5385409    19-NOV-14 /u01/app/oracle/oradata/produccion/PAGOSIFREM_DATA.dbf
+
+RMAN> 
+
+Recovery Manager complete.
+
+Recovery Manager: Release 11.2.0.1.0 - Production on Wed Nov 19 17:27:06 2014
+
+Copyright (c) 1982, 2009, Oracle and/or its affiliates.  All rights reserved.
+
+connected to target database: PRODUCCI (DBID=3688939454)
+
+RMAN> 
+using target database control file instead of recovery catalog
+allocated channel: ORA_DISK_1
+channel ORA_DISK_1: SID=356 device type=DISK
+specification does not match any archived log in the repository
+
+RMAN> 
+database closed
+database dismounted
+Oracle instance shut down
+
+RMAN> 
+executing command: SET DBID
+
+RMAN> 
+connected to target database (not started)
+Oracle instance started
+
+Total System Global Area    6547296256 bytes
+
+Fixed Size                     2213856 bytes
+Variable Size               3825207328 bytes
+Database Buffers            2684354560 bytes
+Redo Buffers                  35520512 bytes
+
+RMAN> 
+Starting restore at 19-NOV-14
+allocated channel: ORA_DISK_1
+channel ORA_DISK_1: SID=253 device type=DISK
+
+channel ORA_DISK_1: restoring control file
+channel ORA_DISK_1: restore complete, elapsed time: 00:00:01
+output file name=/u01/app/oracle/oradata/PRODUCCION/controlfile/o1_mf_b3lgtgr5_.ctl
+output file name=/u01/app/oracle/flash_recovery_area/PRODUCCION/controlfile/o1_mf_b3lgtgs0_.ctl
+Finished restore at 19-NOV-14
+
+RMAN> 
+database is already started
+database mounted
+released channel: ORA_DISK_1
+
+RMAN> 
+allocated channel: ORA_DISK_1
+channel ORA_DISK_1: SID=253 device type=DISK
+crosschecked backup piece: found to be 'AVAILABLE'
+backup piece handle=/u01/app/oracle/flash_recovery_area/PRODUCCION/backupset/2014_11_19/o1_mf_nnnd0_TAG20141119T155444_b6t4f4h0_.bkp RECID=110 STAMP=864057284
+crosschecked backup piece: found to be 'AVAILABLE'
+backup piece handle=/u01/app/oracle/flash_recovery_area/PRODUCCION/backupset/2014_11_19/o1_mf_ncsn0_TAG20141119T155444_b6t4fnl3_.bkp RECID=111 STAMP=864057300
+crosschecked backup piece: found to be 'AVAILABLE'
+backup piece handle=/u01/app/oracle/flash_recovery_area/PRODUCCION/backupset/2014_11_19/o1_mf_annnn_TAG20141119T155502_b6t4fq0z_.bkp RECID=112 STAMP=864057303
+crosschecked backup piece: found to be 'AVAILABLE'
+backup piece handle=/u01/app/oracle/flash_recovery_area/PRODUCCION/backupset/2014_11_19/o1_mf_nnnd1_TAG20141119T163728_b6t6x86y_.bkp RECID=113 STAMP=864059848
+crosschecked backup piece: found to be 'AVAILABLE'
+backup piece handle=/u01/app/oracle/flash_recovery_area/PRODUCCION/backupset/2014_11_19/o1_mf_ncsn1_TAG20141119T163728_b6t6xr9n_.bkp RECID=114 STAMP=864059864
+crosschecked backup piece: found to be 'AVAILABLE'
+backup piece handle=/u01/app/oracle/flash_recovery_area/PRODUCCION/backupset/2014_11_19/o1_mf_annnn_TAG20141119T163746_b6t6xtqr_.bkp RECID=115 STAMP=864059866
+crosschecked backup piece: found to be 'AVAILABLE'
+backup piece handle=/u01/app/oracle/flash_recovery_area/PRODUCCION/backupset/2014_11_19/o1_mf_nnnd1_TAG20141119T165858_b6t85lor_.bkp RECID=116 STAMP=864061138
+crosschecked backup piece: found to be 'AVAILABLE'
+backup piece handle=/u01/app/oracle/flash_recovery_area/PRODUCCION/backupset/2014_11_19/o1_mf_ncsn1_TAG20141119T165858_b6t862rh_.bkp RECID=117 STAMP=864061154
+crosschecked backup piece: found to be 'AVAILABLE'
+backup piece handle=/u01/app/oracle/flash_recovery_area/PRODUCCION/backupset/2014_11_19/o1_mf_annnn_TAG20141119T165917_b6t8656x_.bkp RECID=118 STAMP=864061157
+crosschecked backup piece: found to be 'AVAILABLE'
+backup piece handle=/u01/app/oracle/flash_recovery_area/PRODUCCION/backupset/2014_11_19/o1_mf_nnnd1_TAG20141119T172541_b6t9qolj_.bkp RECID=119 STAMP=864062741
+Crosschecked 10 objects
+
+
+RMAN> 
+Starting restore at 19-NOV-14
+using channel ORA_DISK_1
+
+channel ORA_DISK_1: starting validation of datafile backup set
+channel ORA_DISK_1: reading from backup piece /u01/app/oracle/flash_recovery_area/PRODUCCION/backupset/2014_11_19/o1_mf_nnnd0_TAG20141119T155444_b6t4f4h0_.bkp
+channel ORA_DISK_1: piece handle=/u01/app/oracle/flash_recovery_area/PRODUCCION/backupset/2014_11_19/o1_mf_nnnd0_TAG20141119T155444_b6t4f4h0_.bkp tag=TAG20141119T155444
+channel ORA_DISK_1: restored backup piece 1
+channel ORA_DISK_1: validation complete, elapsed time: 00:01:25
+Finished restore at 19-NOV-14
+
+RMAN> 
+Starting restore at 19-NOV-14
+using channel ORA_DISK_1
+
+channel ORA_DISK_1: starting datafile backup set restore
+channel ORA_DISK_1: specifying datafile(s) to restore from backup set
+channel ORA_DISK_1: restoring datafile 00001 to /u01/app/oracle/oradata/PRODUCCION/datafile/o1_mf_system_b3lgrmx4_.dbf
+channel ORA_DISK_1: restoring datafile 00002 to /u01/app/oracle/oradata/PRODUCCION/datafile/o1_mf_sysaux_b3lgrmxw_.dbf
+channel ORA_DISK_1: restoring datafile 00003 to /u01/app/oracle/oradata/PRODUCCION/datafile/o1_mf_undotbs1_b3lgrmy0_.dbf
+channel ORA_DISK_1: restoring datafile 00004 to /u01/app/oracle/oradata/PRODUCCION/datafile/o1_mf_users_b3lgrmym_.dbf
+channel ORA_DISK_1: restoring datafile 00005 to /u01/app/oracle/oradata/produccion/PAGOSIFREM_DATA.dbf
+channel ORA_DISK_1: reading from backup piece /u01/app/oracle/flash_recovery_area/PRODUCCION/backupset/2014_11_19/o1_mf_nnnd0_TAG20141119T155444_b6t4f4h0_.bkp
+channel ORA_DISK_1: piece handle=/u01/app/oracle/flash_recovery_area/PRODUCCION/backupset/2014_11_19/o1_mf_nnnd0_TAG20141119T155444_b6t4f4h0_.bkp tag=TAG20141119T155444
+channel ORA_DISK_1: restored backup piece 1
+channel ORA_DISK_1: restore complete, elapsed time: 00:01:35
+Finished restore at 19-NOV-14
+
+RMAN> 
+Starting recover at 19-NOV-14
+using channel ORA_DISK_1
+channel ORA_DISK_1: starting incremental datafile backup set restore
+channel ORA_DISK_1: specifying datafile(s) to restore from backup set
+destination for restore of datafile 00001: /u01/app/oracle/oradata/PRODUCCION/datafile/o1_mf_system_b3lgrmx4_.dbf
+destination for restore of datafile 00002: /u01/app/oracle/oradata/PRODUCCION/datafile/o1_mf_sysaux_b3lgrmxw_.dbf
+destination for restore of datafile 00003: /u01/app/oracle/oradata/PRODUCCION/datafile/o1_mf_undotbs1_b3lgrmy0_.dbf
+destination for restore of datafile 00004: /u01/app/oracle/oradata/PRODUCCION/datafile/o1_mf_users_b3lgrmym_.dbf
+destination for restore of datafile 00005: /u01/app/oracle/oradata/produccion/PAGOSIFREM_DATA.dbf
+channel ORA_DISK_1: reading from backup piece /u01/app/oracle/flash_recovery_area/PRODUCCION/backupset/2014_11_19/o1_mf_nnnd1_TAG20141119T163728_b6t6x86y_.bkp
+channel ORA_DISK_1: piece handle=/u01/app/oracle/flash_recovery_area/PRODUCCION/backupset/2014_11_19/o1_mf_nnnd1_TAG20141119T163728_b6t6x86y_.bkp tag=TAG20141119T163728
+channel ORA_DISK_1: restored backup piece 1
+channel ORA_DISK_1: restore complete, elapsed time: 00:00:01
+channel ORA_DISK_1: starting incremental datafile backup set restore
+channel ORA_DISK_1: specifying datafile(s) to restore from backup set
+destination for restore of datafile 00001: /u01/app/oracle/oradata/PRODUCCION/datafile/o1_mf_system_b3lgrmx4_.dbf
+destination for restore of datafile 00002: /u01/app/oracle/oradata/PRODUCCION/datafile/o1_mf_sysaux_b3lgrmxw_.dbf
+destination for restore of datafile 00003: /u01/app/oracle/oradata/PRODUCCION/datafile/o1_mf_undotbs1_b3lgrmy0_.dbf
+destination for restore of datafile 00004: /u01/app/oracle/oradata/PRODUCCION/datafile/o1_mf_users_b3lgrmym_.dbf
+destination for restore of datafile 00005: /u01/app/oracle/oradata/produccion/PAGOSIFREM_DATA.dbf
+channel ORA_DISK_1: reading from backup piece /u01/app/oracle/flash_recovery_area/PRODUCCION/backupset/2014_11_19/o1_mf_nnnd1_TAG20141119T165858_b6t85lor_.bkp
+channel ORA_DISK_1: piece handle=/u01/app/oracle/flash_recovery_area/PRODUCCION/backupset/2014_11_19/o1_mf_nnnd1_TAG20141119T165858_b6t85lor_.bkp tag=TAG20141119T165858
+channel ORA_DISK_1: restored backup piece 1
+channel ORA_DISK_1: restore complete, elapsed time: 00:00:01
+channel ORA_DISK_1: starting incremental datafile backup set restore
+channel ORA_DISK_1: specifying datafile(s) to restore from backup set
+destination for restore of datafile 00001: /u01/app/oracle/oradata/PRODUCCION/datafile/o1_mf_system_b3lgrmx4_.dbf
+destination for restore of datafile 00002: /u01/app/oracle/oradata/PRODUCCION/datafile/o1_mf_sysaux_b3lgrmxw_.dbf
+destination for restore of datafile 00003: /u01/app/oracle/oradata/PRODUCCION/datafile/o1_mf_undotbs1_b3lgrmy0_.dbf
+destination for restore of datafile 00004: /u01/app/oracle/oradata/PRODUCCION/datafile/o1_mf_users_b3lgrmym_.dbf
+destination for restore of datafile 00005: /u01/app/oracle/oradata/produccion/PAGOSIFREM_DATA.dbf
+channel ORA_DISK_1: reading from backup piece /u01/app/oracle/flash_recovery_area/PRODUCCION/backupset/2014_11_19/o1_mf_nnnd1_TAG20141119T172541_b6t9qolj_.bkp
+channel ORA_DISK_1: piece handle=/u01/app/oracle/flash_recovery_area/PRODUCCION/backupset/2014_11_19/o1_mf_nnnd1_TAG20141119T172541_b6t9qolj_.bkp tag=TAG20141119T172541
+channel ORA_DISK_1: restored backup piece 1
+channel ORA_DISK_1: restore complete, elapsed time: 00:00:01
+
+starting media recovery
+
+unable to find archived log
+archived log thread=1 sequence=487
+RMAN-00571: ===========================================================
+RMAN-00569: =============== ERROR MESSAGE STACK FOLLOWS ===============
+RMAN-00571: ===========================================================
+RMAN-03002: failure of recover command at 11/19/2014 17:30:37
+RMAN-06054: media recovery requesting unknown archived log for thread 1 with sequence 487 and starting SCN of 5386734
+
+RMAN> 
+database opened
+
+RMAN> 
+
+Recovery Manager complete.
+JOB98 | 19/11/2014 | 17:30:43 | oracle | ORA-030 | Finalizó exitosamente la restauración del respaldo incremental. | restore_backup_inc_oracle.sh | ORA-RI-01
+JOB98 | 19/11/2014 | 17:30:43 | oracle | ORA-000 | Se completó exitosamente el proceso. |
+EXIT_CODE=0

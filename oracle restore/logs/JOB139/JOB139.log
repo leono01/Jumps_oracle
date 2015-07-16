@@ -1,0 +1,948 @@
+JOB139 | 10/05/2015 | 04:24:40 | oracle | ORA-028 | Realizando restauración del respaldo... | restore_backup_full_oracle.sh | ORA-RF-01
+
+Recovery Manager: Release 11.2.0.1.0 - Production on Sun May 10 04:24:45 2015
+
+Copyright (c) 1982, 2009, Oracle and/or its affiliates.  All rights reserved.
+
+connected to target database: PRODUCCI (DBID=3688939454)
+
+RMAN> 
+using target database control file instead of recovery catalog
+
+List of Backup Sets
+===================
+
+
+BS Key  Type LV Size       Device Type Elapsed Time Completion Time
+------- ---- -- ---------- ----------- ------------ ---------------
+169     Incr 0  4.42G      DISK        00:00:14     13-FEB-15      
+        BP Key: 169   Status: EXPIRED  Compressed: NO  Tag: TAG20150213T131004
+        Piece Name: /u01/app/oracle/flash_recovery_area/PRODUCCION/backupset/2015_02_13/o1_mf_nnnd0_TAG20150213T131004_bfwm0ddf_.bkp
+  List of Datafiles in backup set 169
+  File LV Type Ckp SCN    Ckp Time  Name
+  ---- -- ---- ---------- --------- ----
+  1    0  Incr 5307631674 13-FEB-15 /u01/app/oracle/oradata/PRODUCCION/datafile/o1_mf_system_b3lgrmx4_.dbf
+  2    0  Incr 5307631674 13-FEB-15 /u01/app/oracle/oradata/PRODUCCION/datafile/o1_mf_sysaux_b3lgrmxw_.dbf
+  3    0  Incr 5307631674 13-FEB-15 /u01/app/oracle/oradata/PRODUCCION/datafile/o1_mf_undotbs1_b3lgrmy0_.dbf
+  4    0  Incr 5307631674 13-FEB-15 /u01/app/oracle/oradata/PRODUCCION/datafile/o1_mf_users_b3lgrmym_.dbf
+  5    0  Incr 5307631674 13-FEB-15 /u01/app/oracle/oradata/produccion/PAGOSIFREM_DATA.dbf
+
+BS Key  Type LV Size       Device Type Elapsed Time Completion Time
+------- ---- -- ---------- ----------- ------------ ---------------
+170     Incr 0  10.95M     DISK        00:00:01     13-FEB-15      
+        BP Key: 170   Status: EXPIRED  Compressed: NO  Tag: TAG20150213T131004
+        Piece Name: /u01/app/oracle/flash_recovery_area/PRODUCCION/backupset/2015_02_13/o1_mf_ncsn0_TAG20150213T131004_bfwm0whd_.bkp
+  SPFILE Included: Modification time: 29-JAN-15
+  SPFILE db_unique_name: PRODUCCION
+  Control File Included: Ckp SCN: 5307631713   Ckp time: 13-FEB-15
+
+BS Key  Type LV Size       Device Type Elapsed Time Completion Time
+------- ---- -- ---------- ----------- ------------ ---------------
+171     Incr 0  4.42G      DISK        00:00:14     13-FEB-15      
+        BP Key: 171   Status: AVAILABLE  Compressed: NO  Tag: TAG20150213T131022
+        Piece Name: /u01/app/oracle/flash_recovery_area/PRODUCCION/backupset/2015_02_13/o1_mf_nnnd0_TAG20150213T131022_bfwm0yyx_.bkp
+  List of Datafiles in backup set 171
+  File LV Type Ckp SCN    Ckp Time  Name
+  ---- -- ---- ---------- --------- ----
+  1    0  Incr 5307631740 13-FEB-15 /u01/app/oracle/oradata/PRODUCCION/datafile/o1_mf_system_b3lgrmx4_.dbf
+  2    0  Incr 5307631740 13-FEB-15 /u01/app/oracle/oradata/PRODUCCION/datafile/o1_mf_sysaux_b3lgrmxw_.dbf
+  3    0  Incr 5307631740 13-FEB-15 /u01/app/oracle/oradata/PRODUCCION/datafile/o1_mf_undotbs1_b3lgrmy0_.dbf
+  4    0  Incr 5307631740 13-FEB-15 /u01/app/oracle/oradata/PRODUCCION/datafile/o1_mf_users_b3lgrmym_.dbf
+  5    0  Incr 5307631740 13-FEB-15 /u01/app/oracle/oradata/produccion/PAGOSIFREM_DATA.dbf
+
+BS Key  Type LV Size       Device Type Elapsed Time Completion Time
+------- ---- -- ---------- ----------- ------------ ---------------
+172     Incr 0  10.95M     DISK        00:00:01     13-FEB-15      
+        BP Key: 172   Status: AVAILABLE  Compressed: NO  Tag: TAG20150213T131022
+        Piece Name: /u01/app/oracle/flash_recovery_area/PRODUCCION/backupset/2015_02_13/o1_mf_ncsn0_TAG20150213T131022_bfwm1h2v_.bkp
+  SPFILE Included: Modification time: 29-JAN-15
+  SPFILE db_unique_name: PRODUCCION
+  Control File Included: Ckp SCN: 5307631773   Ckp time: 13-FEB-15
+
+BS Key  Type LV Size       Device Type Elapsed Time Completion Time
+------- ---- -- ---------- ----------- ------------ ---------------
+173     Incr 1  2.11M      DISK        00:00:10     13-FEB-15      
+        BP Key: 173   Status: AVAILABLE  Compressed: NO  Tag: TAG20150213T135833
+        Piece Name: /u01/app/oracle/flash_recovery_area/PRODUCCION/backupset/2015_02_13/o1_mf_nnnd1_TAG20150213T135833_bfwov9fr_.bkp
+  List of Datafiles in backup set 173
+  File LV Type Ckp SCN    Ckp Time  Name
+  ---- -- ---- ---------- --------- ----
+  1    1  Incr 5307636266 13-FEB-15 /u01/app/oracle/oradata/PRODUCCION/datafile/o1_mf_system_b3lgrmx4_.dbf
+  2    1  Incr 5307636266 13-FEB-15 /u01/app/oracle/oradata/PRODUCCION/datafile/o1_mf_sysaux_b3lgrmxw_.dbf
+  3    1  Incr 5307636266 13-FEB-15 /u01/app/oracle/oradata/PRODUCCION/datafile/o1_mf_undotbs1_b3lgrmy0_.dbf
+  4    1  Incr 5307636266 13-FEB-15 /u01/app/oracle/oradata/PRODUCCION/datafile/o1_mf_users_b3lgrmym_.dbf
+  5    1  Incr 5307636266 13-FEB-15 /u01/app/oracle/oradata/produccion/PAGOSIFREM_DATA.dbf
+
+BS Key  Type LV Size       Device Type Elapsed Time Completion Time
+------- ---- -- ---------- ----------- ------------ ---------------
+174     Incr 1  10.95M     DISK        00:00:01     13-FEB-15      
+        BP Key: 174   Status: AVAILABLE  Compressed: NO  Tag: TAG20150213T135833
+        Piece Name: /u01/app/oracle/flash_recovery_area/PRODUCCION/backupset/2015_02_13/o1_mf_ncsn1_TAG20150213T135833_bfwovsgk_.bkp
+  SPFILE Included: Modification time: 29-JAN-15
+  SPFILE db_unique_name: PRODUCCION
+  Control File Included: Ckp SCN: 5307636312   Ckp time: 13-FEB-15
+
+BS Key  Size       Device Type Elapsed Time Completion Time
+------- ---------- ----------- ------------ ---------------
+175     15.08M     DISK        00:00:01     13-FEB-15      
+        BP Key: 175   Status: AVAILABLE  Compressed: NO  Tag: TAG20150213T135851
+        Piece Name: /u01/app/oracle/flash_recovery_area/PRODUCCION/backupset/2015_02_13/o1_mf_annnn_TAG20150213T135851_bfwovvyx_.bkp
+
+  List of Archived Logs in backup set 175
+  Thrd Seq     Low SCN    Low Time  Next SCN   Next Time
+  ---- ------- ---------- --------- ---------- ---------
+  1    1444    5307615859 13-FEB-15 5307635764 13-FEB-15
+  1    1445    5307635764 13-FEB-15 5307636334 13-FEB-15
+
+BS Key  Type LV Size       Device Type Elapsed Time Completion Time
+------- ---- -- ---------- ----------- ------------ ---------------
+176     Incr 0  5.26G      DISK        00:00:20     20-MAY-15      
+        BP Key: 176   Status: EXPIRED  Compressed: NO  Tag: TAG20150520T000238
+        Piece Name: /u01/app/oracle/flash_recovery_area/PRODUCCION/backupset/2015_05_20/o1_mf_nnnd0_TAG20150520T000238_bor5cgy4_.bkp
+  List of Datafiles in backup set 176
+  File LV Type Ckp SCN    Ckp Time  Name
+  ---- -- ---- ---------- --------- ----
+  1    0  Incr 5321973165 20-MAY-15 /u01/app/oracle/oradata/PRODUCCION/datafile/o1_mf_system_b3lgrmx4_.dbf
+  2    0  Incr 5321973165 20-MAY-15 /u01/app/oracle/oradata/PRODUCCION/datafile/o1_mf_sysaux_b3lgrmxw_.dbf
+  3    0  Incr 5321973165 20-MAY-15 /u01/app/oracle/oradata/PRODUCCION/datafile/o1_mf_undotbs1_b3lgrmy0_.dbf
+  4    0  Incr 5321973165 20-MAY-15 /u01/app/oracle/oradata/PRODUCCION/datafile/o1_mf_users_b3lgrmym_.dbf
+  5    0  Incr 5321973165 20-MAY-15 /u01/app/oracle/oradata/produccion/PAGOSIFREM_DATA.dbf
+
+BS Key  Type LV Size       Device Type Elapsed Time Completion Time
+------- ---- -- ---------- ----------- ------------ ---------------
+177     Incr 0  10.95M     DISK        00:00:02     20-MAY-15      
+        BP Key: 177   Status: EXPIRED  Compressed: NO  Tag: TAG20150520T000238
+        Piece Name: /u01/app/oracle/flash_recovery_area/PRODUCCION/backupset/2015_05_20/o1_mf_ncsn0_TAG20150520T000238_bor5d90k_.bkp
+  SPFILE Included: Modification time: 09-APR-15
+  SPFILE db_unique_name: PRODUCCION
+  Control File Included: Ckp SCN: 5321973214   Ckp time: 20-MAY-15
+
+BS Key  Type LV Size       Device Type Elapsed Time Completion Time
+------- ---- -- ---------- ----------- ------------ ---------------
+178     Incr 0  5.26G      DISK        00:02:19     20-MAY-15      
+        BP Key: 178   Status: AVAILABLE  Compressed: NO  Tag: TAG20150520T000307
+        Piece Name: /u01/app/oracle/flash_recovery_area/PRODUCCION/backupset/2015_05_20/o1_mf_nnnd0_TAG20150520T000307_bor5dcpb_.bkp
+  List of Datafiles in backup set 178
+  File LV Type Ckp SCN    Ckp Time  Name
+  ---- -- ---- ---------- --------- ----
+  1    0  Incr 5321973238 20-MAY-15 /u01/app/oracle/oradata/PRODUCCION/datafile/o1_mf_system_b3lgrmx4_.dbf
+  2    0  Incr 5321973238 20-MAY-15 /u01/app/oracle/oradata/PRODUCCION/datafile/o1_mf_sysaux_b3lgrmxw_.dbf
+  3    0  Incr 5321973238 20-MAY-15 /u01/app/oracle/oradata/PRODUCCION/datafile/o1_mf_undotbs1_b3lgrmy0_.dbf
+  4    0  Incr 5321973238 20-MAY-15 /u01/app/oracle/oradata/PRODUCCION/datafile/o1_mf_users_b3lgrmym_.dbf
+  5    0  Incr 5321973238 20-MAY-15 /u01/app/oracle/oradata/produccion/PAGOSIFREM_DATA.dbf
+
+BS Key  Type LV Size       Device Type Elapsed Time Completion Time
+------- ---- -- ---------- ----------- ------------ ---------------
+179     Incr 0  10.95M     DISK        00:02:05     20-MAY-15      
+        BP Key: 179   Status: AVAILABLE  Compressed: NO  Tag: TAG20150520T000307
+        Piece Name: /u01/app/oracle/flash_recovery_area/PRODUCCION/backupset/2015_05_20/o1_mf_ncsn0_TAG20150520T000307_bor5nstm_.bkp
+  SPFILE Included: Modification time: 09-APR-15
+  SPFILE db_unique_name: PRODUCCION
+  Control File Included: Ckp SCN: 5321973322   Ckp time: 20-MAY-15
+
+BS Key  Type LV Size       Device Type Elapsed Time Completion Time
+------- ---- -- ---------- ----------- ------------ ---------------
+180     Incr 0  5.25G      DISK        00:00:19     21-MAY-15      
+        BP Key: 180   Status: AVAILABLE  Compressed: NO  Tag: TAG20150521T000240
+        Piece Name: /u01/app/oracle/flash_recovery_area/PRODUCCION/backupset/2015_05_21/o1_mf_nnnd0_TAG20150521T000240_botsqjpw_.bkp
+  List of Datafiles in backup set 180
+  File LV Type Ckp SCN    Ckp Time  Name
+  ---- -- ---- ---------- --------- ----
+  1    0  Incr 5322130412 21-MAY-15 /u01/app/oracle/oradata/PRODUCCION/datafile/o1_mf_system_b3lgrmx4_.dbf
+  2    0  Incr 5322130412 21-MAY-15 /u01/app/oracle/oradata/PRODUCCION/datafile/o1_mf_sysaux_b3lgrmxw_.dbf
+  3    0  Incr 5322130412 21-MAY-15 /u01/app/oracle/oradata/PRODUCCION/datafile/o1_mf_undotbs1_b3lgrmy0_.dbf
+  4    0  Incr 5322130412 21-MAY-15 /u01/app/oracle/oradata/PRODUCCION/datafile/o1_mf_users_b3lgrmym_.dbf
+  5    0  Incr 5322130412 21-MAY-15 /u01/app/oracle/oradata/produccion/PAGOSIFREM_DATA.dbf
+
+RMAN> 
+
+Recovery Manager complete.
+
+Recovery Manager: Release 11.2.0.1.0 - Production on Sun May 10 04:24:55 2015
+
+Copyright (c) 1982, 2009, Oracle and/or its affiliates.  All rights reserved.
+
+connected to target database: PRODUCCI (DBID=3688939454)
+
+RMAN> 
+using target database control file instead of recovery catalog
+allocated channel: ORA_DISK_1
+channel ORA_DISK_1: SID=6 device type=DISK
+List of Archived Log Copies for database with db_unique_name PRODUCCION
+=====================================================================
+
+Key     Thrd Seq     S Low Time 
+------- ---- ------- - ---------
+2428    1    2430    A 29-APR-15
+        Name: /u01/app/oracle/flash_recovery_area/PRODUCCION/archivelog/2015_05_06/o1_mf_1_2430_bnnw1x5j_.arc
+
+2429    1    2431    A 06-MAY-15
+        Name: /u01/app/oracle/flash_recovery_area/PRODUCCION/archivelog/2015_05_06/o1_mf_1_2431_bnnw1xcg_.arc
+
+2430    1    2432    A 06-MAY-15
+        Name: /u01/app/oracle/flash_recovery_area/PRODUCCION/archivelog/2015_05_06/o1_mf_1_2432_bno1lf5o_.arc
+
+2431    1    2433    A 06-MAY-15
+        Name: /u01/app/oracle/flash_recovery_area/PRODUCCION/archivelog/2015_05_06/o1_mf_1_2433_bnobxtpy_.arc
+
+2432    1    2434    A 06-MAY-15
+        Name: /u01/app/oracle/flash_recovery_area/PRODUCCION/archivelog/2015_05_06/o1_mf_1_2434_bnobxw04_.arc
+
+2433    1    2435    A 06-MAY-15
+        Name: /u01/app/oracle/flash_recovery_area/PRODUCCION/archivelog/2015_05_06/o1_mf_1_2435_bnoby0bo_.arc
+
+2434    1    2436    A 06-MAY-15
+        Name: /u01/app/oracle/flash_recovery_area/PRODUCCION/archivelog/2015_05_06/o1_mf_1_2436_bnoby3f0_.arc
+
+2435    1    2437    A 06-MAY-15
+        Name: /u01/app/oracle/flash_recovery_area/PRODUCCION/archivelog/2015_05_06/o1_mf_1_2437_bnoby6wk_.arc
+
+2436    1    2438    A 06-MAY-15
+        Name: /u01/app/oracle/flash_recovery_area/PRODUCCION/archivelog/2015_05_06/o1_mf_1_2438_bnobybht_.arc
+
+2437    1    2439    A 06-MAY-15
+        Name: /u01/app/oracle/flash_recovery_area/PRODUCCION/archivelog/2015_05_06/o1_mf_1_2439_bnobyfr3_.arc
+
+2438    1    2440    A 06-MAY-15
+        Name: /u01/app/oracle/flash_recovery_area/PRODUCCION/archivelog/2015_05_06/o1_mf_1_2440_bnobyko9_.arc
+
+2439    1    2441    A 06-MAY-15
+        Name: /u01/app/oracle/flash_recovery_area/PRODUCCION/archivelog/2015_05_06/o1_mf_1_2441_bnobyo5j_.arc
+
+2440    1    2442    A 06-MAY-15
+        Name: /u01/app/oracle/flash_recovery_area/PRODUCCION/archivelog/2015_05_06/o1_mf_1_2442_bnobyrv5_.arc
+
+2441    1    2443    A 06-MAY-15
+        Name: /u01/app/oracle/flash_recovery_area/PRODUCCION/archivelog/2015_05_06/o1_mf_1_2443_bnolgst6_.arc
+
+2442    1    2444    A 06-MAY-15
+        Name: /u01/app/oracle/flash_recovery_area/PRODUCCION/archivelog/2015_05_06/o1_mf_1_2444_bnoob7wy_.arc
+
+2443    1    2445    A 06-MAY-15
+        Name: /u01/app/oracle/flash_recovery_area/PRODUCCION/archivelog/2015_05_06/o1_mf_1_2445_bnoobmxf_.arc
+
+2444    1    2446    A 06-MAY-15
+        Name: /u01/app/oracle/flash_recovery_area/PRODUCCION/archivelog/2015_05_07/o1_mf_1_2446_bnowczls_.arc
+
+2445    1    2447    A 07-MAY-15
+        Name: /u01/app/oracle/flash_recovery_area/PRODUCCION/archivelog/2015_05_07/o1_mf_1_2447_bnpbg4yh_.arc
+
+2446    1    2448    A 07-MAY-15
+        Name: /u01/app/oracle/flash_recovery_area/PRODUCCION/archivelog/2015_05_07/o1_mf_1_2448_bnptj8yt_.arc
+
+2447    1    2449    A 07-MAY-15
+        Name: /u01/app/oracle/flash_recovery_area/PRODUCCION/archivelog/2015_05_07/o1_mf_1_2449_bnqb1btk_.arc
+
+2448    1    2450    A 07-MAY-15
+        Name: /u01/app/oracle/flash_recovery_area/PRODUCCION/archivelog/2015_05_07/o1_mf_1_2450_bnqqcz8s_.arc
+
+2449    1    2451    A 07-MAY-15
+        Name: /u01/app/oracle/flash_recovery_area/PRODUCCION/archivelog/2015_05_07/o1_mf_1_2451_bnr2osw3_.arc
+
+2450    1    2452    A 07-MAY-15
+        Name: /u01/app/oracle/flash_recovery_area/PRODUCCION/archivelog/2015_05_07/o1_mf_1_2452_bnr9p7qc_.arc
+
+2451    1    2453    A 07-MAY-15
+        Name: /u01/app/oracle/flash_recovery_area/PRODUCCION/archivelog/2015_05_07/o1_mf_1_2453_bnr9wrm5_.arc
+
+2452    1    2454    A 07-MAY-15
+        Name: /u01/app/oracle/flash_recovery_area/PRODUCCION/archivelog/2015_05_07/o1_mf_1_2454_bnr9wwvc_.arc
+
+2453    1    2455    A 07-MAY-15
+        Name: /u01/app/oracle/flash_recovery_area/PRODUCCION/archivelog/2015_05_08/o1_mf_1_2455_bnrp48rt_.arc
+
+2454    1    2456    A 08-MAY-15
+        Name: /u01/app/oracle/flash_recovery_area/PRODUCCION/archivelog/2015_05_08/o1_mf_1_2456_bns293k8_.arc
+
+2455    1    2457    A 08-MAY-15
+        Name: /u01/app/oracle/flash_recovery_area/PRODUCCION/archivelog/2015_05_08/o1_mf_1_2457_bnsh6snl_.arc
+
+2456    1    2458    A 08-MAY-15
+        Name: /u01/app/oracle/flash_recovery_area/PRODUCCION/archivelog/2015_05_08/o1_mf_1_2458_bnstx371_.arc
+
+2457    1    2459    A 08-MAY-15
+        Name: /u01/app/oracle/flash_recovery_area/PRODUCCION/archivelog/2015_05_08/o1_mf_1_2459_bnt79k8o_.arc
+
+2458    1    2460    A 08-MAY-15
+        Name: /u01/app/oracle/flash_recovery_area/PRODUCCION/archivelog/2015_05_08/o1_mf_1_2460_bntmk5y3_.arc
+
+2459    1    2461    A 08-MAY-15
+        Name: /u01/app/oracle/flash_recovery_area/PRODUCCION/archivelog/2015_05_08/o1_mf_1_2461_bntxljdw_.arc
+
+2460    1    2462    A 08-MAY-15
+        Name: /u01/app/oracle/flash_recovery_area/PRODUCCION/archivelog/2015_05_08/o1_mf_1_2462_bnty28m7_.arc
+
+2461    1    2463    A 08-MAY-15
+        Name: /u01/app/oracle/flash_recovery_area/PRODUCCION/archivelog/2015_05_08/o1_mf_1_2463_bnv1tm1v_.arc
+
+2462    1    2464    A 08-MAY-15
+        Name: /u01/app/oracle/flash_recovery_area/PRODUCCION/archivelog/2015_05_09/o1_mf_1_2464_bnvgpdw3_.arc
+
+2463    1    2465    A 09-MAY-15
+        Name: /u01/app/oracle/flash_recovery_area/PRODUCCION/archivelog/2015_05_09/o1_mf_1_2465_bnvt5v0z_.arc
+
+2464    1    2466    A 09-MAY-15
+        Name: /u01/app/oracle/flash_recovery_area/PRODUCCION/archivelog/2015_05_09/o1_mf_1_2466_bnvvkcjx_.arc
+
+2465    1    2467    A 09-MAY-15
+        Name: /u01/app/oracle/flash_recovery_area/PRODUCCION/archivelog/2015_05_09/o1_mf_1_2467_bnw8899w_.arc
+
+2466    1    2468    A 09-MAY-15
+        Name: /u01/app/oracle/flash_recovery_area/PRODUCCION/archivelog/2015_05_09/o1_mf_1_2468_bnwh9gv9_.arc
+
+2467    1    2469    A 09-MAY-15
+        Name: /u01/app/oracle/flash_recovery_area/PRODUCCION/archivelog/2015_05_09/o1_mf_1_2469_bnwpw839_.arc
+
+2468    1    2470    A 09-MAY-15
+        Name: /u01/app/oracle/flash_recovery_area/PRODUCCION/archivelog/2015_05_09/o1_mf_1_2470_bnx1q2cs_.arc
+
+2469    1    2471    A 09-MAY-15
+        Name: /u01/app/oracle/flash_recovery_area/PRODUCCION/archivelog/2015_05_09/o1_mf_1_2471_bnx85rmc_.arc
+
+2470    1    2472    A 09-MAY-15
+        Name: /u01/app/oracle/flash_recovery_area/PRODUCCION/archivelog/2015_05_09/o1_mf_1_2472_bnxkqjcm_.arc
+
+2471    1    2473    A 09-MAY-15
+        Name: /u01/app/oracle/flash_recovery_area/PRODUCCION/archivelog/2015_05_09/o1_mf_1_2473_bnxm0lwo_.arc
+
+2472    1    2474    A 09-MAY-15
+        Name: /u01/app/oracle/flash_recovery_area/PRODUCCION/archivelog/2015_05_10/o1_mf_1_2474_bnxw2h9b_.arc
+
+2473    1    2475    A 10-MAY-15
+        Name: /u01/app/oracle/flash_recovery_area/PRODUCCION/archivelog/2015_05_10/o1_mf_1_2475_bny7jybj_.arc
+
+2474    1    2476    A 10-MAY-15
+        Name: /u01/app/oracle/flash_recovery_area/PRODUCCION/archivelog/2015_05_10/o1_mf_1_2476_bnygl126_.arc
+
+2475    1    2477    A 10-MAY-15
+        Name: /u01/app/oracle/flash_recovery_area/PRODUCCION/archivelog/2015_05_10/o1_mf_1_2477_bnyom9pg_.arc
+
+2476    1    2478    A 10-MAY-15
+        Name: /u01/app/oracle/flash_recovery_area/PRODUCCION/archivelog/2015_05_10/o1_mf_1_2478_bnywnlfj_.arc
+
+2477    1    2479    A 10-MAY-15
+        Name: /u01/app/oracle/flash_recovery_area/PRODUCCION/archivelog/2015_05_10/o1_mf_1_2479_bnz84rto_.arc
+
+2478    1    2480    A 10-MAY-15
+        Name: /u01/app/oracle/flash_recovery_area/PRODUCCION/archivelog/2015_05_10/o1_mf_1_2480_bnzh8vjm_.arc
+
+2479    1    2481    A 10-MAY-15
+        Name: /u01/app/oracle/flash_recovery_area/PRODUCCION/archivelog/2015_05_10/o1_mf_1_2481_bnzrrx51_.arc
+
+2480    1    2482    A 10-MAY-15
+        Name: /u01/app/oracle/flash_recovery_area/PRODUCCION/archivelog/2015_05_10/o1_mf_1_2482_bnzwm0q5_.arc
+
+2481    1    2483    A 10-MAY-15
+        Name: /u01/app/oracle/flash_recovery_area/PRODUCCION/archivelog/2015_05_10/o1_mf_1_2483_bnzzwgvb_.arc
+
+2482    1    2484    A 10-MAY-15
+        Name: /u01/app/oracle/flash_recovery_area/PRODUCCION/archivelog/2015_05_10/o1_mf_1_2484_bo06vdks_.arc
+
+2483    1    2485    A 10-MAY-15
+        Name: /u01/app/oracle/flash_recovery_area/PRODUCCION/archivelog/2015_05_10/o1_mf_1_2485_bo0bx95x_.arc
+
+2484    1    2486    A 10-MAY-15
+        Name: /u01/app/oracle/flash_recovery_area/PRODUCCION/archivelog/2015_05_11/o1_mf_1_2486_bo0qt446_.arc
+
+2485    1    2487    A 11-MAY-15
+        Name: /u01/app/oracle/flash_recovery_area/PRODUCCION/archivelog/2015_05_11/o1_mf_1_2487_bo1325k7_.arc
+
+2486    1    2488    A 11-MAY-15
+        Name: /u01/app/oracle/flash_recovery_area/PRODUCCION/archivelog/2015_05_11/o1_mf_1_2488_bo1j3fpb_.arc
+
+2487    1    2489    A 11-MAY-15
+        Name: /u01/app/oracle/flash_recovery_area/PRODUCCION/archivelog/2015_05_11/o1_mf_1_2489_bo1vlmfp_.arc
+
+2488    1    2490    A 11-MAY-15
+        Name: /u01/app/oracle/flash_recovery_area/PRODUCCION/archivelog/2015_05_11/o1_mf_1_2490_bo288pgk_.arc
+
+2489    1    2491    A 11-MAY-15
+        Name: /u01/app/oracle/flash_recovery_area/PRODUCCION/archivelog/2015_05_11/o1_mf_1_2491_bo2k0d0j_.arc
+
+2490    1    2492    A 11-MAY-15
+        Name: /u01/app/oracle/flash_recovery_area/PRODUCCION/archivelog/2015_05_11/o1_mf_1_2492_bo2k0h0r_.arc
+
+2491    1    2493    A 11-MAY-15
+        Name: /u01/app/oracle/flash_recovery_area/PRODUCCION/archivelog/2015_05_11/o1_mf_1_2493_bo2v5zvw_.arc
+
+2492    1    2494    A 11-MAY-15
+        Name: /u01/app/oracle/flash_recovery_area/PRODUCCION/archivelog/2015_05_11/o1_mf_1_2494_bo2v6gwv_.arc
+
+2493    1    2495    A 11-MAY-15
+        Name: /u01/app/oracle/flash_recovery_area/PRODUCCION/archivelog/2015_05_11/o1_mf_1_2495_bo2y7t5g_.arc
+
+2494    1    2496    A 11-MAY-15
+        Name: /u01/app/oracle/flash_recovery_area/PRODUCCION/archivelog/2015_05_12/o1_mf_1_2496_bo398kff_.arc
+
+2495    1    2497    A 12-MAY-15
+        Name: /u01/app/oracle/flash_recovery_area/PRODUCCION/archivelog/2015_05_12/o1_mf_1_2497_bo3ozrbt_.arc
+
+2496    1    2498    A 12-MAY-15
+        Name: /u01/app/oracle/flash_recovery_area/PRODUCCION/archivelog/2015_05_12/o1_mf_1_2498_bo41wpwk_.arc
+
+2497    1    2499    A 12-MAY-15
+        Name: /u01/app/oracle/flash_recovery_area/PRODUCCION/archivelog/2015_05_12/o1_mf_1_2499_bo4fp661_.arc
+
+2498    1    2500    A 12-MAY-15
+        Name: /u01/app/oracle/flash_recovery_area/PRODUCCION/archivelog/2015_05_12/o1_mf_1_2500_bo4tgx92_.arc
+
+2499    1    2501    A 12-MAY-15
+        Name: /u01/app/oracle/flash_recovery_area/PRODUCCION/archivelog/2015_05_12/o1_mf_1_2501_bo55fr4p_.arc
+
+2500    1    2502    A 12-MAY-15
+        Name: /u01/app/oracle/flash_recovery_area/PRODUCCION/archivelog/2015_05_12/o1_mf_1_2502_bo55mldh_.arc
+
+2501    1    2503    A 12-MAY-15
+        Name: /u01/app/oracle/flash_recovery_area/PRODUCCION/archivelog/2015_05_12/o1_mf_1_2503_bo5hkzfn_.arc
+
+2502    1    2504    A 12-MAY-15
+        Name: /u01/app/oracle/flash_recovery_area/PRODUCCION/archivelog/2015_05_12/o1_mf_1_2504_bo5hlggd_.arc
+
+2503    1    2505    A 12-MAY-15
+        Name: /u01/app/oracle/flash_recovery_area/PRODUCCION/archivelog/2015_05_12/o1_mf_1_2505_bo5n70bq_.arc
+
+2504    1    2506    A 12-MAY-15
+        Name: /u01/app/oracle/flash_recovery_area/PRODUCCION/archivelog/2015_05_13/o1_mf_1_2506_bo615cbk_.arc
+
+2505    1    2507    A 13-MAY-15
+        Name: /u01/app/oracle/flash_recovery_area/PRODUCCION/archivelog/2015_05_13/o1_mf_1_2507_bo6g2d4p_.arc
+
+2506    1    2508    A 13-MAY-15
+        Name: /u01/app/oracle/flash_recovery_area/PRODUCCION/archivelog/2015_05_13/o1_mf_1_2508_bo6ss7py_.arc
+
+2507    1    2509    A 13-MAY-15
+        Name: /u01/app/oracle/flash_recovery_area/PRODUCCION/archivelog/2015_05_13/o1_mf_1_2509_bo75xwn5_.arc
+
+2508    1    2510    A 13-MAY-15
+        Name: /u01/app/oracle/flash_recovery_area/PRODUCCION/archivelog/2015_05_13/o1_mf_1_2510_bo7lckf8_.arc
+
+2509    1    2511    A 13-MAY-15
+        Name: /u01/app/oracle/flash_recovery_area/PRODUCCION/archivelog/2015_05_13/o1_mf_1_2511_bo7sv12l_.arc
+
+2510    1    2512    A 13-MAY-15
+        Name: /u01/app/oracle/flash_recovery_area/PRODUCCION/archivelog/2015_05_13/o1_mf_1_2512_bo7sv42w_.arc
+
+2511    1    2513    A 13-MAY-15
+        Name: /u01/app/oracle/flash_recovery_area/PRODUCCION/archivelog/2015_05_13/o1_mf_1_2513_bo83xxyz_.arc
+
+2512    1    2514    A 13-MAY-15
+        Name: /u01/app/oracle/flash_recovery_area/PRODUCCION/archivelog/2015_05_13/o1_mf_1_2514_bo83y70h_.arc
+
+2513    1    2515    A 13-MAY-15
+        Name: /u01/app/oracle/flash_recovery_area/PRODUCCION/archivelog/2015_05_13/o1_mf_1_2515_bo87h4gr_.arc
+
+2514    1    2516    A 13-MAY-15
+        Name: /u01/app/oracle/flash_recovery_area/PRODUCCION/archivelog/2015_05_14/o1_mf_1_2516_bo8pftdr_.arc
+
+2515    1    2517    A 14-MAY-15
+        Name: /u01/app/oracle/flash_recovery_area/PRODUCCION/archivelog/2015_05_14/o1_mf_1_2517_bo94qoz0_.arc
+
+2516    1    2518    A 14-MAY-15
+        Name: /u01/app/oracle/flash_recovery_area/PRODUCCION/archivelog/2015_05_14/o1_mf_1_2518_bo9n2yol_.arc
+
+2517    1    2519    A 14-MAY-15
+        Name: /u01/app/oracle/flash_recovery_area/PRODUCCION/archivelog/2015_05_14/o1_mf_1_2519_bob1of2o_.arc
+
+2518    1    2520    A 14-MAY-15
+        Name: /u01/app/oracle/flash_recovery_area/PRODUCCION/archivelog/2015_05_14/o1_mf_1_2520_bobjc2yv_.arc
+
+2519    1    2521    A 14-MAY-15
+        Name: /u01/app/oracle/flash_recovery_area/PRODUCCION/archivelog/2015_05_14/o1_mf_1_2521_bobrb38g_.arc
+
+2520    1    2522    A 14-MAY-15
+        Name: /u01/app/oracle/flash_recovery_area/PRODUCCION/archivelog/2015_05_14/o1_mf_1_2522_bobrbh9k_.arc
+
+2521    1    2523    A 14-MAY-15
+        Name: /u01/app/oracle/flash_recovery_area/PRODUCCION/archivelog/2015_05_14/o1_mf_1_2523_bobrt4jf_.arc
+
+2522    1    2524    A 14-MAY-15
+        Name: /u01/app/oracle/flash_recovery_area/PRODUCCION/archivelog/2015_05_14/o1_mf_1_2524_bobtb276_.arc
+
+2523    1    2525    A 14-MAY-15
+        Name: /u01/app/oracle/flash_recovery_area/PRODUCCION/archivelog/2015_05_15/o1_mf_1_2525_boc9ky3c_.arc
+
+2524    1    2526    A 15-MAY-15
+        Name: /u01/app/oracle/flash_recovery_area/PRODUCCION/archivelog/2015_05_15/o1_mf_1_2526_bocqz5m8_.arc
+
+2525    1    2527    A 15-MAY-15
+        Name: /u01/app/oracle/flash_recovery_area/PRODUCCION/archivelog/2015_05_15/o1_mf_1_2527_bod6y1cy_.arc
+
+2526    1    2528    A 15-MAY-15
+        Name: /u01/app/oracle/flash_recovery_area/PRODUCCION/archivelog/2015_05_15/o1_mf_1_2528_bodozc96_.arc
+
+2527    1    2529    A 15-MAY-15
+        Name: /u01/app/oracle/flash_recovery_area/PRODUCCION/archivelog/2015_05_15/o1_mf_1_2529_bof5fwh0_.arc
+
+2528    1    2530    A 15-MAY-15
+        Name: /u01/app/oracle/flash_recovery_area/PRODUCCION/archivelog/2015_05_15/o1_mf_1_2530_bofdozvz_.arc
+
+2529    1    2531    A 15-MAY-15
+        Name: /u01/app/oracle/flash_recovery_area/PRODUCCION/archivelog/2015_05_15/o1_mf_1_2531_bofdpcwf_.arc
+
+2530    1    2532    A 15-MAY-15
+        Name: /u01/app/oracle/flash_recovery_area/PRODUCCION/archivelog/2015_05_15/o1_mf_1_2532_boff7fmh_.arc
+
+2531    1    2533    A 15-MAY-15
+        Name: /u01/app/oracle/flash_recovery_area/PRODUCCION/archivelog/2015_05_15/o1_mf_1_2533_boff7k4k_.arc
+
+2532    1    2534    A 15-MAY-15
+        Name: /u01/app/oracle/flash_recovery_area/PRODUCCION/archivelog/2015_05_16/o1_mf_1_2534_bofvcjw3_.arc
+
+2533    1    2535    A 16-MAY-15
+        Name: /u01/app/oracle/flash_recovery_area/PRODUCCION/archivelog/2015_05_16/o1_mf_1_2535_bog8sq0p_.arc
+
+2534    1    2536    A 16-MAY-15
+        Name: /u01/app/oracle/flash_recovery_area/PRODUCCION/archivelog/2015_05_16/o1_mf_1_2536_bog8t31d_.arc
+
+2535    1    2537    A 16-MAY-15
+        Name: /u01/app/oracle/flash_recovery_area/PRODUCCION/archivelog/2015_05_16/o1_mf_1_2537_bogkh4df_.arc
+
+2536    1    2538    A 16-MAY-15
+        Name: /u01/app/oracle/flash_recovery_area/PRODUCCION/archivelog/2015_05_16/o1_mf_1_2538_bogsoxg2_.arc
+
+2537    1    2539    A 16-MAY-15
+        Name: /u01/app/oracle/flash_recovery_area/PRODUCCION/archivelog/2015_05_16/o1_mf_1_2539_boh57gyf_.arc
+
+2538    1    2540    A 16-MAY-15
+        Name: /u01/app/oracle/flash_recovery_area/PRODUCCION/archivelog/2015_05_16/o1_mf_1_2540_bohg7hlt_.arc
+
+2539    1    2541    A 16-MAY-15
+        Name: /u01/app/oracle/flash_recovery_area/PRODUCCION/archivelog/2015_05_16/o1_mf_1_2541_bohomxsh_.arc
+
+2540    1    2542    A 16-MAY-15
+        Name: /u01/app/oracle/flash_recovery_area/PRODUCCION/archivelog/2015_05_16/o1_mf_1_2542_boj11qcw_.arc
+
+2541    1    2543    A 16-MAY-15
+        Name: /u01/app/oracle/flash_recovery_area/PRODUCCION/archivelog/2015_05_16/o1_mf_1_2543_boj1ntt9_.arc
+
+2542    1    2544    A 16-MAY-15
+        Name: /u01/app/oracle/flash_recovery_area/PRODUCCION/archivelog/2015_05_16/o1_mf_1_2544_boj1nvp2_.arc
+
+2543    1    2545    A 16-MAY-15
+        Name: /u01/app/oracle/flash_recovery_area/PRODUCCION/archivelog/2015_05_16/o1_mf_1_2545_boj3fjf5_.arc
+
+2544    1    2546    A 16-MAY-15
+        Name: /u01/app/oracle/flash_recovery_area/PRODUCCION/archivelog/2015_05_17/o1_mf_1_2546_bojh5f75_.arc
+
+2545    1    2547    A 17-MAY-15
+        Name: /u01/app/oracle/flash_recovery_area/PRODUCCION/archivelog/2015_05_17/o1_mf_1_2547_bojvoj03_.arc
+
+2546    1    2548    A 17-MAY-15
+        Name: /u01/app/oracle/flash_recovery_area/PRODUCCION/archivelog/2015_05_17/o1_mf_1_2548_bojx65m7_.arc
+
+2547    1    2549    A 17-MAY-15
+        Name: /u01/app/oracle/flash_recovery_area/PRODUCCION/archivelog/2015_05_17/o1_mf_1_2549_bojx6kn0_.arc
+
+2548    1    2550    A 17-MAY-15
+        Name: /u01/app/oracle/flash_recovery_area/PRODUCCION/archivelog/2015_05_17/o1_mf_1_2550_bok0pc0k_.arc
+
+2549    1    2551    A 17-MAY-15
+        Name: /u01/app/oracle/flash_recovery_area/PRODUCCION/archivelog/2015_05_17/o1_mf_1_2551_bokclv5y_.arc
+
+2550    1    2552    A 17-MAY-15
+        Name: /u01/app/oracle/flash_recovery_area/PRODUCCION/archivelog/2015_05_17/o1_mf_1_2552_bokjtc9h_.arc
+
+2551    1    2553    A 17-MAY-15
+        Name: /u01/app/oracle/flash_recovery_area/PRODUCCION/archivelog/2015_05_17/o1_mf_1_2553_bokso0ro_.arc
+
+2552    1    2554    A 17-MAY-15
+        Name: /u01/app/oracle/flash_recovery_area/PRODUCCION/archivelog/2015_05_17/o1_mf_1_2554_bol5l5oc_.arc
+
+2553    1    2555    A 17-MAY-15
+        Name: /u01/app/oracle/flash_recovery_area/PRODUCCION/archivelog/2015_05_17/o1_mf_1_2555_boldx9p3_.arc
+
+2554    1    2556    A 17-MAY-15
+        Name: /u01/app/oracle/flash_recovery_area/PRODUCCION/archivelog/2015_05_17/o1_mf_1_2556_boloshf1_.arc
+
+2555    1    2557    A 17-MAY-15
+        Name: /u01/app/oracle/flash_recovery_area/PRODUCCION/archivelog/2015_05_17/o1_mf_1_2557_bolp26j2_.arc
+
+2556    1    2558    A 17-MAY-15
+        Name: /u01/app/oracle/flash_recovery_area/PRODUCCION/archivelog/2015_05_17/o1_mf_1_2558_bolp2djl_.arc
+
+2557    1    2559    A 17-MAY-15
+        Name: /u01/app/oracle/flash_recovery_area/PRODUCCION/archivelog/2015_05_18/o1_mf_1_2559_bom2hoo1_.arc
+
+2558    1    2560    A 18-MAY-15
+        Name: /u01/app/oracle/flash_recovery_area/PRODUCCION/archivelog/2015_05_18/o1_mf_1_2560_bomg1967_.arc
+
+2559    1    2561    A 18-MAY-15
+        Name: /u01/app/oracle/flash_recovery_area/PRODUCCION/archivelog/2015_05_18/o1_mf_1_2561_bomv0vf1_.arc
+
+2560    1    2562    A 18-MAY-15
+        Name: /u01/app/oracle/flash_recovery_area/PRODUCCION/archivelog/2015_05_18/o1_mf_1_2562_bon6oh47_.arc
+
+2561    1    2563    A 18-MAY-15
+        Name: /u01/app/oracle/flash_recovery_area/PRODUCCION/archivelog/2015_05_18/o1_mf_1_2563_bonljqx2_.arc
+
+2562    1    2564    A 18-MAY-15
+        Name: /u01/app/oracle/flash_recovery_area/PRODUCCION/archivelog/2015_05_18/o1_mf_1_2564_bonz2btj_.arc
+
+2563    1    2565    A 18-MAY-15
+        Name: /u01/app/oracle/flash_recovery_area/PRODUCCION/archivelog/2015_05_18/o1_mf_1_2565_boo9sz9l_.arc
+
+2564    1    2566    A 18-MAY-15
+        Name: /u01/app/oracle/flash_recovery_area/PRODUCCION/archivelog/2015_05_18/o1_mf_1_2566_boo9tk9w_.arc
+
+2565    1    2567    A 18-MAY-15
+        Name: /u01/app/oracle/flash_recovery_area/PRODUCCION/archivelog/2015_05_18/o1_mf_1_2567_boobbvhz_.arc
+
+2566    1    2568    A 18-MAY-15
+        Name: /u01/app/oracle/flash_recovery_area/PRODUCCION/archivelog/2015_05_18/o1_mf_1_2568_boobhk9t_.arc
+
+2567    1    2569    A 18-MAY-15
+        Name: /u01/app/oracle/flash_recovery_area/PRODUCCION/archivelog/2015_05_18/o1_mf_1_2569_boobt1t1_.arc
+
+2568    1    2570    A 18-MAY-15
+        Name: /u01/app/oracle/flash_recovery_area/PRODUCCION/archivelog/2015_05_19/o1_mf_1_2570_booplppy_.arc
+
+2569    1    2571    A 19-MAY-15
+        Name: /u01/app/oracle/flash_recovery_area/PRODUCCION/archivelog/2015_05_19/o1_mf_1_2571_bop2g5mo_.arc
+
+2570    1    2572    A 19-MAY-15
+        Name: /u01/app/oracle/flash_recovery_area/PRODUCCION/archivelog/2015_05_19/o1_mf_1_2572_bophn9xo_.arc
+
+2571    1    2573    A 19-MAY-15
+        Name: /u01/app/oracle/flash_recovery_area/PRODUCCION/archivelog/2015_05_19/o1_mf_1_2573_bopv23b6_.arc
+
+2572    1    2574    A 19-MAY-15
+        Name: /u01/app/oracle/flash_recovery_area/PRODUCCION/archivelog/2015_05_19/o1_mf_1_2574_boq7hy8r_.arc
+
+2573    1    2575    A 19-MAY-15
+        Name: /u01/app/oracle/flash_recovery_area/PRODUCCION/archivelog/2015_05_19/o1_mf_1_2575_boqmn4gf_.arc
+
+2574    1    2576    A 19-MAY-15
+        Name: /u01/app/oracle/flash_recovery_area/PRODUCCION/archivelog/2015_05_19/o1_mf_1_2576_boqy5rsv_.arc
+
+2575    1    2577    A 19-MAY-15
+        Name: /u01/app/oracle/flash_recovery_area/PRODUCCION/archivelog/2015_05_19/o1_mf_1_2577_boqy67tj_.arc
+
+2576    1    2578    A 19-MAY-15
+        Name: /u01/app/oracle/flash_recovery_area/PRODUCCION/archivelog/2015_05_19/o1_mf_1_2578_boqy6wvk_.arc
+
+2577    1    2579    A 19-MAY-15
+        Name: /u01/app/oracle/flash_recovery_area/PRODUCCION/archivelog/2015_05_19/o1_mf_1_2579_boqywsxj_.arc
+
+2578    1    2580    A 19-MAY-15
+        Name: /u01/app/oracle/flash_recovery_area/PRODUCCION/archivelog/2015_05_19/o1_mf_1_2580_boqywv70_.arc
+
+2579    1    2581    A 19-MAY-15
+        Name: /u01/app/oracle/flash_recovery_area/PRODUCCION/archivelog/2015_05_20/o1_mf_1_2581_bor71ohj_.arc
+
+2580    1    2582    A 20-MAY-15
+        Name: /u01/app/oracle/flash_recovery_area/PRODUCCION/archivelog/2015_05_20/o1_mf_1_2582_borm9j97_.arc
+
+2581    1    2583    A 20-MAY-15
+        Name: /u01/app/oracle/flash_recovery_area/PRODUCCION/archivelog/2015_05_20/o1_mf_1_2583_bos0bvg7_.arc
+
+2582    1    2584    A 20-MAY-15
+        Name: /u01/app/oracle/flash_recovery_area/PRODUCCION/archivelog/2015_05_20/o1_mf_1_2584_boscxjxw_.arc
+
+2583    1    2585    A 20-MAY-15
+        Name: /u01/app/oracle/flash_recovery_area/PRODUCCION/archivelog/2015_05_20/o1_mf_1_2585_bosqpggh_.arc
+
+2584    1    2586    A 20-MAY-15
+        Name: /u01/app/oracle/flash_recovery_area/PRODUCCION/archivelog/2015_05_20/o1_mf_1_2586_bot40ttr_.arc
+
+2585    1    2587    A 20-MAY-15
+        Name: /u01/app/oracle/flash_recovery_area/PRODUCCION/archivelog/2015_05_20/o1_mf_1_2587_both7ofq_.arc
+
+2586    1    2588    A 20-MAY-15
+        Name: /u01/app/oracle/flash_recovery_area/PRODUCCION/archivelog/2015_05_20/o1_mf_1_2588_botll9vj_.arc
+
+2587    1    2589    A 20-MAY-15
+        Name: /u01/app/oracle/flash_recovery_area/PRODUCCION/archivelog/2015_05_20/o1_mf_1_2589_botllrwk_.arc
+
+2588    1    2590    A 20-MAY-15
+        Name: /u01/app/oracle/flash_recovery_area/PRODUCCION/archivelog/2015_05_20/o1_mf_1_2590_botmb3r0_.arc
+
+2589    1    2591    A 20-MAY-15
+        Name: /u01/app/oracle/flash_recovery_area/PRODUCCION/archivelog/2015_05_20/o1_mf_1_2591_botmb69o_.arc
+
+
+RMAN-06207: WARNING: 162 objects could not be deleted for DISK channel(s) due
+RMAN-06208:          to mismatched status.  Use CROSSCHECK command to fix status
+RMAN-06210: List of Mismatched objects
+RMAN-06211: ==========================
+RMAN-06212:   Object Type   Filename/Handle
+RMAN-06213: --------------- ---------------------------------------------------
+RMAN-06214: Archivelog      /u01/app/oracle/flash_recovery_area/PRODUCCION/archivelog/2015_05_06/o1_mf_1_2430_bnnw1x5j_.arc
+RMAN-06214: Archivelog      /u01/app/oracle/flash_recovery_area/PRODUCCION/archivelog/2015_05_06/o1_mf_1_2431_bnnw1xcg_.arc
+RMAN-06214: Archivelog      /u01/app/oracle/flash_recovery_area/PRODUCCION/archivelog/2015_05_06/o1_mf_1_2432_bno1lf5o_.arc
+RMAN-06214: Archivelog      /u01/app/oracle/flash_recovery_area/PRODUCCION/archivelog/2015_05_06/o1_mf_1_2433_bnobxtpy_.arc
+RMAN-06214: Archivelog      /u01/app/oracle/flash_recovery_area/PRODUCCION/archivelog/2015_05_06/o1_mf_1_2434_bnobxw04_.arc
+RMAN-06214: Archivelog      /u01/app/oracle/flash_recovery_area/PRODUCCION/archivelog/2015_05_06/o1_mf_1_2435_bnoby0bo_.arc
+RMAN-06214: Archivelog      /u01/app/oracle/flash_recovery_area/PRODUCCION/archivelog/2015_05_06/o1_mf_1_2436_bnoby3f0_.arc
+RMAN-06214: Archivelog      /u01/app/oracle/flash_recovery_area/PRODUCCION/archivelog/2015_05_06/o1_mf_1_2437_bnoby6wk_.arc
+RMAN-06214: Archivelog      /u01/app/oracle/flash_recovery_area/PRODUCCION/archivelog/2015_05_06/o1_mf_1_2438_bnobybht_.arc
+RMAN-06214: Archivelog      /u01/app/oracle/flash_recovery_area/PRODUCCION/archivelog/2015_05_06/o1_mf_1_2439_bnobyfr3_.arc
+RMAN-06214: Archivelog      /u01/app/oracle/flash_recovery_area/PRODUCCION/archivelog/2015_05_06/o1_mf_1_2440_bnobyko9_.arc
+RMAN-06214: Archivelog      /u01/app/oracle/flash_recovery_area/PRODUCCION/archivelog/2015_05_06/o1_mf_1_2441_bnobyo5j_.arc
+RMAN-06214: Archivelog      /u01/app/oracle/flash_recovery_area/PRODUCCION/archivelog/2015_05_06/o1_mf_1_2442_bnobyrv5_.arc
+RMAN-06214: Archivelog      /u01/app/oracle/flash_recovery_area/PRODUCCION/archivelog/2015_05_06/o1_mf_1_2443_bnolgst6_.arc
+RMAN-06214: Archivelog      /u01/app/oracle/flash_recovery_area/PRODUCCION/archivelog/2015_05_06/o1_mf_1_2444_bnoob7wy_.arc
+RMAN-06214: Archivelog      /u01/app/oracle/flash_recovery_area/PRODUCCION/archivelog/2015_05_06/o1_mf_1_2445_bnoobmxf_.arc
+RMAN-06214: Archivelog      /u01/app/oracle/flash_recovery_area/PRODUCCION/archivelog/2015_05_07/o1_mf_1_2446_bnowczls_.arc
+RMAN-06214: Archivelog      /u01/app/oracle/flash_recovery_area/PRODUCCION/archivelog/2015_05_07/o1_mf_1_2447_bnpbg4yh_.arc
+RMAN-06214: Archivelog      /u01/app/oracle/flash_recovery_area/PRODUCCION/archivelog/2015_05_07/o1_mf_1_2448_bnptj8yt_.arc
+RMAN-06214: Archivelog      /u01/app/oracle/flash_recovery_area/PRODUCCION/archivelog/2015_05_07/o1_mf_1_2449_bnqb1btk_.arc
+RMAN-06214: Archivelog      /u01/app/oracle/flash_recovery_area/PRODUCCION/archivelog/2015_05_07/o1_mf_1_2450_bnqqcz8s_.arc
+RMAN-06214: Archivelog      /u01/app/oracle/flash_recovery_area/PRODUCCION/archivelog/2015_05_07/o1_mf_1_2451_bnr2osw3_.arc
+RMAN-06214: Archivelog      /u01/app/oracle/flash_recovery_area/PRODUCCION/archivelog/2015_05_07/o1_mf_1_2452_bnr9p7qc_.arc
+RMAN-06214: Archivelog      /u01/app/oracle/flash_recovery_area/PRODUCCION/archivelog/2015_05_07/o1_mf_1_2453_bnr9wrm5_.arc
+RMAN-06214: Archivelog      /u01/app/oracle/flash_recovery_area/PRODUCCION/archivelog/2015_05_07/o1_mf_1_2454_bnr9wwvc_.arc
+RMAN-06214: Archivelog      /u01/app/oracle/flash_recovery_area/PRODUCCION/archivelog/2015_05_08/o1_mf_1_2455_bnrp48rt_.arc
+RMAN-06214: Archivelog      /u01/app/oracle/flash_recovery_area/PRODUCCION/archivelog/2015_05_08/o1_mf_1_2456_bns293k8_.arc
+RMAN-06214: Archivelog      /u01/app/oracle/flash_recovery_area/PRODUCCION/archivelog/2015_05_08/o1_mf_1_2457_bnsh6snl_.arc
+RMAN-06214: Archivelog      /u01/app/oracle/flash_recovery_area/PRODUCCION/archivelog/2015_05_08/o1_mf_1_2458_bnstx371_.arc
+RMAN-06214: Archivelog      /u01/app/oracle/flash_recovery_area/PRODUCCION/archivelog/2015_05_08/o1_mf_1_2459_bnt79k8o_.arc
+RMAN-06214: Archivelog      /u01/app/oracle/flash_recovery_area/PRODUCCION/archivelog/2015_05_08/o1_mf_1_2460_bntmk5y3_.arc
+RMAN-06214: Archivelog      /u01/app/oracle/flash_recovery_area/PRODUCCION/archivelog/2015_05_08/o1_mf_1_2461_bntxljdw_.arc
+RMAN-06214: Archivelog      /u01/app/oracle/flash_recovery_area/PRODUCCION/archivelog/2015_05_08/o1_mf_1_2462_bnty28m7_.arc
+RMAN-06214: Archivelog      /u01/app/oracle/flash_recovery_area/PRODUCCION/archivelog/2015_05_08/o1_mf_1_2463_bnv1tm1v_.arc
+RMAN-06214: Archivelog      /u01/app/oracle/flash_recovery_area/PRODUCCION/archivelog/2015_05_09/o1_mf_1_2464_bnvgpdw3_.arc
+RMAN-06214: Archivelog      /u01/app/oracle/flash_recovery_area/PRODUCCION/archivelog/2015_05_09/o1_mf_1_2465_bnvt5v0z_.arc
+RMAN-06214: Archivelog      /u01/app/oracle/flash_recovery_area/PRODUCCION/archivelog/2015_05_09/o1_mf_1_2466_bnvvkcjx_.arc
+RMAN-06214: Archivelog      /u01/app/oracle/flash_recovery_area/PRODUCCION/archivelog/2015_05_09/o1_mf_1_2467_bnw8899w_.arc
+RMAN-06214: Archivelog      /u01/app/oracle/flash_recovery_area/PRODUCCION/archivelog/2015_05_09/o1_mf_1_2468_bnwh9gv9_.arc
+RMAN-06214: Archivelog      /u01/app/oracle/flash_recovery_area/PRODUCCION/archivelog/2015_05_09/o1_mf_1_2469_bnwpw839_.arc
+RMAN-06214: Archivelog      /u01/app/oracle/flash_recovery_area/PRODUCCION/archivelog/2015_05_09/o1_mf_1_2470_bnx1q2cs_.arc
+RMAN-06214: Archivelog      /u01/app/oracle/flash_recovery_area/PRODUCCION/archivelog/2015_05_09/o1_mf_1_2471_bnx85rmc_.arc
+RMAN-06214: Archivelog      /u01/app/oracle/flash_recovery_area/PRODUCCION/archivelog/2015_05_09/o1_mf_1_2472_bnxkqjcm_.arc
+RMAN-06214: Archivelog      /u01/app/oracle/flash_recovery_area/PRODUCCION/archivelog/2015_05_09/o1_mf_1_2473_bnxm0lwo_.arc
+RMAN-06214: Archivelog      /u01/app/oracle/flash_recovery_area/PRODUCCION/archivelog/2015_05_10/o1_mf_1_2474_bnxw2h9b_.arc
+RMAN-06214: Archivelog      /u01/app/oracle/flash_recovery_area/PRODUCCION/archivelog/2015_05_10/o1_mf_1_2475_bny7jybj_.arc
+RMAN-06214: Archivelog      /u01/app/oracle/flash_recovery_area/PRODUCCION/archivelog/2015_05_10/o1_mf_1_2476_bnygl126_.arc
+RMAN-06214: Archivelog      /u01/app/oracle/flash_recovery_area/PRODUCCION/archivelog/2015_05_10/o1_mf_1_2477_bnyom9pg_.arc
+RMAN-06214: Archivelog      /u01/app/oracle/flash_recovery_area/PRODUCCION/archivelog/2015_05_10/o1_mf_1_2478_bnywnlfj_.arc
+RMAN-06214: Archivelog      /u01/app/oracle/flash_recovery_area/PRODUCCION/archivelog/2015_05_10/o1_mf_1_2479_bnz84rto_.arc
+RMAN-06214: Archivelog      /u01/app/oracle/flash_recovery_area/PRODUCCION/archivelog/2015_05_10/o1_mf_1_2480_bnzh8vjm_.arc
+RMAN-06214: Archivelog      /u01/app/oracle/flash_recovery_area/PRODUCCION/archivelog/2015_05_10/o1_mf_1_2481_bnzrrx51_.arc
+RMAN-06214: Archivelog      /u01/app/oracle/flash_recovery_area/PRODUCCION/archivelog/2015_05_10/o1_mf_1_2482_bnzwm0q5_.arc
+RMAN-06214: Archivelog      /u01/app/oracle/flash_recovery_area/PRODUCCION/archivelog/2015_05_10/o1_mf_1_2483_bnzzwgvb_.arc
+RMAN-06214: Archivelog      /u01/app/oracle/flash_recovery_area/PRODUCCION/archivelog/2015_05_10/o1_mf_1_2484_bo06vdks_.arc
+RMAN-06214: Archivelog      /u01/app/oracle/flash_recovery_area/PRODUCCION/archivelog/2015_05_10/o1_mf_1_2485_bo0bx95x_.arc
+RMAN-06214: Archivelog      /u01/app/oracle/flash_recovery_area/PRODUCCION/archivelog/2015_05_11/o1_mf_1_2486_bo0qt446_.arc
+RMAN-06214: Archivelog      /u01/app/oracle/flash_recovery_area/PRODUCCION/archivelog/2015_05_11/o1_mf_1_2487_bo1325k7_.arc
+RMAN-06214: Archivelog      /u01/app/oracle/flash_recovery_area/PRODUCCION/archivelog/2015_05_11/o1_mf_1_2488_bo1j3fpb_.arc
+RMAN-06214: Archivelog      /u01/app/oracle/flash_recovery_area/PRODUCCION/archivelog/2015_05_11/o1_mf_1_2489_bo1vlmfp_.arc
+RMAN-06214: Archivelog      /u01/app/oracle/flash_recovery_area/PRODUCCION/archivelog/2015_05_11/o1_mf_1_2490_bo288pgk_.arc
+RMAN-06214: Archivelog      /u01/app/oracle/flash_recovery_area/PRODUCCION/archivelog/2015_05_11/o1_mf_1_2491_bo2k0d0j_.arc
+RMAN-06214: Archivelog      /u01/app/oracle/flash_recovery_area/PRODUCCION/archivelog/2015_05_11/o1_mf_1_2492_bo2k0h0r_.arc
+RMAN-06214: Archivelog      /u01/app/oracle/flash_recovery_area/PRODUCCION/archivelog/2015_05_11/o1_mf_1_2493_bo2v5zvw_.arc
+RMAN-06214: Archivelog      /u01/app/oracle/flash_recovery_area/PRODUCCION/archivelog/2015_05_11/o1_mf_1_2494_bo2v6gwv_.arc
+RMAN-06214: Archivelog      /u01/app/oracle/flash_recovery_area/PRODUCCION/archivelog/2015_05_11/o1_mf_1_2495_bo2y7t5g_.arc
+RMAN-06214: Archivelog      /u01/app/oracle/flash_recovery_area/PRODUCCION/archivelog/2015_05_12/o1_mf_1_2496_bo398kff_.arc
+RMAN-06214: Archivelog      /u01/app/oracle/flash_recovery_area/PRODUCCION/archivelog/2015_05_12/o1_mf_1_2497_bo3ozrbt_.arc
+RMAN-06214: Archivelog      /u01/app/oracle/flash_recovery_area/PRODUCCION/archivelog/2015_05_12/o1_mf_1_2498_bo41wpwk_.arc
+RMAN-06214: Archivelog      /u01/app/oracle/flash_recovery_area/PRODUCCION/archivelog/2015_05_12/o1_mf_1_2499_bo4fp661_.arc
+RMAN-06214: Archivelog      /u01/app/oracle/flash_recovery_area/PRODUCCION/archivelog/2015_05_12/o1_mf_1_2500_bo4tgx92_.arc
+RMAN-06214: Archivelog      /u01/app/oracle/flash_recovery_area/PRODUCCION/archivelog/2015_05_12/o1_mf_1_2501_bo55fr4p_.arc
+RMAN-06214: Archivelog      /u01/app/oracle/flash_recovery_area/PRODUCCION/archivelog/2015_05_12/o1_mf_1_2502_bo55mldh_.arc
+RMAN-06214: Archivelog      /u01/app/oracle/flash_recovery_area/PRODUCCION/archivelog/2015_05_12/o1_mf_1_2503_bo5hkzfn_.arc
+RMAN-06214: Archivelog      /u01/app/oracle/flash_recovery_area/PRODUCCION/archivelog/2015_05_12/o1_mf_1_2504_bo5hlggd_.arc
+RMAN-06214: Archivelog      /u01/app/oracle/flash_recovery_area/PRODUCCION/archivelog/2015_05_12/o1_mf_1_2505_bo5n70bq_.arc
+RMAN-06214: Archivelog      /u01/app/oracle/flash_recovery_area/PRODUCCION/archivelog/2015_05_13/o1_mf_1_2506_bo615cbk_.arc
+RMAN-06214: Archivelog      /u01/app/oracle/flash_recovery_area/PRODUCCION/archivelog/2015_05_13/o1_mf_1_2507_bo6g2d4p_.arc
+RMAN-06214: Archivelog      /u01/app/oracle/flash_recovery_area/PRODUCCION/archivelog/2015_05_13/o1_mf_1_2508_bo6ss7py_.arc
+RMAN-06214: Archivelog      /u01/app/oracle/flash_recovery_area/PRODUCCION/archivelog/2015_05_13/o1_mf_1_2509_bo75xwn5_.arc
+RMAN-06214: Archivelog      /u01/app/oracle/flash_recovery_area/PRODUCCION/archivelog/2015_05_13/o1_mf_1_2510_bo7lckf8_.arc
+RMAN-06214: Archivelog      /u01/app/oracle/flash_recovery_area/PRODUCCION/archivelog/2015_05_13/o1_mf_1_2511_bo7sv12l_.arc
+RMAN-06214: Archivelog      /u01/app/oracle/flash_recovery_area/PRODUCCION/archivelog/2015_05_13/o1_mf_1_2512_bo7sv42w_.arc
+RMAN-06214: Archivelog      /u01/app/oracle/flash_recovery_area/PRODUCCION/archivelog/2015_05_13/o1_mf_1_2513_bo83xxyz_.arc
+RMAN-06214: Archivelog      /u01/app/oracle/flash_recovery_area/PRODUCCION/archivelog/2015_05_13/o1_mf_1_2514_bo83y70h_.arc
+RMAN-06214: Archivelog      /u01/app/oracle/flash_recovery_area/PRODUCCION/archivelog/2015_05_13/o1_mf_1_2515_bo87h4gr_.arc
+RMAN-06214: Archivelog      /u01/app/oracle/flash_recovery_area/PRODUCCION/archivelog/2015_05_14/o1_mf_1_2516_bo8pftdr_.arc
+RMAN-06214: Archivelog      /u01/app/oracle/flash_recovery_area/PRODUCCION/archivelog/2015_05_14/o1_mf_1_2517_bo94qoz0_.arc
+RMAN-06214: Archivelog      /u01/app/oracle/flash_recovery_area/PRODUCCION/archivelog/2015_05_14/o1_mf_1_2518_bo9n2yol_.arc
+RMAN-06214: Archivelog      /u01/app/oracle/flash_recovery_area/PRODUCCION/archivelog/2015_05_14/o1_mf_1_2519_bob1of2o_.arc
+RMAN-06214: Archivelog      /u01/app/oracle/flash_recovery_area/PRODUCCION/archivelog/2015_05_14/o1_mf_1_2520_bobjc2yv_.arc
+RMAN-06214: Archivelog      /u01/app/oracle/flash_recovery_area/PRODUCCION/archivelog/2015_05_14/o1_mf_1_2521_bobrb38g_.arc
+RMAN-06214: Archivelog      /u01/app/oracle/flash_recovery_area/PRODUCCION/archivelog/2015_05_14/o1_mf_1_2522_bobrbh9k_.arc
+RMAN-06214: Archivelog      /u01/app/oracle/flash_recovery_area/PRODUCCION/archivelog/2015_05_14/o1_mf_1_2523_bobrt4jf_.arc
+RMAN-06214: Archivelog      /u01/app/oracle/flash_recovery_area/PRODUCCION/archivelog/2015_05_14/o1_mf_1_2524_bobtb276_.arc
+RMAN-06214: Archivelog      /u01/app/oracle/flash_recovery_area/PRODUCCION/archivelog/2015_05_15/o1_mf_1_2525_boc9ky3c_.arc
+RMAN-06214: Archivelog      /u01/app/oracle/flash_recovery_area/PRODUCCION/archivelog/2015_05_15/o1_mf_1_2526_bocqz5m8_.arc
+RMAN-06214: Archivelog      /u01/app/oracle/flash_recovery_area/PRODUCCION/archivelog/2015_05_15/o1_mf_1_2527_bod6y1cy_.arc
+RMAN-06214: Archivelog      /u01/app/oracle/flash_recovery_area/PRODUCCION/archivelog/2015_05_15/o1_mf_1_2528_bodozc96_.arc
+RMAN-06214: Archivelog      /u01/app/oracle/flash_recovery_area/PRODUCCION/archivelog/2015_05_15/o1_mf_1_2529_bof5fwh0_.arc
+RMAN-06214: Archivelog      /u01/app/oracle/flash_recovery_area/PRODUCCION/archivelog/2015_05_15/o1_mf_1_2530_bofdozvz_.arc
+RMAN-06214: Archivelog      /u01/app/oracle/flash_recovery_area/PRODUCCION/archivelog/2015_05_15/o1_mf_1_2531_bofdpcwf_.arc
+RMAN-06214: Archivelog      /u01/app/oracle/flash_recovery_area/PRODUCCION/archivelog/2015_05_15/o1_mf_1_2532_boff7fmh_.arc
+RMAN-06214: Archivelog      /u01/app/oracle/flash_recovery_area/PRODUCCION/archivelog/2015_05_15/o1_mf_1_2533_boff7k4k_.arc
+RMAN-06214: Archivelog      /u01/app/oracle/flash_recovery_area/PRODUCCION/archivelog/2015_05_16/o1_mf_1_2534_bofvcjw3_.arc
+RMAN-06214: Archivelog      /u01/app/oracle/flash_recovery_area/PRODUCCION/archivelog/2015_05_16/o1_mf_1_2535_bog8sq0p_.arc
+RMAN-06214: Archivelog      /u01/app/oracle/flash_recovery_area/PRODUCCION/archivelog/2015_05_16/o1_mf_1_2536_bog8t31d_.arc
+RMAN-06214: Archivelog      /u01/app/oracle/flash_recovery_area/PRODUCCION/archivelog/2015_05_16/o1_mf_1_2537_bogkh4df_.arc
+RMAN-06214: Archivelog      /u01/app/oracle/flash_recovery_area/PRODUCCION/archivelog/2015_05_16/o1_mf_1_2538_bogsoxg2_.arc
+RMAN-06214: Archivelog      /u01/app/oracle/flash_recovery_area/PRODUCCION/archivelog/2015_05_16/o1_mf_1_2539_boh57gyf_.arc
+RMAN-06214: Archivelog      /u01/app/oracle/flash_recovery_area/PRODUCCION/archivelog/2015_05_16/o1_mf_1_2540_bohg7hlt_.arc
+RMAN-06214: Archivelog      /u01/app/oracle/flash_recovery_area/PRODUCCION/archivelog/2015_05_16/o1_mf_1_2541_bohomxsh_.arc
+RMAN-06214: Archivelog      /u01/app/oracle/flash_recovery_area/PRODUCCION/archivelog/2015_05_16/o1_mf_1_2542_boj11qcw_.arc
+RMAN-06214: Archivelog      /u01/app/oracle/flash_recovery_area/PRODUCCION/archivelog/2015_05_16/o1_mf_1_2543_boj1ntt9_.arc
+RMAN-06214: Archivelog      /u01/app/oracle/flash_recovery_area/PRODUCCION/archivelog/2015_05_16/o1_mf_1_2544_boj1nvp2_.arc
+RMAN-06214: Archivelog      /u01/app/oracle/flash_recovery_area/PRODUCCION/archivelog/2015_05_16/o1_mf_1_2545_boj3fjf5_.arc
+RMAN-06214: Archivelog      /u01/app/oracle/flash_recovery_area/PRODUCCION/archivelog/2015_05_17/o1_mf_1_2546_bojh5f75_.arc
+RMAN-06214: Archivelog      /u01/app/oracle/flash_recovery_area/PRODUCCION/archivelog/2015_05_17/o1_mf_1_2547_bojvoj03_.arc
+RMAN-06214: Archivelog      /u01/app/oracle/flash_recovery_area/PRODUCCION/archivelog/2015_05_17/o1_mf_1_2548_bojx65m7_.arc
+RMAN-06214: Archivelog      /u01/app/oracle/flash_recovery_area/PRODUCCION/archivelog/2015_05_17/o1_mf_1_2549_bojx6kn0_.arc
+RMAN-06214: Archivelog      /u01/app/oracle/flash_recovery_area/PRODUCCION/archivelog/2015_05_17/o1_mf_1_2550_bok0pc0k_.arc
+RMAN-06214: Archivelog      /u01/app/oracle/flash_recovery_area/PRODUCCION/archivelog/2015_05_17/o1_mf_1_2551_bokclv5y_.arc
+RMAN-06214: Archivelog      /u01/app/oracle/flash_recovery_area/PRODUCCION/archivelog/2015_05_17/o1_mf_1_2552_bokjtc9h_.arc
+RMAN-06214: Archivelog      /u01/app/oracle/flash_recovery_area/PRODUCCION/archivelog/2015_05_17/o1_mf_1_2553_bokso0ro_.arc
+RMAN-06214: Archivelog      /u01/app/oracle/flash_recovery_area/PRODUCCION/archivelog/2015_05_17/o1_mf_1_2554_bol5l5oc_.arc
+RMAN-06214: Archivelog      /u01/app/oracle/flash_recovery_area/PRODUCCION/archivelog/2015_05_17/o1_mf_1_2555_boldx9p3_.arc
+RMAN-06214: Archivelog      /u01/app/oracle/flash_recovery_area/PRODUCCION/archivelog/2015_05_17/o1_mf_1_2556_boloshf1_.arc
+RMAN-06214: Archivelog      /u01/app/oracle/flash_recovery_area/PRODUCCION/archivelog/2015_05_17/o1_mf_1_2557_bolp26j2_.arc
+RMAN-06214: Archivelog      /u01/app/oracle/flash_recovery_area/PRODUCCION/archivelog/2015_05_17/o1_mf_1_2558_bolp2djl_.arc
+RMAN-06214: Archivelog      /u01/app/oracle/flash_recovery_area/PRODUCCION/archivelog/2015_05_18/o1_mf_1_2559_bom2hoo1_.arc
+RMAN-06214: Archivelog      /u01/app/oracle/flash_recovery_area/PRODUCCION/archivelog/2015_05_18/o1_mf_1_2560_bomg1967_.arc
+RMAN-06214: Archivelog      /u01/app/oracle/flash_recovery_area/PRODUCCION/archivelog/2015_05_18/o1_mf_1_2561_bomv0vf1_.arc
+RMAN-06214: Archivelog      /u01/app/oracle/flash_recovery_area/PRODUCCION/archivelog/2015_05_18/o1_mf_1_2562_bon6oh47_.arc
+RMAN-06214: Archivelog      /u01/app/oracle/flash_recovery_area/PRODUCCION/archivelog/2015_05_18/o1_mf_1_2563_bonljqx2_.arc
+RMAN-06214: Archivelog      /u01/app/oracle/flash_recovery_area/PRODUCCION/archivelog/2015_05_18/o1_mf_1_2564_bonz2btj_.arc
+RMAN-06214: Archivelog      /u01/app/oracle/flash_recovery_area/PRODUCCION/archivelog/2015_05_18/o1_mf_1_2565_boo9sz9l_.arc
+RMAN-06214: Archivelog      /u01/app/oracle/flash_recovery_area/PRODUCCION/archivelog/2015_05_18/o1_mf_1_2566_boo9tk9w_.arc
+RMAN-06214: Archivelog      /u01/app/oracle/flash_recovery_area/PRODUCCION/archivelog/2015_05_18/o1_mf_1_2567_boobbvhz_.arc
+RMAN-06214: Archivelog      /u01/app/oracle/flash_recovery_area/PRODUCCION/archivelog/2015_05_18/o1_mf_1_2568_boobhk9t_.arc
+RMAN-06214: Archivelog      /u01/app/oracle/flash_recovery_area/PRODUCCION/archivelog/2015_05_18/o1_mf_1_2569_boobt1t1_.arc
+RMAN-06214: Archivelog      /u01/app/oracle/flash_recovery_area/PRODUCCION/archivelog/2015_05_19/o1_mf_1_2570_booplppy_.arc
+RMAN-06214: Archivelog      /u01/app/oracle/flash_recovery_area/PRODUCCION/archivelog/2015_05_19/o1_mf_1_2571_bop2g5mo_.arc
+RMAN-06214: Archivelog      /u01/app/oracle/flash_recovery_area/PRODUCCION/archivelog/2015_05_19/o1_mf_1_2572_bophn9xo_.arc
+RMAN-06214: Archivelog      /u01/app/oracle/flash_recovery_area/PRODUCCION/archivelog/2015_05_19/o1_mf_1_2573_bopv23b6_.arc
+RMAN-06214: Archivelog      /u01/app/oracle/flash_recovery_area/PRODUCCION/archivelog/2015_05_19/o1_mf_1_2574_boq7hy8r_.arc
+RMAN-06214: Archivelog      /u01/app/oracle/flash_recovery_area/PRODUCCION/archivelog/2015_05_19/o1_mf_1_2575_boqmn4gf_.arc
+RMAN-06214: Archivelog      /u01/app/oracle/flash_recovery_area/PRODUCCION/archivelog/2015_05_19/o1_mf_1_2576_boqy5rsv_.arc
+RMAN-06214: Archivelog      /u01/app/oracle/flash_recovery_area/PRODUCCION/archivelog/2015_05_19/o1_mf_1_2577_boqy67tj_.arc
+RMAN-06214: Archivelog      /u01/app/oracle/flash_recovery_area/PRODUCCION/archivelog/2015_05_19/o1_mf_1_2578_boqy6wvk_.arc
+RMAN-06214: Archivelog      /u01/app/oracle/flash_recovery_area/PRODUCCION/archivelog/2015_05_19/o1_mf_1_2579_boqywsxj_.arc
+RMAN-06214: Archivelog      /u01/app/oracle/flash_recovery_area/PRODUCCION/archivelog/2015_05_19/o1_mf_1_2580_boqywv70_.arc
+RMAN-06214: Archivelog      /u01/app/oracle/flash_recovery_area/PRODUCCION/archivelog/2015_05_20/o1_mf_1_2581_bor71ohj_.arc
+RMAN-06214: Archivelog      /u01/app/oracle/flash_recovery_area/PRODUCCION/archivelog/2015_05_20/o1_mf_1_2582_borm9j97_.arc
+RMAN-06214: Archivelog      /u01/app/oracle/flash_recovery_area/PRODUCCION/archivelog/2015_05_20/o1_mf_1_2583_bos0bvg7_.arc
+RMAN-06214: Archivelog      /u01/app/oracle/flash_recovery_area/PRODUCCION/archivelog/2015_05_20/o1_mf_1_2584_boscxjxw_.arc
+RMAN-06214: Archivelog      /u01/app/oracle/flash_recovery_area/PRODUCCION/archivelog/2015_05_20/o1_mf_1_2585_bosqpggh_.arc
+RMAN-06214: Archivelog      /u01/app/oracle/flash_recovery_area/PRODUCCION/archivelog/2015_05_20/o1_mf_1_2586_bot40ttr_.arc
+RMAN-06214: Archivelog      /u01/app/oracle/flash_recovery_area/PRODUCCION/archivelog/2015_05_20/o1_mf_1_2587_both7ofq_.arc
+RMAN-06214: Archivelog      /u01/app/oracle/flash_recovery_area/PRODUCCION/archivelog/2015_05_20/o1_mf_1_2588_botll9vj_.arc
+RMAN-06214: Archivelog      /u01/app/oracle/flash_recovery_area/PRODUCCION/archivelog/2015_05_20/o1_mf_1_2589_botllrwk_.arc
+RMAN-06214: Archivelog      /u01/app/oracle/flash_recovery_area/PRODUCCION/archivelog/2015_05_20/o1_mf_1_2590_botmb3r0_.arc
+RMAN-06214: Archivelog      /u01/app/oracle/flash_recovery_area/PRODUCCION/archivelog/2015_05_20/o1_mf_1_2591_botmb69o_.arc
+
+
+RMAN> 
+database closed
+database dismounted
+Oracle instance shut down
+
+RMAN> 
+executing command: SET DBID
+
+RMAN> 
+connected to target database (not started)
+Oracle instance started
+
+Total System Global Area    6547296256 bytes
+
+Fixed Size                     2213856 bytes
+Variable Size               5167384608 bytes
+Database Buffers            1342177280 bytes
+Redo Buffers                  35520512 bytes
+
+RMAN> 
+Starting restore at 10-MAY-15
+allocated channel: ORA_DISK_1
+channel ORA_DISK_1: SID=253 device type=DISK
+
+channel ORA_DISK_1: restoring control file
+channel ORA_DISK_1: restore complete, elapsed time: 00:00:01
+output file name=/u01/app/oracle/oradata/PRODUCCION/controlfile/o1_mf_b3lgtgr5_.ctl
+output file name=/u01/app/oracle/flash_recovery_area/PRODUCCION/controlfile/o1_mf_b3lgtgs0_.ctl
+Finished restore at 10-MAY-15
+
+RMAN> 
+database is already started
+database mounted
+released channel: ORA_DISK_1
+
+RMAN> 
+allocated channel: ORA_DISK_1
+channel ORA_DISK_1: SID=253 device type=DISK
+crosschecked backup piece: found to be 'AVAILABLE'
+backup piece handle=/u01/app/oracle/flash_recovery_area/PRODUCCION/backupset/2015_02_13/o1_mf_ncsn0_TAG20150213T131022_bfwm1h2v_.bkp RECID=172 STAMP=871564239
+crosschecked backup piece: found to be 'AVAILABLE'
+backup piece handle=/u01/app/oracle/flash_recovery_area/PRODUCCION/backupset/2015_02_13/o1_mf_nnnd1_TAG20150213T135833_bfwov9fr_.bkp RECID=173 STAMP=871567113
+crosschecked backup piece: found to be 'AVAILABLE'
+backup piece handle=/u01/app/oracle/flash_recovery_area/PRODUCCION/backupset/2015_02_13/o1_mf_ncsn1_TAG20150213T135833_bfwovsgk_.bkp RECID=174 STAMP=871567129
+crosschecked backup piece: found to be 'AVAILABLE'
+backup piece handle=/u01/app/oracle/flash_recovery_area/PRODUCCION/backupset/2015_02_13/o1_mf_annnn_TAG20150213T135851_bfwovvyx_.bkp RECID=175 STAMP=871567131
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/u01/app/oracle/flash_recovery_area/PRODUCCION/backupset/2015_05_20/o1_mf_nnnd0_TAG20150520T000238_bor5cgy4_.bkp RECID=176 STAMP=880156958
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/u01/app/oracle/flash_recovery_area/PRODUCCION/backupset/2015_05_20/o1_mf_ncsn0_TAG20150520T000238_bor5d90k_.bkp RECID=177 STAMP=880156985
+crosschecked backup piece: found to be 'AVAILABLE'
+backup piece handle=/u01/app/oracle/flash_recovery_area/PRODUCCION/backupset/2015_05_20/o1_mf_nnnd0_TAG20150520T000307_bor5dcpb_.bkp RECID=178 STAMP=880156987
+crosschecked backup piece: found to be 'AVAILABLE'
+backup piece handle=/u01/app/oracle/flash_recovery_area/PRODUCCION/backupset/2015_05_20/o1_mf_ncsn0_TAG20150520T000307_bor5nstm_.bkp RECID=179 STAMP=880157257
+crosschecked backup piece: found to be 'AVAILABLE'
+backup piece handle=/u01/app/oracle/flash_recovery_area/PRODUCCION/backupset/2015_05_21/o1_mf_nnnd0_TAG20150521T000240_botsqjpw_.bkp RECID=180 STAMP=880243360
+crosschecked backup piece: found to be 'AVAILABLE'
+backup piece handle=/u01/app/oracle/flash_recovery_area/PRODUCCION/backupset/2015_05_21/o1_mf_ncsn0_TAG20150521T000240_botsrbr0_.bkp RECID=181 STAMP=880243386
+crosschecked backup piece: found to be 'AVAILABLE'
+backup piece handle=/u01/app/oracle/flash_recovery_area/PRODUCCION/backupset/2015_05_25/o1_mf_nnnd0_TAG20150525T000248_bp5c7s64_.bkp RECID=182 STAMP=880588969
+Crosschecked 11 objects
+
+
+RMAN> 
+Starting restore at 10-MAY-15
+using channel ORA_DISK_1
+
+channel ORA_DISK_1: starting validation of datafile backup set
+channel ORA_DISK_1: reading from backup piece /u01/app/oracle/flash_recovery_area/PRODUCCION/backupset/2015_05_25/o1_mf_nnnd0_TAG20150525T000248_bp5c7s64_.bkp
+channel ORA_DISK_1: piece handle=/u01/app/oracle/flash_recovery_area/PRODUCCION/backupset/2015_05_25/o1_mf_nnnd0_TAG20150525T000248_bp5c7s64_.bkp tag=TAG20150525T000248
+channel ORA_DISK_1: restored backup piece 1
+channel ORA_DISK_1: validation complete, elapsed time: 00:00:45
+Finished restore at 10-MAY-15
+
+RMAN> 
+Starting restore at 10-MAY-15
+using channel ORA_DISK_1
+
+channel ORA_DISK_1: starting datafile backup set restore
+channel ORA_DISK_1: specifying datafile(s) to restore from backup set
+channel ORA_DISK_1: restoring datafile 00001 to /u01/app/oracle/oradata/PRODUCCION/datafile/o1_mf_system_b3lgrmx4_.dbf
+channel ORA_DISK_1: restoring datafile 00002 to /u01/app/oracle/oradata/PRODUCCION/datafile/o1_mf_sysaux_b3lgrmxw_.dbf
+channel ORA_DISK_1: restoring datafile 00003 to /u01/app/oracle/oradata/PRODUCCION/datafile/o1_mf_undotbs1_b3lgrmy0_.dbf
+channel ORA_DISK_1: restoring datafile 00004 to /u01/app/oracle/oradata/PRODUCCION/datafile/o1_mf_users_b3lgrmym_.dbf
+channel ORA_DISK_1: restoring datafile 00005 to /u01/app/oracle/oradata/produccion/PAGOSIFREM_DATA.dbf
+channel ORA_DISK_1: reading from backup piece /u01/app/oracle/flash_recovery_area/PRODUCCION/backupset/2015_05_25/o1_mf_nnnd0_TAG20150525T000248_bp5c7s64_.bkp
+channel ORA_DISK_1: piece handle=/u01/app/oracle/flash_recovery_area/PRODUCCION/backupset/2015_05_25/o1_mf_nnnd0_TAG20150525T000248_bp5c7s64_.bkp tag=TAG20150525T000248
+channel ORA_DISK_1: restored backup piece 1
+channel ORA_DISK_1: restore complete, elapsed time: 00:01:05
+Finished restore at 10-MAY-15
+
+RMAN> 
+Starting recover at 10-MAY-15
+using channel ORA_DISK_1
+
+starting media recovery
+
+unable to find archived log
+archived log thread=1 sequence=2635
+RMAN-00571: ===========================================================
+RMAN-00569: =============== ERROR MESSAGE STACK FOLLOWS ===============
+RMAN-00571: ===========================================================
+RMAN-03002: failure of recover command at 05/10/2015 04:27:16
+RMAN-06054: media recovery requesting unknown archived log for thread 1 with sequence 2635 and starting SCN of 5322779736
+
+RMAN> 
+database opened
+
+RMAN> 
+
+Recovery Manager complete.
+
+JOB139 | 10/05/2015 | 04:27:20 | oracle | ORA-025 | Finalizó exitosamente la restauración del respaldo completo. | restore_backup_full_oracle.sh | ORA-RF-01
+
+JOB139 | 10/05/2015 | 04:27:20 | oracle | ORA-000 | Se completó exitosamente el proceso. | restore_backup_full_oracle.sh |ORA-RF-01
+EXIT_CODE=0
