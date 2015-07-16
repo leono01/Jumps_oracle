@@ -1,0 +1,4 @@
+JOB175 | 07/07/2015 | 10:46:39 | oracle | ORA-031 | Iniciando la revisión del modo de la base de datos.| oracle_mode.sh | ORA-BI-02
+JOB175 | 07/07/2015 | 10:46:39 | oracle | ORA-001 | Modo de la Base de Datos incorrecto. | oracle_mode.sh | ORA-BI-02
+JOB175 | 07/07/2015 | 10:46:39 | oracle | ORA-032 | Finalizó la revisión del modo de la base de datos| oracle_mode.sh | ORA-BI-02
+EXIT_CODE=1

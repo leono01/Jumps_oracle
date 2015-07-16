@@ -1,0 +1,50 @@
+JOB173 | 05/07/2015 | 00:58:50 | oracle | ORA-021 | Finalizó la configuración de los archivos del script. | create_backup_full_oracle.sh | ORA-BF-06
+JOB173 | 05/07/2015 | 00:58:50 | oracle | ORA-009 | Iniciando el respaldo completo... | Backup_0.sh | ORA-BI-05
+
+Recovery Manager: Release 11.2.0.1.0 - Production on Sun Jul 5 00:58:52 2015
+
+Copyright (c) 1982, 2009, Oracle and/or its affiliates.  All rights reserved.
+
+connected to target database: PRODUCCI (DBID=3688939454)
+
+RMAN> 
+Starting backup at 05-JUL-15
+using target database control file instead of recovery catalog
+allocated channel: ORA_DISK_1
+channel ORA_DISK_1: SID=308 device type=DISK
+channel ORA_DISK_1: starting incremental level 0 datafile backup set
+channel ORA_DISK_1: specifying datafile(s) in backup set
+input datafile file number=00005 name=/u01/app/oracle/oradata/produccion/PAGOSIFREM_DATA.dbf
+input datafile file number=00001 name=/u01/app/oracle/oradata/PRODUCCION/datafile/o1_mf_system_b3lgrmx4_.dbf
+input datafile file number=00002 name=/u01/app/oracle/oradata/PRODUCCION/datafile/o1_mf_sysaux_b3lgrmxw_.dbf
+input datafile file number=00003 name=/u01/app/oracle/oradata/PRODUCCION/datafile/o1_mf_undotbs1_b3lgrmy0_.dbf
+input datafile file number=00004 name=/u01/app/oracle/oradata/PRODUCCION/datafile/o1_mf_users_b3lgrmym_.dbf
+channel ORA_DISK_1: starting piece 1 at 05-JUL-15
+RMAN-03009: failure of backup command on ORA_DISK_1 channel at 07/05/2015 00:59:08
+ORA-19566: se ha excedido el limite de 0 bloques corruptos para el archivo /u01/app/oracle/oradata/PRODUCCION/datafile/o1_mf_system_b3lgrmx4_.dbf
+continuing other job steps, job failed will not be re-run
+channel ORA_DISK_1: starting incremental level 0 datafile backup set
+channel ORA_DISK_1: specifying datafile(s) in backup set
+including current control file in backup set
+including current SPFILE in backup set
+channel ORA_DISK_1: starting piece 1 at 05-JUL-15
+channel ORA_DISK_1: finished piece 1 at 05-JUL-15
+piece handle=/u01/app/oracle/flash_recovery_area/PRODUCCION/backupset/2015_07_05/o1_mf_ncsn0_TAG20150705T005853_bskkxfqk_.bkp tag=TAG20150705T005853 comment=NONE
+channel ORA_DISK_1: backup set complete, elapsed time: 00:00:01
+RMAN-00571: ===========================================================
+RMAN-00569: =============== ERROR MESSAGE STACK FOLLOWS ===============
+RMAN-00571: ===========================================================
+
+RMAN-03009: failure of backup command on ORA_DISK_1 channel at 07/05/2015 00:59:08
+ORA-19566: se ha excedido el limite de 0 bloques corruptos para el archivo /u01/app/oracle/oradata/PRODUCCION/datafile/o1_mf_system_b3lgrmx4_.dbf
+
+RMAN> 
+
+Recovery Manager complete.
+JOB173 | 05/07/2015 | 00:59:14 | oracle | ORA-005 | El respaldo completo se realizó exitosamente. | Backup_0.sh | ORA-BI-05
+JOB173 | 05/07/2015 | 00:59:14 | oracle | ORA-016 | Realizando la compresión del respaldo... | Backup_0.sh | ORA-BI-05
+/u01/app/oracle/flash_recovery_area/PRODUCCION/backupset/2015_07_05/o1_mf_ncsn0_TAG20150705T005853_bskkxfqk_.bkp
+/u01/app/oracle/flash_recovery_area/PRODUCCION/backupset/2015_07_05/o1_mf_annnn_TAG20150705T005912_bskkxj6v_.bkp
+/media/Respaldos/oracle/logs/JOB173/JOB173.properties
+JOB173 | 05/07/2015 | 00:59:14 | oracle | ORA-017 | Finalizó la compresión del respaldo. | Backup_0.sh | ORA-BI-05
+JOB173 | 05/07/2015 | 00:59:14 | oracle | ORA-019 | Finalizó el trabajo de respaldo. | create_backup_full_oracle.sh | ORA-BF-06
