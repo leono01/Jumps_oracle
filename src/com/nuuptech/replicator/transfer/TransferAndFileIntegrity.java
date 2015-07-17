@@ -71,8 +71,8 @@ public class TransferAndFileIntegrity implements Runnable {
             + "([01]?\\d\\d?|2[0-4]\\d|25[0-5])\\."
             + "([01]?\\d\\d?|2[0-4]\\d|25[0-5])$";
     private static final String VALID_IP = "Valid IP: ";
-    //private static final String SFTPPASSPROD = "RedHat2014!";//1
-    private static final String SFTPPASSDRP = "sei2014";//2
+    private static final String SFTPPASSPROD = "RedHat2014!";//1
+    //private static final String SFTPPASSDRP = "sei2014";//2 y 3
     
     //private static final String SFTPPASS = "n0t13n3!";
 
@@ -170,12 +170,12 @@ public class TransferAndFileIntegrity implements Runnable {
             //jsch.addIdentity(identity);
             session = jsch.getSession(user, host, port);
             
-            //session.setPassword(SFTPPASSPROD);
-            session.setPassword(SFTPPASSDRP);
+            session.setPassword(SFTPPASSPROD);
+            //session.setPassword(SFTPPASSDRP);
             
-            System.out.println("Usuario: " + user);
+            //System.out.println("Usuario: " + user);
             //System.out.println("Pass: " + SFTPPASSPROD);
-            System.out.println("Pass: " + SFTPPASSDRP);
+            //System.out.println("Pass: " + SFTPPASSDRP);
             
             //session.setPassword(SFTPPASS);
             
@@ -297,12 +297,12 @@ public class TransferAndFileIntegrity implements Runnable {
                 //System.out.println("\n Datos: " +SFTPPASSPROD+"\n");
                 System.out.println("\n Datos: " +SFTPPASSDRP+"\n");**/
                 
-                //session.setPassword(SFTPPASSPROD);
-                session.setPassword(SFTPPASSDRP);
+                session.setPassword(SFTPPASSPROD);
+                //session.setPassword(SFTPPASSDRP);
                 
-                System.out.println("Usuario: " + user);
+                //System.out.println("Usuario: " + user);
                 //System.out.println("Pass: " + SFTPPASSPROD);
-                System.out.println("Pass: " + SFTPPASSDRP);
+                //System.out.println("Pass: " + SFTPPASSDRP);
                 
                 
                 //session.setPassword(SFTPPASS);
@@ -315,16 +315,17 @@ public class TransferAndFileIntegrity implements Runnable {
                 channelExec = (ChannelExec) session.openChannel(EXEC);
                 
                 
+                //host1
                 //Comando que se ejecutará en MAQUINA 2 conectado desde MAQUINA 1
-                //channelExec.setCommand("java -jar /root/dist/Jumps_ora.jar 201.131.40.87 22 root /var/uploads/replicator/oracle/files /var/uploads/replicator/oracle/files/backup_.tar.gz 1 "+job);
-                //channelExec.setCommand("java -jar /root/dist/Jumps_ora.jar 192.168.15.102 22 root /var/uploads/replicator/oracle/files /var/uploads/replicator/oracle/files/backup_.tar.gz 1 "+job);
+                channelExec.setCommand("java -jar /root/dist/Jumps_ora.jar 10.10.10.98 22 root /var/uploads/replicator/oracle/files /var/uploads/replicator/oracle/files/backup_.tar.gz 1 "+job);                
                 
+                //host2
                 //Comando que se ejecutará en MAQUINA 3 conectado desde MAQUINA 2
-                //channelExec.setCommand("java -jar /root/dist/Jumps_ora.jar 10.10.9.156 22 root /media/Respaldos/oracle/files /var/uploads/replicator/oracle/files/backup_.tar.gz 1 "+job);
-                //channelExec.setCommand("java -jar /root/dist/Jumps_ora.jar 192.168.15.113 22 root /var/uploads/replicator/oracle/files /var/uploads/replicator/oracle/files/backup_.tar.gz 1 "+job);
+                //channelExec.setCommand("java -jar /root/dist/Jumps_ora.jar 10.10.9.156 22 root /media/Respaldos/oracle/files /var/uploads/replicator/oracle/files/backup_.tar.gz 1 "+job);                
                 
+                //host3
                 //Se lista el directorio que se acaba de enviar
-                channelExec.setCommand("ls -la /media/Respaldos/oracle/files");
+                //channelExec.setCommand("ls -la /media/Respaldos/oracle/files");
                 
                 System.out.println(exitCode);
                 
